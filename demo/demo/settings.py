@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users',
     'qj_test',
-    'classview_test'
+    'classview_test',
+    'cookie_test',
 ]
 
 MIDDLEWARE = [
