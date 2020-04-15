@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'users/', include('users.urls')),
     path(r'qj_test/', include('qj_test.urls')),
+    path(r'cv_test/', include('classview_test.urls')),
 ]
