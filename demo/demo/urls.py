@@ -23,4 +23,5 @@ urlpatterns = [
     path(r'qj_test/', include('qj_test.urls')),
     path(r'cv_test/', include('classview_test.urls')),
     path(r'cookie_test/', include('cookie_test.urls')),
+    path(r'session_test/', include('session_test.urls')),
 ]
