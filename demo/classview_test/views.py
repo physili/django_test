@@ -4,7 +4,6 @@ from django.views import View
 from django.http import HttpResponse
 # Create your views here.
 
-
 def my_decorator_3(func):
     def wrapper(request, *args, **kwargs):
         print('自定义装饰器被调用了3')
@@ -77,7 +76,7 @@ class FirstMixin2(object):
     @classmethod
     def as_view(cls, *args, **kwargs):
         view = super().as_view(*args, **kwargs)
-        view = my_decorator_1(view)
+        view = my_decorator_2(view)
         return view
 
 # class View(object):
