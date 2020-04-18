@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'classview_test',
     'cookie_test',
     'session_test',
+    'booktest',
 ]
 
 MIDDLEWARE = [
