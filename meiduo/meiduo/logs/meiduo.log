@@ -1,0 +1,18 @@
+INFO 2020-04-21 02:01:32,281 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-04-21 02:01:51,699 exception 77 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2020-04-21 02:01:51,755 log 228 Bad Request: /usernames/wateraaa/count/
+WARNING 2020-04-21 02:01:51,760 basehttp 154 "GET /usernames/wateraaa/count/ HTTP/1.1" 400 67306
+INFO 2020-04-21 02:16:24,452 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-21 02:16:48,222 basehttp 154 "GET /usernames/water123/count/ HTTP/1.1" 200 41
+INFO 2020-04-21 03:01:22,757 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-21 03:02:06,776 basehttp 154 "GET /usernames/water123/count/ HTTP/1.1" 200 41
+WARNING 2020-04-21 03:04:01,824 log 228 Not Found: /image_codes/f4097519-7d94-49a3-bd0e-ae2370b38cde/
+WARNING 2020-04-21 03:04:01,833 basehttp 154 "GET /image_codes/f4097519-7d94-49a3-bd0e-ae2370b38cde/ HTTP/1.1" 404 2286
+INFO 2020-04-21 03:06:07,622 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-04-21 03:06:19,797 log 228 Not Found: /image_codes/e9658c75-a3db-454b-91cc-9fdf76b16039/
+WARNING 2020-04-21 03:06:19,798 basehttp 154 "GET /image_codes/e9658c75-a3db-454b-91cc-9fdf76b16039/ HTTP/1.1" 404 2286
+INFO 2020-04-21 03:06:59,210 basehttp 154 "GET /usernames/water4567/count/ HTTP/1.1" 200 41
+INFO 2020-04-21 03:07:39,954 basehttp 154 "GET /usernames/water4567/count/ HTTP/1.1" 200 41
+INFO 2020-04-21 03:11:11,288 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-04-21 03:11:20,970 log 228 Not Found: /image_codes/5d6efbf2-c6a9-4d54-88c5-4ffd99396baa/
+WARNING 2020-04-21 03:11:20,977 basehttp 154 "GET /image_codes/5d6efbf2-c6a9-4d54-88c5-4ffd99396baa/ HTTP/1.1" 404 2286
