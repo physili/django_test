@@ -12,3 +12,14 @@ class User(AbstractUser):
 
     def __str__(self):
         return self.username
+
+class BookInfo(models.Model):
+    b_title=models.CharField(max_length=20,verbose_name='书名')
+
+    class Meta:
+        db_table = 'tb_bookinfo'
+        verbose_name = '图书信息'
+        verbose_name_plural = verbose_name
+
+    def __str__(self):
+        return self.b_title
