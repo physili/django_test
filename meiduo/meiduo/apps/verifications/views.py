@@ -26,14 +26,21 @@ class ImageCodeView(View):
 class SMSCodeView(View):
     '''短信验证码'''
     def get(self,request,mobile):
+        # 在一开始,先对提取标志数据,判断相同的电话操作是否超过60秒了, 避免短信频繁操作
+        # 3.创建链接到redis的对象
+        redis_conn = get_redis_connection('verify_code')
+        send_flag = redis_conn.get('send_flag_%s' % mobile)
+        if send_flag:
+            logger.warning('短信发送过于频繁')
+            return http.JsonResponse({'code':400,'errmsg':'短信发送过于频繁'})
+
         # 1.接受参数:图形验证码,uuid,电话号码
         image_code_client = request.GET.get('image_code')
         uuid = request.GET.get('image_code_id')
         # 2.整体校验参数
         if not all([image_code_client,uuid]):
             return http.JsonResponse({'code':400,'errmsg':'缺少比传参数'})
-        # 3.创建链接到redis的对象
-        redis_conn = get_redis_connection('verify_code')
+
         # 4.提取图形验证码
         image_code_server = redis_conn.get('img_%s'%uuid)
         if image_code_server is None:
@@ -52,6 +59,8 @@ class SMSCodeView(View):
         logger.info(sms_code)
         # 8.保存短信验证码
         redis_conn.setex('sms_%s'%mobile, 300, sms_code)
+        # 同时保存一个标记60秒, 用于避免短信轰炸
+        redis_conn.setex('send_flag_%s' % mobile, 60, 1)
         # 9.发送短信验证码
         CCP().send_template_sms(mobile,[sms_code,5],1)
         # 10.响应结果
