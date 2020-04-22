@@ -5,3 +5,6 @@ INFO 2020-04-22 12:57:55,262 basehttp 154 "GET /usernames/water/count/ HTTP/1.1"
 INFO 2020-04-22 12:58:25,582 basehttp 154 "GET /usernames/water/count/ HTTP/1.1" 200 47
 INFO 2020-04-22 13:07:05,715 autoreload 597 Watching for file changes with StatReloader
 INFO 2020-04-22 13:07:24,431 basehttp 154 "GET /mobiles/13431679246/count/ HTTP/1.1" 200 47
+INFO 2020-04-22 13:30:53,562 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-22 13:31:13,771 basehttp 154 "GET /image_codes/90d72702-6635-415b-b8a7-0ccee3605730/ HTTP/1.1" 200 3119
+INFO 2020-04-22 13:32:10,827 basehttp 154 "GET /image_codes/9929d43a-57e5-477d-bff4-4af0bd874973/ HTTP/1.1" 200 3274
