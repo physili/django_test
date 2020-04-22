@@ -57,10 +57,18 @@ class SMSCodeView(View):
         # 7.生成短信验证码:生成6位数验证码
         sms_code = '%06d'%random.randint(0,999999)
         logger.info(sms_code)
+
+        # 通过管道方式优化客户端与redis通讯次数
+        # 创建管道
+        pl = redis_conn.pipeline()
+        # 将redis请求添加到队列
         # 8.保存短信验证码
-        redis_conn.setex('sms_%s'%mobile, 300, sms_code)
+        pl.setex('sms_%s'%mobile, 300, sms_code)
         # 同时保存一个标记60秒, 用于避免短信轰炸
-        redis_conn.setex('send_flag_%s' % mobile, 60, 1)
+        pl.setex('send_flag_%s' % mobile, 60, 1)
+        # 执行请求
+        pl.execute()
+
         # 9.发送短信验证码
         CCP().send_template_sms(mobile,[sms_code,5],1)
         # 10.响应结果
