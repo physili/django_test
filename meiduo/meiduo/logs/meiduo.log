@@ -64,3 +64,34 @@ django.core.cache.backends.base.InvalidCacheBackendError: Could not find config 
 ERROR 2020-04-21 09:19:36,497 basehttp 154 "GET /image_codes/2ff4558c-48cc-41e1-b7d4-41efaa9e71c0/ HTTP/1.1" 500 93553
 INFO 2020-04-21 09:21:10,150 autoreload 597 Watching for file changes with StatReloader
 INFO 2020-04-21 09:21:14,872 basehttp 154 "GET /image_codes/c2c39d52-c80b-4ad4-a473-dc87324d86ab/ HTTP/1.1" 200 3311
+INFO 2020-04-22 09:24:52,725 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-22 09:25:04,105 basehttp 154 "GET /image_codes/601ad5bb-7ce8-4d2e-90e8-c7114391d91a/ HTTP/1.1" 200 3098
+INFO 2020-04-22 09:25:13,665 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+INFO 2020-04-22 09:25:28,765 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+WARNING 2020-04-22 09:25:28,785 log 228 Not Found: /sms_codes/13690599000/
+WARNING 2020-04-22 09:25:28,788 basehttp 154 "GET /sms_codes/13690599000/?image_code=pxpb&image_code_id=601ad5bb-7ce8-4d2e-90e8-c7114391d91a HTTP/1.1" 404 2653
+INFO 2020-04-22 09:27:46,131 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-22 09:27:52,391 basehttp 154 "GET /image_codes/95181b43-967b-429b-887a-2852f0ffaee9/ HTTP/1.1" 200 3219
+INFO 2020-04-22 09:28:03,884 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+INFO 2020-04-22 09:28:13,317 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+WARNING 2020-04-22 09:28:13,323 log 228 Not Found: /sms_codes/13690599000/
+WARNING 2020-04-22 09:28:13,325 basehttp 154 "GET /sms_codes/13690599000/?image_code=qujd&image_code_id=95181b43-967b-429b-887a-2852f0ffaee9 HTTP/1.1" 404 2653
+INFO 2020-04-22 09:28:42,712 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-22 09:28:52,657 basehttp 154 "GET /image_codes/39124f47-aede-42fd-ae96-785cc4b45978/ HTTP/1.1" 200 3085
+INFO 2020-04-22 09:29:04,557 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+INFO 2020-04-22 09:29:16,051 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+WARNING 2020-04-22 09:29:16,058 log 228 Not Found: /sms_codes/13690599000/
+WARNING 2020-04-22 09:29:16,058 basehttp 154 "GET /sms_codes/13690599000/?image_code=3q4t&image_code_id=39124f47-aede-42fd-ae96-785cc4b45978 HTTP/1.1" 404 2653
+INFO 2020-04-22 09:30:09,943 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-22 09:30:15,756 basehttp 154 "GET /image_codes/aaf37c98-9130-4a28-831a-126c5dc7e610/ HTTP/1.1" 200 3364
+INFO 2020-04-22 09:30:33,420 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+INFO 2020-04-22 09:30:48,600 basehttp 154 "GET /image_codes/898b0faa-f7a6-4438-88ee-144545c17325/ HTTP/1.1" 200 3386
+INFO 2020-04-22 09:31:12,899 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+WARNING 2020-04-22 09:31:12,920 log 228 Not Found: /sms_codes/13690599000/
+WARNING 2020-04-22 09:31:12,921 basehttp 154 "GET /sms_codes/13690599000/?image_code=cqnk&image_code_id=898b0faa-f7a6-4438-88ee-144545c17325 HTTP/1.1" 404 2653
+INFO 2020-04-22 09:34:07,463 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-22 09:34:12,096 basehttp 154 "GET /image_codes/4e177c34-7c07-4990-965a-69a47f3d3a00/ HTTP/1.1" 200 2930
+INFO 2020-04-22 09:34:21,843 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+INFO 2020-04-22 09:34:27,039 views 52 365251
+INFO 2020-04-22 09:34:27,049 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+INFO 2020-04-22 09:34:27,419 basehttp 154 "GET /sms_codes/13690599000/?image_code=x3zc&image_code_id=4e177c34-7c07-4990-965a-69a47f3d3a00 HTTP/1.1" 200 61
