@@ -8,6 +8,7 @@ from django.views import View
 import logging
 logger = logging.getLogger('django')
 from meiduo.libs.captcha.captcha import captcha
+from celery_tasks.sms.tasks import ccp_send_sms_code
 
 
 class ImageCodeView(View):
@@ -70,6 +71,7 @@ class SMSCodeView(View):
         pl.execute()
 
         # 9.发送短信验证码
-        CCP().send_template_sms(mobile,[sms_code,5],1)
+        # CCP().send_template_sms(mobile,[sms_code,5],1)
+        ccp_send_sms_code.delay(mobile,sms_code)
         # 10.响应结果
         return http.JsonResponse({'code':0,'errmsg':'发送短信成功'})
