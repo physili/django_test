@@ -16,3 +16,14 @@ class UsernameCountView(View):
             return JsonResponse({'code':400,'errmsg':'访问数据库失败'})
     # 2.返回结果json-->code&errmsg&count
         return JsonResponse({'code':200,'errmsg':'ok','count':'count'})
+
+
+class MobileCountView(View):
+    '''判断手机号是否重复'''
+    def get(self,request,mobile):
+        '''判断手机号是否重复'''
+        try:
+            count = User2.objects.filter(mobile=mobile).count()
+        except Exception as e:
+            return JsonResponse({'code':400,'errmsg':'访问数据库失败'})
+        return JsonResponse({'code':200,'errmsg':'ok','count':'count'})
