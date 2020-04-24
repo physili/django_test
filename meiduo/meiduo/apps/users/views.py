@@ -4,6 +4,10 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.views import View
 from users.models import User
+from django_redis import get_redis_connection
+import json
+import re
+from django.contrib.auth import login
 
 #用户名重复注册验证
 class UsernameCountView(View):
@@ -22,3 +26,45 @@ class MobileCountView(View):
         except Exception as e:
             return JsonResponse({'code':400,'errmsg':'查询出错'})
         return JsonResponse({'code':200,'errmsg':'ok','count':count})
+
+class RegisterView(View):
+    def post(self,request):
+        # 1.接受数据
+        dict = json.loads(request.body.decode())
+        # 2.提取参数
+        username = dict.get('username')
+        password = dict.get('password')
+        password2 = dict.get('password2')
+        mobile = dict.get('mobile')
+        allow = dict.get('allow')
+        sms_code_client = dict.get('sms_code')
+        # 3.检验参数(整体)
+        if not all([username,password,password2,mobile,allow,sms_code_client]):
+            return JsonResponse({'code':400,'errmsg':'传入参数缺少'})
+        # 4.检验参数(单个)
+        if not re.match(r'^[a-zA-Z0-9_-]{5,20}$',username):
+            return JsonResponse({'code': 400, 'errmsg': 'username格式有误'})
+        if not re.match(r'^[a-zA-Z0-9]{8,20}$',password):
+            return JsonResponse({'code': 400,  'errmsg': 'password格式有误'})
+        if password != password2:
+            return JsonResponse({'code': 400, 'errmsg': '两次输入不对'})
+        if not re.match(r'^1[3-9]\d{9}$',mobile):
+            return JsonResponse({'code': 400,'errmsg': 'mobile格式有误'})
+        if allow==False:
+            return JsonResponse({'code': 400, 'errmsg': 'allow格式有误'})
+
+        redis_conn = get_redis_connection('verify_code')
+        sms_code_server = redis_conn.get('sms_%s'%mobile)
+        if sms_code_server is None:
+            return JsonResponse({'code': 400,'errmsg': '短信验证码过期'})
+        if sms_code_client != sms_code_server.decode():
+            return JsonResponse({'code': 400, 'errmsg': '验证码有误'})
+        # 5.保存用户
+        try:
+            user = User.objects.create_user(username=username,password=password,mobile=mobile)
+        except Exception as e:
+            return JsonResponse({'code': 400, 'errmsg': '保存到数据库出错'})
+        # 6.状态保持
+        login(request,user)
+        # 7.返回响应
+        return JsonResponse({'code': 0, 'errmsg': 'ok'})

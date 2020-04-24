@@ -131,3 +131,26 @@ INFO 2020-04-22 13:55:17,375 basehttp 154 "GET /image_codes/0f1afc05-3cc8-4c8d-8
 INFO 2020-04-22 13:55:34,453 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
 INFO 2020-04-22 13:55:45,732 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
 INFO 2020-04-22 13:56:16,956 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+INFO 2020-04-24 11:36:58,002 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 11:37:04,486 basehttp 154 "GET /image_codes/7959cc21-0282-4ea2-a386-e3add817ef36/ HTTP/1.1" 200 3586
+INFO 2020-04-24 11:37:09,024 basehttp 154 "GET /image_codes/754e4b92-53c7-4616-8019-a609b4e0314e/ HTTP/1.1" 200 3314
+INFO 2020-04-24 11:37:18,895 basehttp 154 "GET /usernames/water123/count/ HTTP/1.1" 200 41
+INFO 2020-04-24 11:37:33,972 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+INFO 2020-04-24 11:37:39,686 views 60 597336
+INFO 2020-04-24 11:37:39,688 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+INFO 2020-04-24 11:37:39,957 basehttp 154 "GET /sms_codes/13690599000/?image_code=GTYD&image_code_id=754e4b92-53c7-4616-8019-a609b4e0314e HTTP/1.1" 200 61
+INFO 2020-04-24 11:37:56,105 basehttp 154 "OPTIONS /register/ HTTP/1.1" 200 0
+INFO 2020-04-24 11:37:56,124 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+INFO 2020-04-24 11:37:56,127 basehttp 154 "GET /usernames/water123/count/ HTTP/1.1" 200 41
+WARNING 2020-04-24 11:37:56,141 log 228 Forbidden (CSRF cookie not set.): /register/
+WARNING 2020-04-24 11:37:56,142 basehttp 154 "POST /register/ HTTP/1.1" 403 2868
+WARNING 2020-04-24 11:38:05,665 log 228 Forbidden (CSRF cookie not set.): /register/
+INFO 2020-04-24 11:38:05,667 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+INFO 2020-04-24 11:38:05,667 basehttp 154 "GET /usernames/water123/count/ HTTP/1.1" 200 41
+WARNING 2020-04-24 11:38:05,675 basehttp 154 "POST /register/ HTTP/1.1" 403 2868
+INFO 2020-04-24 11:39:41,635 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 11:39:47,274 basehttp 154 "GET /mobiles/13690599000/count/ HTTP/1.1" 200 41
+INFO 2020-04-24 11:39:47,290 basehttp 154 "GET /usernames/water123/count/ HTTP/1.1" 200 41
+INFO 2020-04-24 11:39:47,472 basehttp 154 "POST /register/ HTTP/1.1" 200 27
+WARNING 2020-04-24 11:39:47,936 log 228 Not Found: /carts/simple/
+WARNING 2020-04-24 11:39:47,939 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 2902
