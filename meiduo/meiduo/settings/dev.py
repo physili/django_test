@@ -211,3 +211,5 @@ CORS_ORIGIN_WHITELIST = (
     'http://www.meiduo.site:8080',
 )
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
+
+AUTHENTICATION_BACKENDS = ['users.utils.UsernameMobileAuthBackend']
