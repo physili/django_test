@@ -7,7 +7,8 @@ from users.models import User
 from django_redis import get_redis_connection
 import json
 import re
-from django.contrib.auth import login
+from django.contrib.auth import login, authenticate
+
 
 #用户名重复注册验证
 class UsernameCountView(View):
@@ -68,3 +69,28 @@ class RegisterView(View):
         login(request,user)
         # 7.返回响应
         return JsonResponse({'code': 0, 'errmsg': 'ok'})
+
+class LoginView(View):
+    def post(self,request):
+        #1.接受请求,提取参数
+        dict = json.loads(request.body.decode())
+        username = dict.get('username')
+        password = dict.get('password')
+        remembered = dict.get('remembered')
+        #2.检验参数(整体检验)
+        if not all([username,password,remembered]):
+            return JsonResponse({'code':400,'errmsg':'缺少必传参数'})
+        #3.登录认证authenticate
+        user = authenticate(username=username,password=password)
+        if user is None:
+            return JsonResponse({'code': 400,'errmsg': '用户名或者密码错误'})
+        #4.保持状态login
+        login(request,user)
+        #5.判断是否需要记住登录
+        if remembered == True:
+            request.session.set_expiry(None)
+        else:
+            request.session.set_expiry(0)
+
+        #6.返回响应
+        return JsonResponse({'code':0,'errmsg':'ok'})
