@@ -176,3 +176,9 @@ INFO 2020-04-24 13:38:52,180 autoreload 597 Watching for file changes with StatR
 INFO 2020-04-24 13:39:58,375 basehttp 154 "POST /login/ HTTP/1.1" 200 27
 WARNING 2020-04-24 13:39:59,028 log 228 Not Found: /carts/simple/
 WARNING 2020-04-24 13:39:59,034 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3057
+INFO 2020-04-24 13:49:20,887 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-24 13:49:28,985 basehttp 154 "GET /image_codes/7ea13e43-584c-48f8-b8d9-d9c7750fcede/ HTTP/1.1" 200 3067
+INFO 2020-04-24 13:50:01,524 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-04-24 13:50:01,643 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-04-24 13:50:02,068 log 228 Not Found: /carts/simple/
+WARNING 2020-04-24 13:50:02,077 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3057

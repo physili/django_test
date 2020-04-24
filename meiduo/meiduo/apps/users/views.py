@@ -67,8 +67,12 @@ class RegisterView(View):
             return JsonResponse({'code': 400, 'errmsg': '保存到数据库出错'})
         # 6.状态保持
         login(request,user)
+        # 登录后显示用户名
+        # 通过cookie携带用户信息
+        response = JsonResponse({'code': 0, 'errmsg': 'ok'})
+        response.set_cookie('username',user.username,max_age=3600*24*12)
         # 7.返回响应
-        return JsonResponse({'code': 0, 'errmsg': 'ok'})
+        return response
 
 class LoginView(View):
     def post(self,request):
@@ -92,5 +96,8 @@ class LoginView(View):
         else:
             request.session.set_expiry(0)
 
+        response = JsonResponse({'code':0,'errmsg':'ok'})
+        response.set_cookie('username',user.username,max_age=3600*24*12)
+
         #6.返回响应
-        return JsonResponse({'code':0,'errmsg':'ok'})
+        return response
