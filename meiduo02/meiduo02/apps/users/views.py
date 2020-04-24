@@ -81,3 +81,32 @@ class RegisterView(View):
         response.set_cookie('username',user.username,max_age=3600*24*12)
         #6.返回响应
         return response
+
+
+class LoginView(View):
+    def post(self,request):
+        #1.接受请求,提取参数(username,password,remembered)
+        dict = json.loads(request.body.decode())
+        username = dict.get('username')
+        password = dict.get('password')
+        remembered = dict.get('remembered')
+        #2.验证参数(整体)
+        if not all([username,password,remembered]):
+            return JsonResponse({'code':400,'errmsg':'缺少必传参数'})
+        #3.验证username和password用authenticate
+        #3.2判断user是否存在
+        user = authenticate(username=username,password=password)
+        if user is None:
+            return JsonResponse({'code':400,'errmsg':'验证失败'})
+        #4.保持状态
+        login(request,user)
+        #5.判断是否remembered
+        if remembered == True:
+            request.session.set_expiry(None)
+        else:
+            request.session.set_expiry(0)
+        #6.cookie携带用户名信息,显示信息
+        response = JsonResponse
+        response.set_cookie('username', user.username, max_age=3600*24*12)
+        #7.响应返回
+        return response
