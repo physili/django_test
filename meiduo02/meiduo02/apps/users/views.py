@@ -1,17 +1,20 @@
-from django.contrib.auth import login,authenticate
+from django.contrib.auth import login,authenticate,logout
 
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.views import View
 from django_redis import get_redis_connection
 import logging
+
+from meiduo02.utils.views import LoginVerifyMixin
+
 logger = logging.getLogger('django')
 from users.models import User2
 import re
 import json
 
 # Create your views here.
-
+#用户名重复验证接口
 class UsernameCountView(View):
     '''判断用户是否重复'''
     def get(self,request,username):
@@ -24,7 +27,7 @@ class UsernameCountView(View):
     # 2.返回结果json-->code&errmsg&count
         return JsonResponse({'code':200,'errmsg':'ok','count':'count'})
 
-
+#手机号重复验证接口
 class MobileCountView(View):
     '''判断手机号是否重复'''
     def get(self,request,mobile):
@@ -35,6 +38,7 @@ class MobileCountView(View):
             return JsonResponse({'code':400,'errmsg':'访问数据库失败'})
         return JsonResponse({'code':200,'errmsg':'ok','count':'count'})
 
+#注册接口
 class RegisterView(View):
     def post(self,request):
         #1.接受请求, 提取参数(username,password,psd2,mobile,sms_code,allow)
@@ -82,7 +86,7 @@ class RegisterView(View):
         #6.返回响应
         return response
 
-
+#登录接口
 class LoginView(View):
     def post(self,request):
         #1.接受请求,提取参数(username,password,remembered)
@@ -110,3 +114,19 @@ class LoginView(View):
         response.set_cookie('username', user.username, max_age=3600*24*12)
         #7.响应返回
         return response
+
+
+#登录退出接口
+class LogoutView(View):
+    def delete(self,request):
+        logout(request)
+
+        response = JsonResponse({'code':0,'errmsg':'ok'})
+        response.delete_cookie('username')
+        return response
+
+
+#用户信息中心
+class UserInfoView(LoginVerifyMixin,View):
+    def get(self,request):
+        pass
