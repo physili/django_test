@@ -7,7 +7,7 @@ from users.models import User
 from django_redis import get_redis_connection
 import json
 import re
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 
 
 #用户名重复注册验证
@@ -100,4 +100,17 @@ class LoginView(View):
         response.set_cookie('username',user.username,max_age=3600*24*12)
 
         #6.返回响应
+        return response
+
+
+#退出登录接口
+class LogoutView(View):
+    def delete(self,request):
+        '''实现退出登录逻辑'''
+        #清理session
+        logout(request)
+
+        #创建response对象, 删除cookie信息
+        response = JsonResponse({'code':0,'errmsg':'ok'})
+        response.delete_cookie('username')
         return response
