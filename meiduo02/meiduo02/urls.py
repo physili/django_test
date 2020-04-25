@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'',include('users.urls')),
     path(r'',include('verifications.urls')),
+    path(r'',include('oauth.urls')),
 
 ]
