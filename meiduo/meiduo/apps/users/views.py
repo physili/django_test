@@ -3,6 +3,8 @@ from django.shortcuts import render
 # Create your views here.
 from django.http import JsonResponse
 from django.views import View
+
+from meiduo.utils.views import LoginVerifyMixin
 from users.models import User
 from django_redis import get_redis_connection
 import json
@@ -28,6 +30,7 @@ class MobileCountView(View):
             return JsonResponse({'code':400,'errmsg':'查询出错'})
         return JsonResponse({'code':200,'errmsg':'ok','count':count})
 
+#注册接口
 class RegisterView(View):
     def post(self,request):
         # 1.接受数据
@@ -74,6 +77,7 @@ class RegisterView(View):
         # 7.返回响应
         return response
 
+#登录接口
 class LoginView(View):
     def post(self,request):
         #1.接受请求,提取参数
@@ -114,3 +118,9 @@ class LogoutView(View):
         response = JsonResponse({'code':0,'errmsg':'ok'})
         response.delete_cookie('username')
         return response
+
+
+#用户信息中心接口
+class UserInfoView(LoginVerifyMixin,View):
+    def get(self,request):
+        pass
