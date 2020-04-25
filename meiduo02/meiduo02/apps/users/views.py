@@ -106,7 +106,7 @@ class LoginView(View):
         else:
             request.session.set_expiry(0)
         #6.cookie携带用户名信息,显示信息
-        response = JsonResponse
+        response = JsonResponse({'code': 0, 'errmsg': 'ok'})
         response.set_cookie('username', user.username, max_age=3600*24*12)
         #7.响应返回
         return response
