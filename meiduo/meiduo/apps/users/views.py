@@ -123,4 +123,9 @@ class LogoutView(View):
 #用户信息中心接口
 class UserInfoView(LoginVerifyMixin,View):
     def get(self,request):
-        pass
+        dict = {'username':request.user.username,
+                'mobile':request.user.mobile,
+                'email':request.user.email,
+                'email_active':request.user.email_active,
+                }
+        return JsonResponse({'code':0,'errmsg':'ok','info_data':dict})
