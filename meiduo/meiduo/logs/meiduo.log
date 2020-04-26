@@ -202,3 +202,38 @@ INFO 2020-04-25 12:57:06,821 basehttp 154 "GET /oauth_callback/?code=6C5A484EDB6
 INFO 2020-04-25 12:57:06,846 basehttp 154 "GET /image_codes/ce1a5a12-a12c-45e2-8e42-a6572d9a0852/ HTTP/1.1" 200 2876
 INFO 2020-04-25 13:01:06,976 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/oauth/views.py changed, reloading.
 INFO 2020-04-25 13:01:07,457 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 04:26:08,696 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-04-26 04:26:33,019 log 228 Not Found: /carts/simple/
+WARNING 2020-04-26 04:26:33,020 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3697
+INFO 2020-04-26 04:27:13,256 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 203
+INFO 2020-04-26 04:28:59,555 basehttp 154 "GET /oauth_callback/?code=888C4FA5E2FADF135DED59344112F3F3 HTTP/1.1" 200 263
+INFO 2020-04-26 04:28:59,686 basehttp 154 "GET /image_codes/4f2f7406-1e6e-4f3b-95f0-71b6a3f14deb/ HTTP/1.1" 200 3328
+INFO 2020-04-26 04:31:29,558 basehttp 154 "GET /image_codes/f256e793-b379-478c-b8d0-47d3984013d6/ HTTP/1.1" 200 3342
+INFO 2020-04-26 04:31:36,521 views 60 174739
+INFO 2020-04-26 04:31:36,669 basehttp 154 "GET /sms_codes/13431679246/?image_code=ktxg&image_code_id=f256e793-b379-478c-b8d0-47d3984013d6 HTTP/1.1" 200 61
+INFO 2020-04-26 04:31:48,566 basehttp 154 "OPTIONS /oauth_callback/ HTTP/1.1" 200 0
+INFO 2020-04-26 04:31:48,756 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 27
+WARNING 2020-04-26 04:31:49,579 log 228 Not Found: /carts/simple/
+WARNING 2020-04-26 04:31:49,583 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3697
+WARNING 2020-04-26 04:38:48,546 log 228 Not Found: /browse_histories/
+WARNING 2020-04-26 04:38:48,549 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3709
+INFO 2020-04-26 04:38:48,574 basehttp 154 "GET /info/ HTTP/1.1" 200 125
+INFO 2020-04-26 04:47:08,198 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-04-26 04:47:08,322 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-04-26 04:47:08,799 log 228 Not Found: /carts/simple/
+WARNING 2020-04-26 04:47:08,802 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3697
+INFO 2020-04-26 04:49:17,787 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-26 04:49:27,295 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2020-04-26 04:49:27,336 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2020-04-26 04:49:44,617 basehttp 154 "GET /qq/authorization/?next=/ HTTP/1.1" 200 203
+INFO 2020-04-26 04:50:02,829 basehttp 154 "GET /oauth_callback/?code=E8D3B7B10BF2E2408385C5974D04E08B HTTP/1.1" 200 27
+WARNING 2020-04-26 04:50:03,496 log 228 Not Found: /carts/simple/
+WARNING 2020-04-26 04:50:03,497 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3697
+INFO 2020-04-26 04:50:33,486 basehttp 154 "GET /info/ HTTP/1.1" 200 125
+WARNING 2020-04-26 04:50:33,489 log 228 Not Found: /browse_histories/
+WARNING 2020-04-26 04:50:33,490 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3709
+WARNING 2020-04-26 04:51:00,868 log 228 Not Found: /browse_histories/
+INFO 2020-04-26 04:51:00,869 basehttp 154 "GET /info/ HTTP/1.1" 200 125
+WARNING 2020-04-26 04:51:00,877 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3709
+INFO 2020-04-26 04:53:40,909 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/oauth/views.py changed, reloading.
+INFO 2020-04-26 04:53:42,011 autoreload 597 Watching for file changes with StatReloader
