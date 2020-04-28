@@ -315,3 +315,9 @@ INFO 2020-04-28 08:55:23,276 basehttp 154 "GET /info/ HTTP/1.1" 200 150
 WARNING 2020-04-28 08:55:32,309 log 228 Not Found: /browse_histories/
 INFO 2020-04-28 08:55:32,313 basehttp 154 "GET /info/ HTTP/1.1" 200 150
 WARNING 2020-04-28 08:55:32,317 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4034
+INFO 2020-04-28 10:33:30,628 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/urls.py changed, reloading.
+INFO 2020-04-28 10:33:33,063 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-28 10:33:51,390 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/areas/urls.py changed, reloading.
+INFO 2020-04-28 10:33:53,492 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-28 10:43:09,233 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/areas/models.py changed, reloading.
+INFO 2020-04-28 10:43:12,528 autoreload 597 Watching for file changes with StatReloader
