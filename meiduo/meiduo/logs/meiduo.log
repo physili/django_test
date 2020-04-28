@@ -259,3 +259,43 @@ INFO 2020-04-26 05:23:00,729 autoreload 597 Watching for file changes with StatR
 INFO 2020-04-26 05:23:10,292 basehttp 154 "GET /info/ HTTP/1.1" 200 130
 WARNING 2020-04-26 05:23:10,365 log 228 Not Found: /browse_histories/
 WARNING 2020-04-26 05:23:10,373 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3709
+INFO 2020-04-28 06:39:14,802 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-28 06:39:57,044 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2020-04-28 06:39:57,491 basehttp 154 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2020-04-28 07:25:15,355 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-04-28 07:25:31,598 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 07:25:31,609 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3865
+WARNING 2020-04-28 07:25:37,560 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 07:25:37,570 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3865
+WARNING 2020-04-28 07:25:50,891 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 07:25:50,895 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3865
+INFO 2020-04-28 07:26:21,039 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2020-04-28 07:26:21,079 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2020-04-28 07:26:48,740 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-04-28 07:26:48,873 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-04-28 07:26:49,462 log 228 Not Found: /carts/simple/
+WARNING 2020-04-28 07:26:49,464 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3853
+WARNING 2020-04-28 07:26:52,380 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 07:26:52,381 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3865
+INFO 2020-04-28 07:27:40,850 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-28 07:28:12,912 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-04-28 07:28:13,532 log 228 Not Found: /carts/simple/
+WARNING 2020-04-28 07:28:13,532 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3853
+WARNING 2020-04-28 07:28:23,212 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 07:28:23,224 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3865
+INFO 2020-04-28 07:28:39,544 basehttp 154 "GET /info/ HTTP/1.1" 200 127
+INFO 2020-04-28 07:29:10,766 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2020-04-28 07:30:18,919 basehttp 154 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2020-04-28 07:42:48,198 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA1ODk4OCwiZXhwIjoxNTg4MTQ1Mzg4fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.ueI-UzXOqDIfW9WGwWCgRMcZhQM08b89QlsJ81iJIPhim_cXvEYTgm4nXCTN9CmWk3PHuInjjICULvYxu-tgKA HTTP/1.1" 200 0
+WARNING 2020-04-28 07:42:48,287 log 228 Not Found: /emails/verification/
+WARNING 2020-04-28 07:42:48,290 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA1ODk4OCwiZXhwIjoxNTg4MTQ1Mzg4fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.ueI-UzXOqDIfW9WGwWCgRMcZhQM08b89QlsJ81iJIPhim_cXvEYTgm4nXCTN9CmWk3PHuInjjICULvYxu-tgKA HTTP/1.1" 404 4099
+WARNING 2020-04-28 07:43:50,249 log 228 Not Found: /carts/simple/
+WARNING 2020-04-28 07:43:50,268 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3853
+WARNING 2020-04-28 07:43:53,254 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 07:43:53,266 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3865
+INFO 2020-04-28 07:44:00,174 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+INFO 2020-04-28 07:44:10,527 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2020-04-28 07:44:25,867 basehttp 154 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2020-04-28 07:45:02,093 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA1OTg2NSwiZXhwIjoxNTg4MTQ2MjY1fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.nyVpjB_Kd73VkTfsbhJziAMj8CMlBlpoXnwKm-TbWirglveqKqcTSRfCxk8EyI6JQSSP03KaMxFa8lWrOYenEw HTTP/1.1" 200 0
+WARNING 2020-04-28 07:45:02,194 log 228 Not Found: /emails/verification/
+WARNING 2020-04-28 07:45:02,195 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA1OTg2NSwiZXhwIjoxNTg4MTQ2MjY1fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.nyVpjB_Kd73VkTfsbhJziAMj8CMlBlpoXnwKm-TbWirglveqKqcTSRfCxk8EyI6JQSSP03KaMxFa8lWrOYenEw HTTP/1.1" 404 4099

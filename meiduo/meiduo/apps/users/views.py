@@ -8,8 +8,10 @@ from meiduo.utils.views import LoginVerifyMixin
 from users.models import User
 from django_redis import get_redis_connection
 import json
-import re
+import re,logging
+logger = logging.getLogger('django')
 from django.contrib.auth import login, authenticate, logout
+from celery_tasks.email.tasks import send_verify_email
 
 
 #用户名重复注册验证
@@ -129,3 +131,33 @@ class UserInfoView(LoginVerifyMixin,View):
                 'email_active':request.user.email_active,
                 }
         return JsonResponse({'code':0,'errmsg':'ok','info_data':dict})
+
+
+#实现添加邮箱逻辑
+class EmailView(View):
+    def put(self,request):
+        #1.接受请求,提取参数
+        dict = json.loads(request.body.decode())
+        email = dict.get('email')
+        #2.验证参数(整体)
+        if email is None:
+            return JsonResponse({'code': 400,  'errmsg': '缺少email参数'})
+        #3.验证参数(单个)
+        if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$',email):
+            return JsonResponse({'code': 400, 'errmsg': '参数email有误'})
+        #4.赋值email字段
+        try:
+            request.user.email = email
+            request.user.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400,  'errmsg': '添加邮箱失败'})
+        #5.todo 发送验证邮件功能
+        try:
+            verify_url = request.user.generate_verify_email_url()
+            send_verify_email.delay(email,verify_url)
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 0,  'errmsg': '发送邮箱失败'})
+
+        return JsonResponse({'code': 0,  'errmsg': 'ok'})

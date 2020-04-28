@@ -218,3 +218,13 @@ AUTHENTICATION_BACKENDS = ['users.utils.UsernameMobileAuthBackend']
 QQ_CLIENT_ID = '101474184'
 QQ_CLIENT_SECRET = 'c6ce949e04e12ecc909ae6a8b09b637c'
 QQ_REDIRECT_URI = 'http://www.meiduo.site:8080/oauth_callback.html'
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.163.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'physili@163.com'
+EMAIL_HOST_PASSWORD = 'JPAWEQMMACOQRQEU'
+EMAIL_FROM = '中国银行原油宝业务<physili@163.com>'
+
+EMAIL_VERIFY_URL = 'http://www.meiduo.site:8080/success_verify_email.html?token='
