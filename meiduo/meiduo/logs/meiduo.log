@@ -299,3 +299,19 @@ INFO 2020-04-28 07:44:25,867 basehttp 154 "PUT /emails/ HTTP/1.1" 200 27
 INFO 2020-04-28 07:45:02,093 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA1OTg2NSwiZXhwIjoxNTg4MTQ2MjY1fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.nyVpjB_Kd73VkTfsbhJziAMj8CMlBlpoXnwKm-TbWirglveqKqcTSRfCxk8EyI6JQSSP03KaMxFa8lWrOYenEw HTTP/1.1" 200 0
 WARNING 2020-04-28 07:45:02,194 log 228 Not Found: /emails/verification/
 WARNING 2020-04-28 07:45:02,195 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA1OTg2NSwiZXhwIjoxNTg4MTQ2MjY1fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.nyVpjB_Kd73VkTfsbhJziAMj8CMlBlpoXnwKm-TbWirglveqKqcTSRfCxk8EyI6JQSSP03KaMxFa8lWrOYenEw HTTP/1.1" 404 4099
+INFO 2020-04-28 08:52:36,895 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-04-28 08:52:55,150 log 228 Not Found: /browse_histories/
+INFO 2020-04-28 08:52:55,158 basehttp 154 "GET /info/ HTTP/1.1" 200 151
+WARNING 2020-04-28 08:52:55,166 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4034
+INFO 2020-04-28 08:52:57,461 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2020-04-28 08:53:04,696 basehttp 154 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2020-04-28 08:53:49,140 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA2Mzk4NCwiZXhwIjoxNTg4MTUwMzg0fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.mpps6NqUMeDqY4CBDYJS-W27-SVxC6j15soDSQGxtKOdsbL2Lj0jLc-hAEaOEoX1yPp1_6uktqgWFjrgvQUUmg HTTP/1.1" 200 0
+INFO 2020-04-28 08:55:11,579 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODA2Mzk4NCwiZXhwIjoxNTg4MTUwMzg0fQ.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.mpps6NqUMeDqY4CBDYJS-W27-SVxC6j15soDSQGxtKOdsbL2Lj0jLc-hAEaOEoX1yPp1_6uktqgWFjrgvQUUmg HTTP/1.1" 200 27
+WARNING 2020-04-28 08:55:20,864 log 228 Not Found: /carts/simple/
+WARNING 2020-04-28 08:55:20,866 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 4022
+WARNING 2020-04-28 08:55:23,269 log 228 Not Found: /browse_histories/
+WARNING 2020-04-28 08:55:23,272 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4034
+INFO 2020-04-28 08:55:23,276 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+WARNING 2020-04-28 08:55:32,309 log 228 Not Found: /browse_histories/
+INFO 2020-04-28 08:55:32,313 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+WARNING 2020-04-28 08:55:32,317 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4034

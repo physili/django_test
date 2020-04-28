@@ -29,3 +29,26 @@ class User(AbstractUser):
         #拼接加密邮箱验证链接
         verify_url = settings.EMAIL_VERIFY_URL + token
         return verify_url
+
+    #创建类方法, 检验邮箱验证链接
+    @staticmethod
+    def check_verify_email_url(token):
+        # 生成解密对象
+        obj = TimedJSONWebSignatureSerializer(settings.SECRET_KEY,expires_in=3600*24)
+        try:
+            #解密
+            dict = obj.loads(token)
+        except Exception as e:
+            return None
+        else:
+            #获取解密内容
+            user_id = dict.get('user_id')
+            email = dict.get('email')
+        try:
+            #获取内容相符的对象
+            user = User.objects.get(id=user_id,email=email)
+        except Exception as e:
+            return None
+        else:
+            #返回数据库对象
+            return user
