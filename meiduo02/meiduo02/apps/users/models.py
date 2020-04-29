@@ -27,3 +27,26 @@ class User2(AbstractUser):
         verify_url = settings.EMAIL_VERIFY_URL + token
         return verify_url
 
+    #创建静态方法, 检验邮箱链接
+    @staticmethod
+    def check_verify_email_token(token):
+        #创建对象
+        obj = TimedJSONWebSignatureSerializer(settings.SECRET_KEY, expires_in= 60 * 60 * 24)
+        #解密token
+        try:
+            dict = obj.loads(token)
+        except Exception as e:
+            return None
+        else:
+            user_id = dict.get('user_id')
+            email = dict.get('email')
+        #提取对应的用户
+        try:
+            user = User2.objects.get(id=user_id,email=email)
+        except Exception as e:
+            return None
+        else:
+            return user
+
+
+

@@ -127,3 +127,13 @@ WARNING 2020-04-29 15:05:35,772 log 228 Not Found: /emails/verification/
 WARNING 2020-04-29 15:05:35,799 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODE0Mzg1NCwiZXhwIjoxNTg4MjMwMjU0fQ.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.WTsL5RDSebCQuahVb1caIVRfYFdTr8sgY0I2fJ9h6CVaNa_IJS6cIGbRHI_C0iRa6o8psGjaOs6NjoUvvx-kCQ HTTP/1.1" 404 4101
 WARNING 2020-04-29 15:05:53,445 log 228 Not Found: /emails/verification/
 WARNING 2020-04-29 15:05:53,455 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODE0Mzg1NCwiZXhwIjoxNTg4MjMwMjU0fQ.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.WTsL5RDSebCQuahVb1caIVRfYFdTr8sgY0I2fJ9h6CVaNa_IJS6cIGbRHI_C0iRa6o8psGjaOs6NjoUvvx-kCQ HTTP/1.1" 404 4101
+INFO 2020-04-29 15:48:28,101 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-04-29 15:48:39,421 log 228 Not Found: /carts/simple/
+WARNING 2020-04-29 15:48:39,429 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 4024
+WARNING 2020-04-29 15:48:41,901 log 228 Not Found: /browse_histories/
+WARNING 2020-04-29 15:48:41,939 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4036
+INFO 2020-04-29 15:48:41,954 basehttp 154 "GET /info/ HTTP/1.1" 200 154
+INFO 2020-04-29 15:48:45,098 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2020-04-29 15:48:51,968 basehttp 154 "PUT /emails/ HTTP/1.1" 200 27
+INFO 2020-04-29 15:49:15,914 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODE0NjUzMSwiZXhwIjoxNTg4MjMyOTMxfQ.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.2oMcEAVTkG_OoQlM6ISrqpLiN3Tcq4Qhuh5MyPiJ0OtZrnNfU9J5UuE8ZHQDhdF1RVGaWqsfy2aiOAzaTM17gA HTTP/1.1" 200 0
+INFO 2020-04-29 15:49:38,954 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODE0NjUzMSwiZXhwIjoxNTg4MjMyOTMxfQ.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.2oMcEAVTkG_OoQlM6ISrqpLiN3Tcq4Qhuh5MyPiJ0OtZrnNfU9J5UuE8ZHQDhdF1RVGaWqsfy2aiOAzaTM17gA HTTP/1.1" 200 27

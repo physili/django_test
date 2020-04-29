@@ -163,3 +163,25 @@ class EmailView(View):
         send_verify_email.delay(email,verify_url)
         #响应返回
         return JsonResponse({'code': 0,  'errmsg': 'ok'})
+
+#验证邮箱链接接口
+class VerifyEmailView(View):
+    def put(self,request):
+        #接受请求,提取参数
+        token = request.GET.get('token')
+        #验证参数
+        if not token:
+            return JsonResponse({'code':400, 'errmsg':'缺少token'})
+        user = User2.check_verify_email_token(token)
+        #判断user是否存在
+        if not user:
+            return JsonResponse({'code':400, 'errmsg':'无效的token'})
+        #提取user的email_active, 并改成True
+        try:
+            user.email_active = True
+            user.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code':400, 'errmsg':'激活邮件失败'})
+        return JsonResponse({'code':0,  'errmsg':'ok'})
+
