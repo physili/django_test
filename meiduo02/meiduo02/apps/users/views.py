@@ -8,7 +8,7 @@ from meiduo02.utils.views import LoginVerifyMixin
 from celery_tasks.email.tasks import send_verify_email
 import logging
 logger = logging.getLogger('django')
-from users.models import User2
+from users.models import User2, Address
 import re
 import json
 
@@ -184,4 +184,78 @@ class VerifyEmailView(View):
             logger.error(e)
             return JsonResponse({'code':400, 'errmsg':'激活邮件失败'})
         return JsonResponse({'code':0,  'errmsg':'ok'})
+
+
+#新增地址接口
+class CreateAddressView(View):
+    def post(self,request):
+        #获取地址个数, 先判断是否超20个
+        try:
+            address_count = Address.objects.filter(user=request.user, is_deleted=False).count()
+        except Exception as e:
+            return JsonResponse({'code': 400,  'errmsg': '获取地址数据出错'})
+        if address_count >= 20:
+            return JsonResponse({'code': 400,  'errmsg': '超过地址数量上限'})
+        #提取参数
+        dict = json.loads(request.body.decode())
+        receiver = dict.get('receiver')
+        province_id = dict.get('province_id')
+        city_id = dict.get('city_id')
+        district_id = dict.get('district_id')
+        place = dict.get('place')
+        mobile = dict.get('mobile')
+        tel = dict.get('tel')
+        email = dict.get('email')
+        #验证参数(整体:receiver,province_id,city_id,district_id,place,mobile
+        if not all([receiver,province_id,city_id,district_id,place,mobile]):
+            return JsonResponse({'code': 400, 'errmsg': '缺少必传参数'})
+        #验证参数(单个:mobile,tel,email)
+        if not re.match(r'^1[3-9]\d{9}$', mobile):
+            return JsonResponse({'code': 400, 'errmsg': '参数mobile有误'})
+        if tel:
+            if not re.match(r'^(0[0-9]{2,3}-)?([2-9][0-9]{6,7})+(-[0-9]{1,4})?$', tel):
+                return JsonResponse({'code': 400, 'errmsg': '参数tel有误'})
+        if email:
+            if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
+                return JsonResponse({'code': 400, 'errmsg': '参数email有误'})
+
+        #保存地址信息
+        try:
+            address = Address.objects.create(user=request.user, title = receiver, receiver = receiver,province_id = province_id,city_id = city_id, district_id = district_id, place = place,mobile = mobile,tel = tel,email = email)
+            # 设置默认地址, 先判断user是否有默认地址
+            if not request.user.default_address:
+                request.user.default_address = address
+                request.user.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400, 'errmsg': '新增地址失败'})
+        #返回新增数据
+        address_dict = {"id": address.id, "title": address.title, "receiver": address.receiver,
+                        "province": address.province.name, "city": address.city.name, "district": address.district.name,
+                        "place": address.place, "mobile": address.mobile, "tel": address.tel, "email": address.email}
+        return JsonResponse({'code': 0, 'errmsg': '新增地址成功', 'address': address_dict})
+
+
+#展示用户收货地址接口
+class AddressView(View):
+    def get(self,request):
+        #从数据库提取地址数据对象
+        addresses = Address.objects.filter(user=request.user,is_deleted=False)
+        #把对象转化成列表格式返回
+        address_list = []
+        for address in addresses:
+            address_dict = {"id": address.id, "title": address.title,"receiver": address.receiver,
+                            "province": address.province.name, "city": address.city.name, "district": address.district.name,
+                            "place": address.place,"mobile": address.mobile, "tel": address.tel, "email": address.email}
+            #将默认地址移动到最前面
+            if request.user.default_address_id == address.id:
+                address_list.insert(0,address_dict)
+            else:
+                address_list.append(address_dict)
+        #提取默认地址id返回
+        default_id = request.user.default_address_id
+        #返回数据
+        return JsonResponse({'code': 0, 'errmsg': 'ok', 'addresses': address_list, 'default_address_id': default_id})
+
+
 
