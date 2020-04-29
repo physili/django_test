@@ -137,3 +137,27 @@ class UserInfoView(LoginVerifyMixin,View):
             'email_active':request.user.email_active,
         }
         return JsonResponse({'code':0,'errmsg':'ok','info_data':info_dict})
+
+
+#添加邮箱接口
+class EmailView(View):
+    def put(self,request):
+        #接受请求,提取参数
+        dict = json.loads(request.body.decode())
+        email = dict.get('email')
+        #验证参数(整体)
+        if not email:
+            return JsonResponse({'code': 400,  'errmsg': '缺少email参数'})
+        #验证参数(单个)
+        if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$',email):
+            return JsonResponse({'code': 400, 'errmsg': '参数email有误'})
+        #email赋值
+        try:
+            request.user.email = email
+            request.user.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400,  'errmsg': '添加邮箱失败'})
+        #todo email发送
+        #响应返回
+        return JsonResponse({'code': 0,  'errmsg': 'ok'})
