@@ -4,10 +4,9 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.views import View
 from django_redis import get_redis_connection
-import logging
-
 from meiduo02.utils.views import LoginVerifyMixin
-
+from celery_tasks.email.tasks import send_verify_email
+import logging
 logger = logging.getLogger('django')
 from users.models import User2
 import re
@@ -159,5 +158,8 @@ class EmailView(View):
             logger.error(e)
             return JsonResponse({'code': 400,  'errmsg': '添加邮箱失败'})
         #todo email发送
+        #先在上面导入异步任务函数
+        verify_url = request.user.generate_verify_email_url()
+        send_verify_email.delay(email,verify_url)
         #响应返回
         return JsonResponse({'code': 0,  'errmsg': 'ok'})

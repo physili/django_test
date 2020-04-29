@@ -117,3 +117,13 @@ WARNING 2020-04-29 00:17:59,969 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3
 WARNING 2020-04-29 00:18:02,974 log 228 Not Found: /browse_histories/
 WARNING 2020-04-29 00:18:02,976 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3711
 INFO 2020-04-29 00:18:02,984 basehttp 154 "GET /info/ HTTP/1.1" 200 130
+INFO 2020-04-29 15:03:39,975 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-29 15:03:57,468 basehttp 154 "OPTIONS /emails/ HTTP/1.1" 200 0
+INFO 2020-04-29 15:04:27,343 basehttp 154 "PUT /emails/ HTTP/1.1" 200 27
+WARNING 2020-04-29 15:05:24,295 log 228 Not Found: /browse_histories/
+WARNING 2020-04-29 15:05:24,303 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3867
+INFO 2020-04-29 15:05:35,667 basehttp 154 "OPTIONS /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODE0Mzg1NCwiZXhwIjoxNTg4MjMwMjU0fQ.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.WTsL5RDSebCQuahVb1caIVRfYFdTr8sgY0I2fJ9h6CVaNa_IJS6cIGbRHI_C0iRa6o8psGjaOs6NjoUvvx-kCQ HTTP/1.1" 200 0
+WARNING 2020-04-29 15:05:35,772 log 228 Not Found: /emails/verification/
+WARNING 2020-04-29 15:05:35,799 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODE0Mzg1NCwiZXhwIjoxNTg4MjMwMjU0fQ.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.WTsL5RDSebCQuahVb1caIVRfYFdTr8sgY0I2fJ9h6CVaNa_IJS6cIGbRHI_C0iRa6o8psGjaOs6NjoUvvx-kCQ HTTP/1.1" 404 4101
+WARNING 2020-04-29 15:05:53,445 log 228 Not Found: /emails/verification/
+WARNING 2020-04-29 15:05:53,455 basehttp 154 "PUT /emails/verification/?token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTU4ODE0Mzg1NCwiZXhwIjoxNTg4MjMwMjU0fQ.eyJ1c2VyX2lkIjoyLCJlbWFpbCI6Imh1YW5neW9uZ3J1aUBob3RtYWlsLmNvbSJ9.WTsL5RDSebCQuahVb1caIVRfYFdTr8sgY0I2fJ9h6CVaNa_IJS6cIGbRHI_C0iRa6o8psGjaOs6NjoUvvx-kCQ HTTP/1.1" 404 4101

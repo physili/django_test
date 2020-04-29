@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from itsdangerous import TimedJSONWebSignatureSerializer
+from django.conf import settings
 
 # Create your models here.
 class User2(AbstractUser):
@@ -13,3 +15,15 @@ class User2(AbstractUser):
 
     def __str__(self):
         return self.username
+
+    #创建类方法,生成验证邮件链接
+    def generate_verify_email_url(self):
+        #创建加密对象
+        obj = TimedJSONWebSignatureSerializer(settings.SECRET_KEY, expires_in= 60 * 60 * 24)
+        #创建内容
+        dict = {'user_id':self.id, 'email':self.email}
+        #加密
+        token = obj.dumps(dict).decode()
+        verify_url = settings.EMAIL_VERIFY_URL + token
+        return verify_url
+
