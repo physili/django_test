@@ -316,4 +316,42 @@ class UpdateDestroyAddressView(View):
         return JsonResponse({'code': 0,  'errmsg': '删除地址成功'})
 
 
+#默认地址设置接口
+class DefaultAddressView(View):
+    def put(self,request,address_id):
+        #接受参数,查询地址
+        try:
+            address = Address.objects.get(id=address_id)
+            # 设置地址为默认地址
+            request.user.default_address = address
+            request.user.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400, 'errmsg': '设置默认地址失败'})
+        # 返回响应
+        return JsonResponse({'code': 0, 'errmsg': '设置默认地址成功'})
+
+
+#地址标题设置接口
+class UpdateTitleAddressView(View):
+    def put(self,request,address_id):
+        #接受地址标题的参数
+        dict = json.loads(request.body.decode())
+        title = dict.get('title')
+        #检验参数
+        if not title:
+            return JsonResponse({'code':400,'errmsg':'传参有误'})
+        # 设置新的地址标题
+        try:
+            address = Address.objects.get(id=address_id)
+            address.title = title
+            address.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400, 'errmsg': '设置地址标题失败'})
+        return JsonResponse({'code': 0, 'errmsg': '设置地址标题成功'})
+
+
+
+
 

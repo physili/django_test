@@ -167,3 +167,10 @@ INFO 2020-04-29 21:23:56,786 basehttp 154 "OPTIONS /addresses/1/ HTTP/1.1" 200 0
 INFO 2020-04-29 21:23:56,806 basehttp 154 "DELETE /addresses/1/ HTTP/1.1" 200 61
 INFO 2020-04-29 21:23:57,058 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
 INFO 2020-04-29 21:23:57,069 basehttp 154 "GET /addresses/ HTTP/1.1" 200 339
+INFO 2020-04-29 21:59:35,277 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-29 22:00:00,408 basehttp 154 "OPTIONS /addresses/2/default/ HTTP/1.1" 200 0
+INFO 2020-04-29 22:00:00,476 basehttp 154 "PUT /addresses/2/default/ HTTP/1.1" 200 73
+INFO 2020-04-29 22:00:00,936 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-04-29 22:00:00,988 basehttp 154 "GET /addresses/ HTTP/1.1" 200 339
+INFO 2020-04-29 22:00:23,356 basehttp 154 "OPTIONS /addresses/2/title/ HTTP/1.1" 200 0
+INFO 2020-04-29 22:00:23,379 basehttp 154 "PUT /addresses/2/title/ HTTP/1.1" 200 73
