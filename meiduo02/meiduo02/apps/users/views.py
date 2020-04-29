@@ -258,4 +258,62 @@ class AddressView(View):
         return JsonResponse({'code': 0, 'errmsg': 'ok', 'addresses': address_list, 'default_address_id': default_id})
 
 
+#修改地址和删除地址接口
+class UpdateDestroyAddressView(View):
+    #修改地址
+    def put(self,request,address_id):  #路径传参
+        #接受请求,提取参数
+        dict = json.loads(request.body.decode())
+        receiver = dict.get('receiver')
+        province_id = dict.get('province_id')
+        city_id = dict.get('city_id')
+        district_id = dict.get('district_id')
+        place = dict.get('place')
+        mobile = dict.get('mobile')
+        tel = dict.get('tel')
+        email = dict.get('email')
+        # 验证参数(整体:receiver,province_id,city_id,district_id,place,mobile
+        if not all([receiver, province_id, city_id, district_id, place, mobile]):
+            return JsonResponse({'code': 400, 'errmsg': '缺少必传参数'})
+        # 验证参数(单个:mobile,tel,email)
+        if not re.match(r'^1[3-9]\d{9}$', mobile):
+            return JsonResponse({'code': 400, 'errmsg': '参数mobile有误'})
+        if tel:
+            if not re.match(r'^(0[0-9]{2,3}-)?([2-9][0-9]{6,7})+(-[0-9]{1,4})?$', tel):
+                return JsonResponse({'code': 400, 'errmsg': '参数tel有误'})
+        if email:
+            if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
+                return JsonResponse({'code': 400, 'errmsg': '参数email有误'})
+
+        #根据address_id提取数据库对象, 更新数据
+        try:
+            Address.objects.filter(id=address_id).update(user=request.user, title = receiver, receiver = receiver,
+                                                         province_id = province_id,city_id = city_id, district_id = district_id,
+                                                         place = place,mobile = mobile,tel = tel,email = email)
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400,   'errmsg': '更新地址失败'})
+        #构造响应数据
+        address = Address.objects.get(id=address_id)
+        address_dict = {"id": address.id, "title": address.title, "receiver": address.receiver,
+                        "province": address.province.name, "city": address.city.name, "district": address.district.name,
+                        "place": address.place, "mobile": address.mobile, "tel": address.tel, "email": address.email}
+        # 返回响应数据
+        return JsonResponse({'code': 0, 'errmsg': '更改成功', 'address': address_dict})
+
+
+    #删除地址
+    def delete(self,request,address_id): #路径传参
+        #根据address_id删除对应的数据对象
+        #逻辑删除, 故先提取对象
+        try:
+            address = Address.objects.get(id=address_id)
+            address.is_deleted = True
+            address.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400,  'errmsg': '删除地址失败'})
+        return JsonResponse({'code': 0,  'errmsg': '删除地址成功'})
+
+
 
