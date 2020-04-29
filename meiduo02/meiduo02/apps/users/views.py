@@ -1,5 +1,4 @@
 from django.contrib.auth import login,authenticate,logout
-
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.views import View
@@ -94,7 +93,7 @@ class LoginView(View):
         password = dict.get('password')
         remembered = dict.get('remembered')
         #2.验证参数(整体)
-        if not all([username,password,remembered]):
+        if not all([username,password]):
             return JsonResponse({'code':400,'errmsg':'缺少必传参数'})
         #3.验证username和password用authenticate
         #3.2判断user是否存在
@@ -351,6 +350,39 @@ class UpdateTitleAddressView(View):
             return JsonResponse({'code': 400, 'errmsg': '设置地址标题失败'})
         return JsonResponse({'code': 0, 'errmsg': '设置地址标题成功'})
 
+
+#更改密码
+class ChangePasswordView(LoginVerifyMixin,View):  #继承LoginVerifyMixin, 保证用户已登录
+    def put(self,request):
+        #json传参,提取参数
+        dict = json.loads(request.body.decode())
+        old_password = dict.get('old_password')
+        new_password = dict.get('new_password')
+        new_password2 = dict.get('new_password2')
+        #检验参数(整体)
+        if not all([old_password,new_password,new_password2]):
+            return JsonResponse({'code':400, 'errmsg':'缺少必传参数'})
+        #检验参数(单个)
+        result = request.user.check_password(old_password)
+        if not result:
+            return JsonResponse({'code': 400, 'errmsg': '原始密码不正确'})
+        if not re.match(r'^[0-9A-Za-z]{8,20}$', new_password):  # 验证新密码
+            return JsonResponse({'code': 400, 'errmsg': '密码最少8位,最长20位'})
+        if new_password != new_password2:  # 验证新密码2
+            return JsonResponse({'code': 400, 'errmsg': '两次输入密码不一致'})
+        #修改密码
+        try:
+            request.user.set_password(new_password)
+            request.user.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400, 'errmsg': '修改密码失败'})
+        #退出登录, 删除cookie
+        logout(request)
+        response = JsonResponse({'code':0,'errmsg':'ok'})
+        response.delete_cookie('username')
+        #返回结果
+        return response
 
 
 

@@ -174,3 +174,51 @@ INFO 2020-04-29 22:00:00,936 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
 INFO 2020-04-29 22:00:00,988 basehttp 154 "GET /addresses/ HTTP/1.1" 200 339
 INFO 2020-04-29 22:00:23,356 basehttp 154 "OPTIONS /addresses/2/title/ HTTP/1.1" 200 0
 INFO 2020-04-29 22:00:23,379 basehttp 154 "PUT /addresses/2/title/ HTTP/1.1" 200 73
+INFO 2020-04-29 22:19:43,464 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-29 22:20:51,402 basehttp 154 "OPTIONS /password/ HTTP/1.1" 200 0
+WARNING 2020-04-29 22:20:51,416 log 228 Not Found: /password/
+WARNING 2020-04-29 22:20:51,416 basehttp 154 "PUT /password/ HTTP/1.1" 404 5239
+INFO 2020-04-29 22:21:49,707 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-29 22:21:54,609 basehttp 154 "PUT /password/ HTTP/1.1" 200 27
+INFO 2020-04-29 22:22:23,462 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-04-29 22:22:23,466 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-04-29 22:22:36,491 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-04-29 22:22:49,058 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-04-29 22:22:52,240 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-04-29 22:24:17,205 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-04-29 22:24:26,445 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-04-29 22:24:28,447 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-04-29 22:24:29,110 log 228 Not Found: /carts/simple/
+WARNING 2020-04-29 22:24:29,113 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5409
+INFO 2020-04-29 22:24:58,290 basehttp 154 "GET /info/ HTTP/1.1" 200 153
+WARNING 2020-04-29 22:24:58,319 log 228 Not Found: /browse_histories/
+WARNING 2020-04-29 22:24:58,332 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 5421
+WARNING 2020-04-29 22:25:10,042 log 228 Not Found: /browse_histories/
+WARNING 2020-04-29 22:25:10,044 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 5421
+INFO 2020-04-29 22:25:10,051 basehttp 154 "GET /info/ HTTP/1.1" 200 153
+INFO 2020-04-29 22:25:11,875 basehttp 154 "GET /addresses/ HTTP/1.1" 200 339
+INFO 2020-04-29 22:25:11,881 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-04-29 22:25:39,828 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2020-04-29 22:25:39,879 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2020-04-29 22:26:27,959 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-04-29 22:26:27,964 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-04-29 22:26:38,929 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-04-29 22:26:39,627 log 228 Not Found: /carts/simple/
+WARNING 2020-04-29 22:26:39,631 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5409
+INFO 2020-04-29 22:26:43,653 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2020-04-29 22:29:27,509 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-04-29 22:30:18,564 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-04-29 22:32:36,012 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-29 22:33:19,617 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-04-29 22:34:29,684 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-29 22:34:34,423 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-04-29 22:34:35,559 log 228 Not Found: /carts/simple/
+WARNING 2020-04-29 22:34:35,561 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5409
+INFO 2020-04-29 22:34:41,479 basehttp 154 "GET /info/ HTTP/1.1" 200 153
+WARNING 2020-04-29 22:34:41,501 log 228 Not Found: /browse_histories/
+WARNING 2020-04-29 22:34:41,503 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 5421
+INFO 2020-04-29 22:34:57,546 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-04-29 22:34:57,665 basehttp 154 "GET /addresses/ HTTP/1.1" 200 339
+WARNING 2020-04-29 22:35:05,705 log 228 Not Found: /browse_histories/
+INFO 2020-04-29 22:35:05,718 basehttp 154 "GET /info/ HTTP/1.1" 200 153
+WARNING 2020-04-29 22:35:05,723 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 5421
