@@ -102,3 +102,18 @@ INFO 2020-04-28 23:51:30,110 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 2
 WARNING 2020-04-28 23:51:31,356 log 228 Not Found: /carts/simple/
 WARNING 2020-04-28 23:51:31,358 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3699
 INFO 2020-04-28 23:51:57,680 basehttp 154 "POST /oauth_callback/ HTTP/1.1" 200 45
+INFO 2020-04-29 00:15:45,236 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-04-29 00:15:51,124 basehttp 154 "GET /info/ HTTP/1.1" 200 63
+WARNING 2020-04-29 00:15:51,148 log 228 Not Found: /browse_histories/
+WARNING 2020-04-29 00:15:51,149 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3711
+INFO 2020-04-29 00:16:07,581 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-04-29 00:16:07,591 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-04-29 00:16:11,134 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-04-29 00:16:17,951 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-04-29 00:17:50,975 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-04-29 00:17:59,503 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-04-29 00:17:59,966 log 228 Not Found: /carts/simple/
+WARNING 2020-04-29 00:17:59,969 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 3699
+WARNING 2020-04-29 00:18:02,974 log 228 Not Found: /browse_histories/
+WARNING 2020-04-29 00:18:02,976 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 3711
+INFO 2020-04-29 00:18:02,984 basehttp 154 "GET /info/ HTTP/1.1" 200 130
