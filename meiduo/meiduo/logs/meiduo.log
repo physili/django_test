@@ -420,3 +420,28 @@ WARNING 2020-04-28 14:44:17,717 log 228 Not Found: /addresses/create/
 WARNING 2020-04-28 14:44:17,718 basehttp 154 "POST /addresses/create/ HTTP/1.1" 404 4368
 WARNING 2020-04-28 14:44:19,694 log 228 Not Found: /addresses/create/
 WARNING 2020-04-28 14:44:19,695 basehttp 154 "POST /addresses/create/ HTTP/1.1" 404 4368
+INFO 2020-05-02 15:22:04,236 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-02 15:22:14,863 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-02 15:22:14,870 basehttp 154 "POST /login/ HTTP/1.1" 200 63
+INFO 2020-05-02 15:23:14,265 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-02 15:23:18,923 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-05-02 15:23:19,679 log 228 Not Found: /carts/simple/
+WARNING 2020-05-02 15:23:19,683 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 4680
+INFO 2020-05-02 15:23:23,447 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+WARNING 2020-05-02 15:23:23,468 log 228 Not Found: /browse_histories/
+WARNING 2020-05-02 15:23:23,470 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4692
+INFO 2020-05-02 15:23:26,771 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-05-02 15:23:26,782 basehttp 154 "GET /addresses/ HTTP/1.1" 200 71
+INFO 2020-05-02 15:23:39,828 basehttp 154 "GET /areas/140000/ HTTP/1.1" 200 601
+INFO 2020-05-02 15:23:41,224 basehttp 154 "GET /areas/140500/ HTTP/1.1" 200 365
+INFO 2020-05-02 15:24:31,206 basehttp 154 "OPTIONS /addresses/create/ HTTP/1.1" 200 0
+INFO 2020-05-02 15:24:31,236 basehttp 154 "POST /addresses/create/ HTTP/1.1" 200 75
+INFO 2020-05-02 15:24:31,367 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-05-02 15:24:31,398 basehttp 154 "GET /addresses/ HTTP/1.1" 200 68
+INFO 2020-05-02 15:24:46,720 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-05-02 15:24:46,745 basehttp 154 "GET /addresses/ HTTP/1.1" 200 68
+INFO 2020-05-02 15:26:11,069 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/users/views.py changed, reloading.
+INFO 2020-05-02 15:26:11,589 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-02 15:27:26,970 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-02 15:27:32,246 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-05-02 15:27:32,278 basehttp 154 "GET /addresses/ HTTP/1.1" 200 345

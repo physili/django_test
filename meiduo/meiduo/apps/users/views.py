@@ -88,7 +88,7 @@ class LoginView(View):
         password = dict.get('password')
         remembered = dict.get('remembered')
         #2.检验参数(整体检验)
-        if not all([username,password,remembered]):
+        if not all([username,password]):
             return JsonResponse({'code':400,'errmsg':'缺少必传参数'})
         #3.登录认证authenticate
         user = authenticate(username=username,password=password)
@@ -231,4 +231,27 @@ class CreateAddressView(View):
             logger.error(e)
             return JsonResponse({'code': 400, 'errmsg': '新增地址失败'})
         #返回响应
-        return JsonResponse({'code': 0,  'errmsg': '新增地址成功',  'address':address_dict})
+        return JsonResponse({'code': 0,  'errmsg': '新增地址成功',  'address':0})
+
+
+#展示地址接口
+class AddressView(View):
+    def get(self,request):
+        #从数据库获取数据
+        try:
+            address_set = Address.objects.filter(user=request.user, is_deleted=False)
+            #把查询集遍历存入列表
+            address_list = []
+            for address_sub in address_set:
+                address_dict = {"id": address_sub.id, "title": address_sub.title,"receiver": address_sub.receiver,"province": address_sub.province.name, "city": address_sub.city.name, "district": address_sub.district.name,"place": address_sub.place,"mobile": address_sub.mobile, "tel": address_sub.tel, "email": address_sub.email}
+                #若该地址是默认地址, 插在最前
+                if request.user.default_address_id == address_sub.id:
+                    address_list.insert(0,address_dict)
+                #若不是, 追加后面
+                else:
+                    address_list.append(address_dict)
+        except Exception as e:
+            return JsonResponse({'code': 400, 'errmsg': '展示地址失败'})
+        #提取用户默认id
+        default_id = request.user.default_address_id
+        return JsonResponse({'code':0,'errmsg':'ok', 'addresses':address_list,'default_address_id':default_id})
