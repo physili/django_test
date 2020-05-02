@@ -5,7 +5,7 @@ from django.http import JsonResponse
 from django.views import View
 
 from meiduo.utils.views import LoginVerifyMixin
-from users.models import User
+from users.models import User, Address
 from django_redis import get_redis_connection
 import json
 import re,logging
@@ -184,3 +184,51 @@ class VerifyEmailView(View):
             logger.error(e)
             return JsonResponse({'code':400, 'errmsg':'激活邮件失败'})
         return JsonResponse({'code':0,  'errmsg':'ok'})
+
+
+#新增地址接口
+class CreateAddressView(View):
+    def post(self,request):
+        #先查看地址个数
+        try:
+            count = Address.objects.filter(user=request.user,is_deleted=False).count()
+        except Exception as e:
+            return JsonResponse({'code': 400, 'errmsg': '获取地址数据出错'})
+        if count >= 20:  # 判断是否超过地址上限：最多20个
+            return JsonResponse({'code': 400, 'errmsg': '超过地址数量上限'})
+        #提取参数
+        dict = json.loads(request.body.decode())
+        receiver = dict.get('receiver')
+        province_id = dict.get('province_id')
+        city_id = dict.get('city_id')
+        district_id = dict.get('district_id')
+        place = dict.get('place')
+        mobile = dict.get('mobile')
+        tel = dict.get('tel')
+        email = dict.get('email')
+        #验证参数(整体)
+        if not all([receiver,province_id,city_id,district_id,place,mobile]):
+            return JsonResponse({'code': 400, 'errmsg': '缺少必传参数'})
+        #验证参数(单个)
+        if not re.match(r'^1[3-9]\d{9}$', mobile):
+            return JsonResponse({'code': 400, 'errmsg': '参数mobile有误'})
+        if tel:
+            if not re.match(r'^(0[0-9]{2,3}-)?([2-9][0-9]{6,7})+(-[0-9]{1,4})?$', tel):
+                return JsonResponse({'code': 400, 'errmsg': '参数tel有误'})
+        if email:
+            if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
+                return JsonResponse({'code': 400, 'errmsg': '参数email有误'})
+        #保存地址信息
+        try:
+            address = Address.objects.create(user=request.user, title=receiver, receiver=receiver,
+                                             province_id=province_id, city_id=city_id, district_id=district_id,
+                                             place=place, mobile=mobile, tel=tel, email=email)
+        #设置默认地址
+            if not request.user.default_address:
+                request.user.default_address = address
+                request.user.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400, 'errmsg': '新增地址失败'})
+        #返回响应
+        return JsonResponse({'code': 0,  'errmsg': '新增地址成功',  'address':address_dict})
