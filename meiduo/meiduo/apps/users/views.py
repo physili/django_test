@@ -291,8 +291,10 @@ class UpdateDestroyAddressView(View):
         except Exception as e:
             logger.error(e)
             return JsonResponse({'code': 400, 'errmsg': '新增地址失败'})
+        address = Address.objects.get(id=address_id)  # 构造响应数据
+        address_dict = { "id": address.id, "title": address.title, "receiver": address.receiver, "province": address.province.name, "city": address.city.name, "district": address.district.name, "place": address.place,"mobile": address.mobile,"tel": address.tel,"email": address.email }
         # 返回响应
-        return JsonResponse({'code': 0, 'errmsg': '新增地址成功', 'address': 0})
+        return JsonResponse({'code': 0, 'errmsg': '修改地址成功', 'address': address_dict})
 
 
     #删除地址接口, 逻辑删除
@@ -306,3 +308,16 @@ class UpdateDestroyAddressView(View):
             logger.error(e)
             return JsonResponse({'code': 400, 'errmsg': '删除地址失败'})
         return JsonResponse({'code': 0, 'errmsg': '删除地址成功'})
+
+
+#设置默认地址
+class DefaultAddressView(View):
+    def put(self,request,address_id):#路径传参
+        #根据request.user找到对应的用户, 并设置default_address
+        try:
+            request.user.default_address_id = address_id
+            request.user.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400, 'errmsg': '设置默认地址失败'})
+        return JsonResponse({'code': 0, 'errmsg': '设置默认地址成功'})

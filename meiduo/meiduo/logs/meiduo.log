@@ -445,3 +445,55 @@ INFO 2020-05-02 15:26:11,589 autoreload 597 Watching for file changes with StatR
 INFO 2020-05-02 15:27:26,970 autoreload 597 Watching for file changes with StatReloader
 INFO 2020-05-02 15:27:32,246 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
 INFO 2020-05-02 15:27:32,278 basehttp 154 "GET /addresses/ HTTP/1.1" 200 345
+INFO 2020-05-03 01:37:01,053 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-03 01:37:14,064 basehttp 154 "GET /areas/140000/ HTTP/1.1" 200 601
+INFO 2020-05-03 01:37:15,217 basehttp 154 "GET /areas/140700/ HTTP/1.1" 200 595
+INFO 2020-05-03 01:37:26,095 basehttp 154 "OPTIONS /addresses/create/ HTTP/1.1" 200 0
+INFO 2020-05-03 01:37:26,133 basehttp 154 "POST /addresses/create/ HTTP/1.1" 200 75
+INFO 2020-05-03 01:37:26,550 basehttp 154 "GET /addresses/ HTTP/1.1" 200 629
+INFO 2020-05-03 01:37:26,556 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-05-03 01:38:09,339 basehttp 154 "GET /areas/310000/ HTTP/1.1" 200 141
+INFO 2020-05-03 01:38:15,165 basehttp 154 "GET /areas/310100/ HTTP/1.1" 200 837
+INFO 2020-05-03 01:38:34,022 basehttp 154 "OPTIONS /addresses/2/ HTTP/1.1" 200 0
+INFO 2020-05-03 01:38:34,048 basehttp 154 "PUT /addresses/2/ HTTP/1.1" 200 75
+INFO 2020-05-03 01:41:14,817 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-03 01:45:07,143 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2020-05-03 01:45:07,197 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2020-05-03 01:45:22,677 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-03 01:45:23,061 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-05-03 01:45:23,835 log 228 Not Found: /carts/simple/
+WARNING 2020-05-03 01:45:23,840 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 4865
+WARNING 2020-05-03 01:45:26,872 log 228 Not Found: /browse_histories/
+INFO 2020-05-03 01:45:26,880 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+WARNING 2020-05-03 01:45:26,901 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 4877
+INFO 2020-05-03 01:45:31,142 basehttp 154 "GET /addresses/ HTTP/1.1" 200 635
+INFO 2020-05-03 01:46:22,551 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-05-03 01:46:52,212 basehttp 154 "GET /areas/130000/ HTTP/1.1" 200 701
+INFO 2020-05-03 01:46:53,660 basehttp 154 "GET /areas/130500/ HTTP/1.1" 200 957
+INFO 2020-05-03 01:47:04,583 basehttp 154 "POST /addresses/create/ HTTP/1.1" 200 75
+INFO 2020-05-03 01:47:04,862 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-05-03 01:47:05,165 basehttp 154 "GET /addresses/ HTTP/1.1" 200 925
+INFO 2020-05-03 01:48:29,645 basehttp 154 "GET /areas/220000/ HTTP/1.1" 200 539
+INFO 2020-05-03 01:48:31,305 basehttp 154 "GET /areas/220600/ HTTP/1.1" 200 401
+INFO 2020-05-03 01:48:37,803 basehttp 154 "OPTIONS /addresses/3/ HTTP/1.1" 200 0
+INFO 2020-05-03 01:48:57,565 basehttp 154 "PUT /addresses/3/ HTTP/1.1" 200 75
+INFO 2020-05-03 01:55:20,513 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-03 01:55:27,870 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-05-03 01:55:27,921 basehttp 154 "GET /addresses/ HTTP/1.1" 200 931
+INFO 2020-05-03 01:55:48,458 basehttp 154 "GET /areas/210000/ HTTP/1.1" 200 745
+INFO 2020-05-03 01:55:50,482 basehttp 154 "GET /areas/211300/ HTTP/1.1" 200 465
+INFO 2020-05-03 01:55:54,375 basehttp 154 "PUT /addresses/3/ HTTP/1.1" 200 362
+INFO 2020-05-03 01:56:16,156 basehttp 154 "OPTIONS /addresses/2/ HTTP/1.1" 200 0
+INFO 2020-05-03 01:56:16,168 basehttp 154 "DELETE /addresses/2/ HTTP/1.1" 200 61
+INFO 2020-05-03 01:56:16,303 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-05-03 01:56:16,342 basehttp 154 "GET /addresses/ HTTP/1.1" 200 635
+INFO 2020-05-03 02:04:38,263 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-03 02:04:50,715 basehttp 154 "OPTIONS /addresses/3/default/ HTTP/1.1" 200 0
+WARNING 2020-05-03 02:04:50,724 log 228 Not Found: /addresses/3/default/
+WARNING 2020-05-03 02:04:50,725 basehttp 154 "PUT /addresses/3/default/ HTTP/1.1" 404 4886
+WARNING 2020-05-03 02:05:00,543 log 228 Not Found: /addresses/3/default/
+WARNING 2020-05-03 02:05:00,546 basehttp 154 "PUT /addresses/3/default/ HTTP/1.1" 404 4886
+INFO 2020-05-03 02:05:36,098 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-03 02:05:40,484 basehttp 154 "PUT /addresses/3/default/ HTTP/1.1" 200 73
+INFO 2020-05-03 02:05:40,658 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-05-03 02:05:40,668 basehttp 154 "GET /addresses/ HTTP/1.1" 200 635
