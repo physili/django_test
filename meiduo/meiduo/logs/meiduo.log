@@ -500,3 +500,15 @@ INFO 2020-05-03 02:05:40,668 basehttp 154 "GET /addresses/ HTTP/1.1" 200 635
 INFO 2020-05-03 02:19:28,238 autoreload 597 Watching for file changes with StatReloader
 INFO 2020-05-03 02:19:41,096 basehttp 154 "OPTIONS /addresses/1/title/ HTTP/1.1" 200 0
 INFO 2020-05-03 02:19:41,110 basehttp 154 "PUT /addresses/1/title/ HTTP/1.1" 200 73
+INFO 2020-05-03 02:35:15,039 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-03 02:35:39,055 basehttp 154 "OPTIONS /password/ HTTP/1.1" 200 0
+INFO 2020-05-03 02:35:39,273 basehttp 154 "PUT /password/ HTTP/1.1" 200 27
+INFO 2020-05-03 02:36:00,858 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-03 02:36:00,964 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-05-03 02:36:01,429 log 228 Not Found: /carts/simple/
+WARNING 2020-05-03 02:36:01,430 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5407
+INFO 2020-05-03 02:36:03,746 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+WARNING 2020-05-03 02:36:03,747 log 228 Not Found: /browse_histories/
+WARNING 2020-05-03 02:36:03,764 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 5419
+INFO 2020-05-03 02:36:07,770 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
+INFO 2020-05-03 02:36:07,791 basehttp 154 "GET /addresses/ HTTP/1.1" 200 637

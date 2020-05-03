@@ -340,3 +340,38 @@ class UpdateTitleAddressView(View):
             logger.error(e)
             return JsonResponse({'code': 400, 'errmsg': '设置地址标题失败'})
         return JsonResponse({'code': 0, 'errmsg': '设置地址标题成功'})
+
+
+#修改密码
+class ChangePasswordView(LoginVerifyMixin,View):#继承扩展类
+    def put(self,request):
+        #提取参数
+        dict = json.loads(request.body.decode())
+        old_password = dict.get('old_password')
+        new_password = dict.get('new_password')
+        new_password2 = dict.get('new_password2')
+        #验证参数(整体
+        if not all([old_password, new_password, new_password2]):
+            return JsonResponse({'code': 400, 'errmsg': '缺少必传参数'})
+        #验证参数(单个
+        #旧密码是否正确用check_password
+        result = request.user.check_password(old_password)  # 验证旧密码
+        if not result:
+            return JsonResponse({'code': 400, 'errmsg': '原始密码不正确'})
+        #新密码是否配对
+        if not re.match(r'^[0-9A-Za-z]{8,20}$', new_password):  # 验证新密码
+            return JsonResponse({'code': 400, 'errmsg': '密码最少8位,最长20位'})
+        if new_password != new_password2:  # 验证新密码2
+            return JsonResponse({'code': 400, 'errmsg': '两次输入密码不一致'})
+        #保存密码用set_password
+        try:  # 修改密码
+            request.user.set_password(new_password)
+            request.user.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400, 'errmsg': '修改密码失败'})
+        #密码重设后退出登录, 删除cookie信息
+        logout(request)  # 清理状态保持信息
+        response = JsonResponse({'code': 0, 'errmsg': 'ok'})
+        response.delete_cookie('username')
+        return response
