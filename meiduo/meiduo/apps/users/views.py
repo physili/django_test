@@ -321,3 +321,22 @@ class DefaultAddressView(View):
             logger.error(e)
             return JsonResponse({'code': 400, 'errmsg': '设置默认地址失败'})
         return JsonResponse({'code': 0, 'errmsg': '设置默认地址成功'})
+
+
+#设置地址标题
+class UpdateTitleAddressView(View):
+    def put(self,request,address_id):
+        pass
+        #提取参数
+        dict = json.loads(request.body.decode())
+        title = dict.get('title')
+        #验证参数(整体)
+        #根据address_id提取address信息, 并修改title
+        try:
+            address = Address.objects.get(id=address_id)
+            address.title = title
+            address.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400, 'errmsg': '设置地址标题失败'})
+        return JsonResponse({'code': 0, 'errmsg': '设置地址标题成功'})

@@ -497,3 +497,6 @@ INFO 2020-05-03 02:05:36,098 autoreload 597 Watching for file changes with StatR
 INFO 2020-05-03 02:05:40,484 basehttp 154 "PUT /addresses/3/default/ HTTP/1.1" 200 73
 INFO 2020-05-03 02:05:40,658 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
 INFO 2020-05-03 02:05:40,668 basehttp 154 "GET /addresses/ HTTP/1.1" 200 635
+INFO 2020-05-03 02:19:28,238 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-03 02:19:41,096 basehttp 154 "OPTIONS /addresses/1/title/ HTTP/1.1" 200 0
+INFO 2020-05-03 02:19:41,110 basehttp 154 "PUT /addresses/1/title/ HTTP/1.1" 200 73
