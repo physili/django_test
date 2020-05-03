@@ -255,3 +255,54 @@ class AddressView(View):
         #提取用户默认id
         default_id = request.user.default_address_id
         return JsonResponse({'code':0,'errmsg':'ok', 'addresses':address_list,'default_address_id':default_id})
+
+
+#修改地址和删除地址接口
+class UpdateDestroyAddressView(View):
+    #修改地址接口
+    def put(self,request,address_id): #路径传参
+        # 提取参数
+        dict = json.loads(request.body.decode())
+        receiver = dict.get('receiver')
+        province_id = dict.get('province_id')
+        city_id = dict.get('city_id')
+        district_id = dict.get('district_id')
+        place = dict.get('place')
+        mobile = dict.get('mobile')
+        tel = dict.get('tel')
+        email = dict.get('email')
+        # 验证参数(整体)
+        if not all([receiver, province_id, city_id, district_id, place, mobile]):
+            return JsonResponse({'code': 400, 'errmsg': '缺少必传参数'})
+        # 验证参数(单个)
+        if not re.match(r'^1[3-9]\d{9}$', mobile):
+            return JsonResponse({'code': 400, 'errmsg': '参数mobile有误'})
+        if tel:
+            if not re.match(r'^(0[0-9]{2,3}-)?([2-9][0-9]{6,7})+(-[0-9]{1,4})?$', tel):
+                return JsonResponse({'code': 400, 'errmsg': '参数tel有误'})
+        if email:
+            if not re.match(r'^[a-z0-9][\w\.\-]*@[a-z0-9\-]+(\.[a-z]{2,5}){1,2}$', email):
+                return JsonResponse({'code': 400, 'errmsg': '参数email有误'})
+        #根据address_id修改对应user地址信息
+        try:
+            Address.objects.filter(id=address_id).update(user=request.user, title=receiver, receiver=receiver,
+                                             province_id=province_id, city_id=city_id, district_id=district_id,
+                                             place=place, mobile=mobile, tel=tel, email=email)
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400, 'errmsg': '新增地址失败'})
+        # 返回响应
+        return JsonResponse({'code': 0, 'errmsg': '新增地址成功', 'address': 0})
+
+
+    #删除地址接口, 逻辑删除
+    def delete(self,request,address_id):#路径传参
+        #根据address_id找到对应的ueser地址信息, 把is_delete改成True
+        try:
+            address = Address.objects.get(id=address_id)
+            address.is_deleted = True
+            address.save()
+        except Exception as e:
+            logger.error(e)
+            return JsonResponse({'code': 400, 'errmsg': '删除地址失败'})
+        return JsonResponse({'code': 0, 'errmsg': '删除地址成功'})
