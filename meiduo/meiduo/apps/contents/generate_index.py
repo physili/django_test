@@ -37,6 +37,7 @@ def generate_static_index_html():
             cat2.sub_cats=[]  #商品频道的三级菜单
     #......................三级菜单
             cat3s = GoodsCategory.objects.filter(parent=cat2)
+            print(cat3s,type(cat3s))
             # 遍历所有三级类别对象
             for cat3 in cat3s:
                 #把三级类别对象加到二级的'下级'属性里
@@ -55,6 +56,7 @@ def generate_static_index_html():
         contents[cat.key]=Content.objects.filter(category=cat,status=True).order_by('sequence')
     # 把类别频道数据和广告内容数据整合到一个新字典里
     context = {'categories': categories, 'contents': contents}
+
     #==========提取template模板=========
     #根据导入的loader获取'index.html'模板
     template = loader.get_template('index.html')
