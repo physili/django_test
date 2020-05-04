@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #解决跨域问题
     'corsheaders',
+    #解决定时任务问题(操作系统级的定时)
+    'django_crontab',
     'users',
     'verifications',
     'oauth',
@@ -241,3 +244,11 @@ FDFS_URL = 'http://192.168.64.180:8888/'
 
 # 指定django系统使用的文件存储类:
 DEFAULT_FILE_STORAGE = 'meiduo.utils.fastdfs.fastdfs_storage.FastDFSStorage'
+
+GENERATED_STATIC_HTML_FILES_DIR = os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'front_end_pc')
+
+CRONJOBS = [# 每1分钟生成一次首页静态文件
+    ('*/1 * * * *', 'contents.generate_index.generate_static_index_html', '>> ' + os.path.join(BASE_DIR, 'logs/crontab.log'))]
+
+# 解决 crontab 中文问题
+CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
