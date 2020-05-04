@@ -745,3 +745,9 @@ WARNING 2020-05-04 14:06:43,728 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
 WARNING 2020-05-04 14:06:43,756 log 228 Not Found: /carts/simple/
 WARNING 2020-05-04 14:06:43,774 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
 INFO 2020-05-04 14:06:43,786 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+INFO 2020-05-04 14:23:06,520 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-04 14:23:10,668 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 14:23:10,676 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5773
+INFO 2020-05-04 14:23:10,689 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
+INFO 2020-05-04 14:23:10,747 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+INFO 2020-05-04 14:23:14,302 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-sales HTTP/1.1" 200 1464

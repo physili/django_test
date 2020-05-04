@@ -46,3 +46,18 @@ class ListView(View):
             # list.append(sku)
         # print(list)
         return JsonResponse({'code': 0, 'errmsg': 'ok', 'breadcrumb': breadcrumb, 'list': list, 'count': total_page})
+
+
+#商品列表热销排行接口
+class HotGoodsView(View):
+    def get(self,request,category_id):
+        #根据销量倒序
+        try:
+            skus = SKU.objects.filter(category_id=category_id, is_launched=True).order_by('-sales')[0:2]
+        except Exception as e:
+            return JsonResponse({'code':400, 'errmsg':'获取商品出错'})
+        #JsonResponse不能返回对象. 需要转化成字典或列表格式
+        hot_skus = []
+        for sku in skus:
+            hot_skus.append({'id':sku.id,'default_image_url':sku.default_image_url, 'name':sku.name,'price':sku.price })
+        return JsonResponse({'code':0,'errmsg':'OK','hot_skus':hot_skus})
