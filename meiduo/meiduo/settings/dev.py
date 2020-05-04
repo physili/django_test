@@ -240,7 +240,7 @@ EMAIL_VERIFY_URL = 'http://www.meiduo.site:8080/success_verify_email.html?token=
 FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'utils/fastdfs/client.conf')
 # FDFS中storage和tracker位置.端口规定死是8888, ip换成自己的ip
 # 老师电脑ip为172.16.238.128
-FDFS_URL = 'http://192.168.64.180:8888/'
+FDFS_URL = 'http://192.168.64.184:8888/'
 
 # 指定django系统使用的文件存储类:
 DEFAULT_FILE_STORAGE = 'meiduo.utils.fastdfs.fastdfs_storage.FastDFSStorage'

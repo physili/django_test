@@ -512,3 +512,236 @@ WARNING 2020-05-03 02:36:03,747 log 228 Not Found: /browse_histories/
 WARNING 2020-05-03 02:36:03,764 basehttp 154 "GET /browse_histories/ HTTP/1.1" 404 5419
 INFO 2020-05-03 02:36:07,770 basehttp 154 "GET /areas/ HTTP/1.1" 200 1772
 INFO 2020-05-03 02:36:07,791 basehttp 154 "GET /addresses/ HTTP/1.1" 200 637
+INFO 2020-05-04 12:52:09,546 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-04 12:52:16,353 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 12:52:16,357 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+WARNING 2020-05-04 12:55:01,233 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 12:55:01,234 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+WARNING 2020-05-04 12:55:01,270 log 228 Not Found: /hot/115/
+INFO 2020-05-04 12:55:01,272 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1461
+WARNING 2020-05-04 12:55:01,276 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
+INFO 2020-05-04 12:55:55,799 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-sales HTTP/1.1" 200 1364
+INFO 2020-05-04 12:55:58,460 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1461
+INFO 2020-05-04 12:56:01,086 basehttp 154 "GET /list/115/skus/?page=2&page_size=5&ordering=-create_time HTTP/1.1" 200 1387
+INFO 2020-05-04 12:56:03,664 basehttp 154 "GET /list/115/skus/?page=3&page_size=5&ordering=-create_time HTTP/1.1" 200 1055
+WARNING 2020-05-04 13:02:24,842 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 13:02:24,850 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+INFO 2020-05-04 13:05:47,731 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-04 13:05:55,153 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 13:05:55,156 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+WARNING 2020-05-04 13:05:55,155 log 228 Not Found: /hot/115/
+INFO 2020-05-04 13:05:55,189 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1461
+WARNING 2020-05-04 13:05:55,198 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
+WARNING 2020-05-04 13:06:02,540 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 13:06:02,546 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+WARNING 2020-05-04 13:06:11,650 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 13:06:11,656 log 228 Not Found: /hot/115/
+WARNING 2020-05-04 13:06:11,680 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+WARNING 2020-05-04 13:06:11,690 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
+INFO 2020-05-04 13:06:11,692 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1461
+INFO 2020-05-04 13:06:17,281 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-sales HTTP/1.1" 200 1364
+INFO 2020-05-04 13:07:49,436 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-04 13:07:58,862 log 228 Not Found: /hot/115/
+WARNING 2020-05-04 13:07:58,893 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
+WARNING 2020-05-04 13:07:58,898 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 13:07:58,905 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+ERROR 2020-05-04 13:07:59,003 log 228 Internal Server Error: /list/115/skus/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/goods/views.py", line 39, in get
+    return JsonResponse({'code': 0, 'errmsg': 'ok', 'list': list, 'count': total_page})
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/http/response.py", line 558, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/serializers/json.py", line 104, in default
+    return super().default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'set' is not JSON serializable
+ERROR 2020-05-04 13:07:59,005 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 500 115082
+WARNING 2020-05-04 13:08:11,276 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 13:08:11,278 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+WARNING 2020-05-04 13:08:17,494 log 228 Not Found: /hot/115/
+WARNING 2020-05-04 13:08:17,524 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
+WARNING 2020-05-04 13:08:17,527 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 13:08:17,527 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+ERROR 2020-05-04 13:08:17,615 log 228 Internal Server Error: /list/115/skus/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/goods/views.py", line 39, in get
+    return JsonResponse({'code': 0, 'errmsg': 'ok', 'list': list, 'count': total_page})
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/http/response.py", line 558, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/serializers/json.py", line 104, in default
+    return super().default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'set' is not JSON serializable
+ERROR 2020-05-04 13:08:17,623 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 500 115082
+WARNING 2020-05-04 13:08:34,676 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 13:08:34,677 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+INFO 2020-05-04 13:10:01,400 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-04 13:10:11,737 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-04 13:11:11,843 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 13:11:11,887 log 228 Not Found: /hot/115/
+WARNING 2020-05-04 13:11:11,895 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+WARNING 2020-05-04 13:11:11,923 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
+INFO 2020-05-04 13:12:42,509 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-04 13:12:50,816 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 13:12:50,826 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+WARNING 2020-05-04 13:12:50,823 log 228 Not Found: /hot/115/
+WARNING 2020-05-04 13:12:50,854 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
+ERROR 2020-05-04 13:12:51,018 log 228 Internal Server Error: /list/115/skus/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/goods/views.py", line 40, in get
+    return JsonResponse({'code': 0, 'errmsg': 'ok', 'list': list, 'count': total_page})
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/http/response.py", line 558, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/serializers/json.py", line 104, in default
+    return super().default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'set' is not JSON serializable
+ERROR 2020-05-04 13:12:51,056 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 500 115055
+INFO 2020-05-04 13:14:25,995 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-04 13:14:32,504 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 13:14:32,524 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+WARNING 2020-05-04 13:14:32,547 log 228 Not Found: /hot/115/
+WARNING 2020-05-04 13:14:32,590 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
+INFO 2020-05-04 13:16:06,284 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-04 13:16:11,500 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 13:16:11,504 log 228 Not Found: /hot/115/
+WARNING 2020-05-04 13:16:11,523 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
+WARNING 2020-05-04 13:16:11,515 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+ERROR 2020-05-04 13:16:11,741 log 228 Internal Server Error: /list/115/skus/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/goods/views.py", line 40, in get
+    return JsonResponse({'code': 0, 'errmsg': 'ok', 'list': list, 'count': total_page})
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/http/response.py", line 558, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/serializers/json.py", line 104, in default
+    return super().default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'SKU' is not JSON serializable
+ERROR 2020-05-04 13:16:11,745 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 500 114977
+INFO 2020-05-04 13:17:23,520 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-04 13:17:31,239 log 228 Not Found: /hot/115/
+WARNING 2020-05-04 13:17:31,259 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 13:17:31,259 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
+WARNING 2020-05-04 13:17:31,284 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+INFO 2020-05-04 13:19:03,784 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-04 13:19:06,498 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 13:19:06,534 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+WARNING 2020-05-04 13:19:06,563 log 228 Not Found: /hot/115/
+WARNING 2020-05-04 13:19:06,580 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
+ERROR 2020-05-04 13:20:42,471 log 228 Internal Server Error: /list/115/skus/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/goods/views.py", line 41, in get
+    return JsonResponse({'code': 0, 'errmsg': 'ok', 'list': list, 'count': total_page})
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/http/response.py", line 558, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "/usr/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/serializers/json.py", line 104, in default
+    return super().default(o)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'SKU' is not JSON serializable
+ERROR 2020-05-04 13:20:42,476 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 500 116711
+INFO 2020-05-04 13:23:43,875 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/goods/views.py changed, reloading.
+INFO 2020-05-04 13:23:45,515 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-04 13:24:03,784 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/goods/views.py changed, reloading.
+INFO 2020-05-04 13:24:05,276 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-04 14:05:03,957 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-04 14:05:09,846 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1461
+WARNING 2020-05-04 14:05:09,896 log 228 Not Found: /hot/115/
+WARNING 2020-05-04 14:05:09,896 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
+WARNING 2020-05-04 14:05:09,899 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 14:05:09,900 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+WARNING 2020-05-04 14:05:39,144 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 14:05:39,153 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+WARNING 2020-05-04 14:05:39,180 log 228 Not Found: /hot/115/
+INFO 2020-05-04 14:05:39,194 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1461
+WARNING 2020-05-04 14:05:39,196 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
+INFO 2020-05-04 14:06:38,598 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-04 14:06:43,724 log 228 Not Found: /hot/115/
+WARNING 2020-05-04 14:06:43,728 basehttp 154 "GET /hot/115/ HTTP/1.1" 404 5578
+WARNING 2020-05-04 14:06:43,756 log 228 Not Found: /carts/simple/
+WARNING 2020-05-04 14:06:43,774 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5593
+INFO 2020-05-04 14:06:43,786 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
