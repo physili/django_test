@@ -1,4 +1,7 @@
 import os, time
+
+from goods.utils import get_categories
+
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'meiduo.settings.dev')
 import django
 django.setup()
@@ -13,37 +16,7 @@ from goods.models import GoodsChannel, GoodsCategory  #导入商品频道和商�
 #定义一个函数, 生成静态化页面
 def generate_static_index_html():
     #==========提取类别频道数据===========
-    #定义一个有序字典对象
-    categories = OrderedDict()
-    #对goods channel进行排序, 按照所属组 再按照序号
-    channels = GoodsChannel.objects.order_by('group_id','sequence')
-    #遍历排序后的结果:得到所有的一级菜单
-    for channel in channels:
-        #从频道中得到当前组的组id
-        group_id = channel.group_id
-        #判断当前组id是否在有序字典中,若不在,添加进去
-        if group_id not in categories:
-            categories[group_id] = {'channels':[],'sub_cats':[]} #商品频道每一行有一级菜单和二级菜单
-        #获取一级菜单的类别对象
-        cat1 = channel.category
-        #给一级菜单补充内容
-        categories[group_id]['channels'].append({'id':cat1.id, 'name':cat1.name,'url':channel.url})
-    #......................二级菜单
-        #获取二级菜单的类别对象
-        cat2s = GoodsCategory.objects.filter(parent=cat1)
-        #遍历所有二级类别对象
-        for cat2 in cat2s:
-            #给每个二级类别对象动态添加一个'下级'属性
-            cat2.sub_cats=[]  #商品频道的三级菜单
-    #......................三级菜单
-            cat3s = GoodsCategory.objects.filter(parent=cat2)
-            print(cat3s,type(cat3s))
-            # 遍历所有三级类别对象
-            for cat3 in cat3s:
-                #把三级类别对象加到二级的'下级'属性里
-                cat2.sub_cats.append(cat3)
-            #把二级类别对象加到一级的'下级'属性里
-            categories[group_id]['sub_cats'].append(cat2)
+    categories = get_categories()
 
     #==========提取首页广告数据===========
     #定义一个字典来存储广告内容部分
