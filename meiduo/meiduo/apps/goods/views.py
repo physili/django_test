@@ -61,3 +61,23 @@ class HotGoodsView(View):
         for sku in skus:
             hot_skus.append({'id':sku.id,'default_image_url':sku.default_image_url, 'name':sku.name,'price':sku.price })
         return JsonResponse({'code':0,'errmsg':'OK','hot_skus':hot_skus})
+
+
+#重写haystack的SearchView类的create_response方法
+from haystack.views import SearchView
+class MySearchView(SearchView):
+    def create_response(self):
+        page = self.request.GET.get('page')
+        context = self.get_context()   # 获取搜索结果
+        data_list = []
+        for sku in context['page'].object_list:
+            data_list.append({
+                'id':sku.object.id,
+                'name':sku.object.name,
+                'price':sku.object.price,
+                'default_image_url':sku.object.default_image_url,
+                'searchkey':context.get('query'),
+                'page_size':context['page'].paginator.num_pages,
+                'count':context['page'].paginator.count
+            })
+        return JsonResponse(data_list, safe=False)

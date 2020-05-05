@@ -751,3 +751,46 @@ WARNING 2020-05-04 14:23:10,676 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5
 INFO 2020-05-04 14:23:10,689 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
 INFO 2020-05-04 14:23:10,747 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
 INFO 2020-05-04 14:23:14,302 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-sales HTTP/1.1" 200 1464
+INFO 2020-05-05 04:28:08,254 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-05 04:28:15,680 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-05 04:29:42,696 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-05 09:45:07,226 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-05 09:45:11,891 log 228 Not Found: /carts/simple/
+WARNING 2020-05-05 09:45:11,906 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5929
+INFO 2020-05-05 09:45:11,909 basehttp 154 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2020-05-05 09:45:11,950 log 228 Not Found: /browse_histories/
+WARNING 2020-05-05 09:45:11,951 basehttp 154 "POST /browse_histories/ HTTP/1.1" 404 5942
+WARNING 2020-05-05 09:46:08,102 log 228 Not Found: /browse_histories/
+WARNING 2020-05-05 09:46:08,120 basehttp 154 "POST /browse_histories/ HTTP/1.1" 404 5942
+WARNING 2020-05-05 09:46:08,137 log 228 Not Found: /carts/simple/
+WARNING 2020-05-05 09:46:08,139 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5929
+WARNING 2020-05-05 09:48:48,105 log 228 Not Found: /carts/simple/
+WARNING 2020-05-05 09:48:48,106 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5929
+INFO 2020-05-05 09:50:03,891 basehttp 154 "GET /search/?q=Apple&page=1&page_size=6 HTTP/1.1" 200 2
+INFO 2020-05-05 09:50:10,035 basehttp 154 "GET /search/?q=1&page=1&page_size=6 HTTP/1.1" 200 2
+INFO 2020-05-05 09:53:22,425 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-05 10:38:15,334 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-05 11:03:53,096 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-05 11:04:08,586 log 228 Not Found: /carts/simple/
+WARNING 2020-05-05 11:04:08,591 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5929
+WARNING 2020-05-05 11:04:13,584 log 228 Not Found: /carts/simple/
+WARNING 2020-05-05 11:04:13,592 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5929
+INFO 2020-05-05 11:04:13,648 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
+INFO 2020-05-05 11:04:13,660 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+INFO 2020-05-05 11:04:29,017 basehttp 154 "GET /list/115/skus/?page=2&page_size=5&ordering=-create_time HTTP/1.1" 200 1487
+INFO 2020-05-05 11:04:30,924 basehttp 154 "GET /list/115/skus/?page=3&page_size=5&ordering=-create_time HTTP/1.1" 200 1155
+WARNING 2020-05-05 11:04:34,838 log 228 Not Found: /carts/simple/
+WARNING 2020-05-05 11:04:34,849 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5929
+WARNING 2020-05-05 11:04:39,220 log 228 Not Found: /carts/simple/
+WARNING 2020-05-05 11:04:39,223 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5929
+INFO 2020-05-05 11:17:39,479 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-05 11:18:02,694 basehttp 154 "GET /search/?q=1&page=1&page_size=6 HTTP/1.1" 200 261
+WARNING 2020-05-05 11:18:30,669 log 228 Not Found: /carts/simple/
+WARNING 2020-05-05 11:18:30,670 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5929
+INFO 2020-05-05 11:18:30,673 basehttp 154 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2020-05-05 11:18:30,729 log 228 Not Found: /browse_histories/
+WARNING 2020-05-05 11:18:30,733 basehttp 154 "POST /browse_histories/ HTTP/1.1" 404 5942
+WARNING 2020-05-05 11:19:27,611 log 228 Not Found: /browse_histories/
+WARNING 2020-05-05 11:19:27,657 basehttp 154 "POST /browse_histories/ HTTP/1.1" 404 5942
+WARNING 2020-05-05 11:19:27,665 log 228 Not Found: /carts/simple/
+WARNING 2020-05-05 11:19:27,670 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 5929

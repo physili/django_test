@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'corsheaders',
     #解决定时任务问题(操作系统级的定时)
     'django_crontab',
+    # 全文检索
+    'haystack',
     'users',
     'verifications',
     'oauth',
@@ -240,7 +242,7 @@ EMAIL_VERIFY_URL = 'http://www.meiduo.site:8080/success_verify_email.html?token=
 FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'utils/fastdfs/client.conf')
 # FDFS中storage和tracker位置.端口规定死是8888, ip换成自己的ip
 # 老师电脑ip为172.16.238.128
-FDFS_URL = 'http://192.168.64.184:8888/'
+FDFS_URL = 'http://192.168.64.186:8888/'
 
 # 指定django系统使用的文件存储类:
 DEFAULT_FILE_STORAGE = 'meiduo.utils.fastdfs.fastdfs_storage.FastDFSStorage'
@@ -252,3 +254,20 @@ CRONJOBS = [# 每1分钟生成一次首页静态文件
 
 # 解决 crontab 中文问题
 CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
+
+
+# Haystack
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
+        'URL': 'http://192.168.64.186:9200/', # Elasticsearch服务器ip地址，端口号固定为9200
+        'INDEX_NAME': 'meiduo', # Elasticsearch建立的索引库的名称
+    },
+}
+
+# 当添加、修改、删除数据时，自动生成索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+
+
+#用于搜索时决定每页显示数据条数:
+HAYSTACK_SEARCH_RESULTS_PER_PAGE = 4
