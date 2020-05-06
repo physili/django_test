@@ -4,6 +4,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.views import View
 
+from goods.models import SKU
 from meiduo.utils.views import LoginVerifyMixin
 from users.models import User, Address
 from django_redis import get_redis_connection
@@ -375,3 +376,47 @@ class ChangePasswordView(LoginVerifyMixin,View):#继承扩展类
         response = JsonResponse({'code': 0, 'errmsg': 'ok'})
         response.delete_cookie('username')
         return response
+
+
+#用户浏览记录接口
+class UserBrowseHistory(LoginVerifyMixin, View):
+    # 保存用户浏览记录
+    def post(self, request):
+        #1.提取参数 sku_id
+        dict = json.loads(request.body.decode())
+        sku_id = dict.get('sku_id')
+        #2.验证参数(整体 是否存在
+        try:
+            SKU.objects.get(id=sku_id)
+        except Exception as e:
+            return JsonResponse({'code':400, 'errmsg':'sku不存在'})
+        #3.保存到redis, 用列表list类型, 链接redis
+        redis_conn = get_redis_connection('history')
+        #4.使用管道pipeline
+        pl = redis_conn.pipeline()
+        user_id = request.user.id
+        #5.先去重
+        pl.lrem('history_%s'%user_id, 0, sku_id)
+        #6.再插入
+        pl.lpush('history_%s'%user_id, sku_id)
+        #7.最后截取
+        pl.ltrim('history_%s'%user_id, 0, 4)
+        #8.管道执行
+        pl.execute()
+        return JsonResponse({'code':0,'errmsg':'ok'})
+
+    #展示浏览记录
+    def get(self,request):
+        #1.链接redis
+        redis_conn = get_redis_connection('history')
+        #2.提取sku_id列表
+        user_id = request.user.id
+        sku_ids = redis_conn.lrange('history_%s'%user_id, 0, -1)
+        skus = []
+        #3.遍历对象的信息整理到列表里
+        for sku_id in sku_ids:
+            # 4.根据sku_id访问数据库,提取sku对象
+            sku = SKU.objects.get(id=sku_id)
+            skus.append({'id':sku.id, 'name':sku.name, 'default_image_url':sku.default_image_url, 'price':sku.price})
+        return JsonResponse({'code': 0, 'errmsg': 'OK', 'skus': skus})
+
