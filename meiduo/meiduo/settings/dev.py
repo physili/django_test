@@ -156,14 +156,32 @@ CACHES = {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     },
-    "verify_code": { # session 信息: 存到 2 号库
+    "verify_code": { # 验证码 信息: 存到 2 号库
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://127.0.0.1:6379/2",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     },
+
+    #3号库用于存储celery的消息队列
+
+    "history": { # 用户浏览记录: 存到 4号库
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/4",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
+    "carts": {  # 购物车: 存到 5号库
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/5",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    },
 }
+
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
 
@@ -242,7 +260,7 @@ EMAIL_VERIFY_URL = 'http://www.meiduo.site:8080/success_verify_email.html?token=
 FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'utils/fastdfs/client.conf')
 # FDFS中storage和tracker位置.端口规定死是8888, ip换成自己的ip
 # 老师电脑ip为172.16.238.128
-FDFS_URL = 'http://192.168.64.186:8888/'
+FDFS_URL = 'http://192.168.64.187:8888/'
 
 # 指定django系统使用的文件存储类:
 DEFAULT_FILE_STORAGE = 'meiduo.utils.fastdfs.fastdfs_storage.FastDFSStorage'
@@ -260,7 +278,7 @@ CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
 HAYSTACK_CONNECTIONS = {
     'default': {
         'ENGINE': 'haystack.backends.elasticsearch_backend.ElasticsearchSearchEngine',
-        'URL': 'http://192.168.64.186:9200/', # Elasticsearch服务器ip地址，端口号固定为9200
+        'URL': 'http://192.168.64.187:9200/', # Elasticsearch服务器ip地址，端口号固定为9200
         'INDEX_NAME': 'meiduo', # Elasticsearch建立的索引库的名称
     },
 }

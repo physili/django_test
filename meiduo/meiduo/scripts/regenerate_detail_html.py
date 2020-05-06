@@ -14,7 +14,7 @@ from celery_tasks.html.tasks import generate_static_sku_detail_html
 
 if __name__ == '__main__':
     skus = SKU.objects.all()
-    for sku in skus:
+    # for sku in skus:
         # print(sku.id)
-        generate_static_sku_detail_html(sku.id)
-    # generate_static_sku_detail_html(1)
+        # generate_static_sku_detail_html(sku.id)
+    generate_static_sku_detail_html(3)
