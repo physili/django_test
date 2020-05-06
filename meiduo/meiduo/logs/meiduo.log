@@ -909,3 +909,123 @@ INFO 2020-05-06 09:40:27,974 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 
 INFO 2020-05-06 09:40:33,926 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
 INFO 2020-05-06 09:40:38,063 basehttp 154 "GET /info/ HTTP/1.1" 200 150
 INFO 2020-05-06 09:40:38,076 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 603
+INFO 2020-05-06 13:28:09,034 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-06 13:28:34,532 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-06 13:28:43,790 log 228 Not Found: /carts/simple/
+WARNING 2020-05-06 13:28:43,793 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-06 13:28:43,851 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
+INFO 2020-05-06 13:28:43,899 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+WARNING 2020-05-06 13:28:45,983 log 228 Not Found: /carts/simple/
+INFO 2020-05-06 13:28:45,997 basehttp 154 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2020-05-06 13:28:46,001 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-06 13:29:04,290 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+INFO 2020-05-06 13:29:12,781 basehttp 154 "OPTIONS /carts/ HTTP/1.1" 200 0
+INFO 2020-05-06 13:34:26,366 basehttp 154 "POST /carts/ HTTP/1.1" 200 67
+ERROR 2020-05-06 13:36:23,173 log 228 Internal Server Error: /carts/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/carts/views.py", line 88, in get
+    for sku_id,count in hash_dict.item():
+AttributeError: 'dict' object has no attribute 'item'
+ERROR 2020-05-06 13:36:23,185 basehttp 154 "GET /carts/ HTTP/1.1" 500 85794
+INFO 2020-05-06 13:37:36,087 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-05-06 13:38:25,905 log 228 Internal Server Error: /carts/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/carts/views.py", line 109, in get
+    'count':cart_dict['sku_id']['count'],
+KeyError: 'sku_id'
+ERROR 2020-05-06 13:38:25,908 basehttp 154 "GET /carts/ HTTP/1.1" 500 86919
+INFO 2020-05-06 13:44:48,417 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-05-06 13:45:21,752 log 228 Internal Server Error: /carts/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/carts/views.py", line 109, in get
+    'count':cart_dict[sku_id]['count'],
+KeyError: b'16'
+ERROR 2020-05-06 13:45:21,762 basehttp 154 "GET /carts/ HTTP/1.1" 500 86866
+INFO 2020-05-06 13:48:18,748 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-05-06 13:48:52,749 log 228 Internal Server Error: /carts/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/carts/views.py", line 113, in get
+    'amount':(sku.price * cart_dict['sku_id']['count']),
+KeyError: 'sku_id'
+ERROR 2020-05-06 13:48:52,760 basehttp 154 "GET /carts/ HTTP/1.1" 500 86779
+INFO 2020-05-06 13:49:21,051 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-06 13:49:28,220 basehttp 154 "GET /carts/ HTTP/1.1" 200 376
+WARNING 2020-05-06 13:49:55,379 log 228 Not Found: /carts/simple/
+WARNING 2020-05-06 13:49:55,382 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-06 13:50:01,421 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+INFO 2020-05-06 13:50:01,512 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 603
+INFO 2020-05-06 13:50:05,278 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2020-05-06 13:50:05,295 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+WARNING 2020-05-06 13:50:19,140 log 228 Not Found: /carts/simple/
+WARNING 2020-05-06 13:50:19,142 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+WARNING 2020-05-06 13:50:47,649 log 228 Not Found: /carts/simple/
+WARNING 2020-05-06 13:50:47,667 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-06 13:50:47,669 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
+INFO 2020-05-06 13:50:47,683 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+INFO 2020-05-06 13:50:54,748 basehttp 154 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2020-05-06 13:50:54,763 log 228 Not Found: /carts/simple/
+INFO 2020-05-06 13:50:54,767 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 63
+WARNING 2020-05-06 13:50:54,772 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-06 13:51:02,717 basehttp 154 "OPTIONS /carts/ HTTP/1.1" 200 0
+INFO 2020-05-06 13:51:46,960 basehttp 154 "POST /carts/ HTTP/1.1" 200 67
+ERROR 2020-05-06 13:53:32,959 log 228 Internal Server Error: /carts/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/carts/views.py", line 109, in get
+    'count':cart_dict[int(sku_id)]['count'],
+UnboundLocalError: local variable 'sku_id' referenced before assignment
+ERROR 2020-05-06 13:53:32,962 basehttp 154 "GET /carts/ HTTP/1.1" 500 86336
+INFO 2020-05-06 13:55:16,571 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-06 13:55:39,765 basehttp 154 "GET /carts/ HTTP/1.1" 200 375
+WARNING 2020-05-06 13:55:52,080 log 228 Not Found: /carts/simple/
+WARNING 2020-05-06 13:55:52,082 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-06 13:57:07,213 basehttp 154 "GET /carts/ HTTP/1.1" 200 44
