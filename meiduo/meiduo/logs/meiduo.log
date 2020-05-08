@@ -1115,3 +1115,28 @@ WARNING 2020-05-08 12:56:13,734 log 228 Not Found: /carts/simple/
 WARNING 2020-05-08 12:56:13,744 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
 INFO 2020-05-08 12:56:16,031 basehttp 154 "GET /carts/ HTTP/1.1" 200 377
 INFO 2020-05-08 12:58:49,136 basehttp 154 "DELETE /carts/ HTTP/1.1" 200 27
+INFO 2020-05-08 13:57:05,824 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-08 13:57:26,971 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+INFO 2020-05-08 13:57:26,988 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 603
+INFO 2020-05-08 13:57:30,360 basehttp 154 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2020-05-08 13:57:30,399 log 228 Not Found: /carts/simple/
+WARNING 2020-05-08 13:57:30,402 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-08 13:57:30,422 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+INFO 2020-05-08 13:57:37,565 basehttp 154 "OPTIONS /carts/ HTTP/1.1" 200 0
+INFO 2020-05-08 13:57:37,596 basehttp 154 "POST /carts/ HTTP/1.1" 200 67
+WARNING 2020-05-08 13:57:44,548 log 228 Not Found: /carts/simple/
+WARNING 2020-05-08 13:57:44,565 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-08 13:57:44,592 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
+INFO 2020-05-08 13:57:44,604 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+WARNING 2020-05-08 13:57:47,034 log 228 Not Found: /carts/simple/
+WARNING 2020-05-08 13:57:47,038 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-08 13:57:47,063 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 27
+INFO 2020-05-08 13:57:54,302 basehttp 154 "POST /carts/ HTTP/1.1" 200 67
+INFO 2020-05-08 13:58:00,259 basehttp 154 "GET /carts/ HTTP/1.1" 200 711
+INFO 2020-05-08 13:58:13,454 basehttp 154 "OPTIONS /carts/selection/ HTTP/1.1" 200 0
+WARNING 2020-05-08 13:58:13,476 log 228 Not Found: /carts/selection/
+WARNING 2020-05-08 13:58:13,476 basehttp 154 "PUT /carts/selection/ HTTP/1.1" 404 6259
+INFO 2020-05-08 13:59:46,309 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-08 14:00:19,845 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-08 14:01:01,909 basehttp 154 "PUT /carts/selection/ HTTP/1.1" 200 27
+INFO 2020-05-08 14:01:36,454 basehttp 154 "PUT /carts/selection/ HTTP/1.1" 200 27

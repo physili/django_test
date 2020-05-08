@@ -11,9 +11,6 @@ from django.shortcuts import render
 
 
 #创建购物车管理接口
-
-
-
 class CartsView(View):
     #添加购物车
     def post(self,request):
@@ -226,6 +223,51 @@ class CartsView(View):
                 cart_data = base64.b64encode(pickle.dumps(cookie_dict)).decode()
                 response.set_cookie('carts',cart_data)
             return response
+
+
+#购物车全选接口
+class CartSelectAllView(View):
+    def put(self,request):
+        #1.提取参数selected
+        dict = json.loads(request.body.decode())
+        selected = dict.get('selected', True)
+        #2.验证参数, 是否布尔值
+        if selected:
+            if not isinstance(selected,bool):
+                return JsonResponse({'code': 400,
+                                     'errmsg': 'selected参数有误'})
+        # 3.判断是否登录
+        if request.user.is_authenticated:
+            # 4.先链接redis, 再判断全选是true还是false
+            redis_conn = get_redis_connection('carts')
+            hash_dict = redis_conn.hgetall('carts_%s'%request.user.id)
+            sku_ids = hash_dict.keys()
+            if selected:
+                # 5.true: 把hash里的sku_id全帮到set里
+                redis_conn.sadd('selected_%s'%request.user.id, *sku_ids)
+            else:
+                # 6.false: 把set里该用户删除
+                redis_conn.srem('selected_%s'%request.user.id, *sku_ids)
+                # 7.返回json
+            return JsonResponse({'code': 0,
+                                     'errmsg': 'ok'})
+        else:
+            # 8.先提取cookie,判断cookie是否存在
+            cookie_cart = request.COOKIES.get('carts')
+            response = JsonResponse({'code': 0,
+                                     'errmsg': 'ok'})
+            if cookie_cart:
+                cookie_dict = pickle.loads(base64.b64decode(cookie_cart))
+                #直接覆盖selected
+                for sku_id in cookie_dict:
+                    cookie_dict[sku_id]['selected'] = selected
+                cookie_data = base64.b64encode(pickle.dumps(cookie_dict)).decode()
+                response.set_cookie('carts',cookie_data)
+            return response
+
+
+
+
 
 
 
