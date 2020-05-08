@@ -1099,3 +1099,19 @@ INFO 2020-05-08 12:24:01,353 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 
 INFO 2020-05-08 12:24:04,825 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
 WARNING 2020-05-08 12:24:07,069 log 228 Not Found: /carts/simple/
 WARNING 2020-05-08 12:24:07,074 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-08 12:54:06,925 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-08 12:54:10,059 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 63
+INFO 2020-05-08 12:54:10,063 basehttp 154 "GET /info/ HTTP/1.1" 200 63
+WARNING 2020-05-08 12:54:12,369 log 228 Not Found: /carts/simple/
+WARNING 2020-05-08 12:54:12,373 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-08 12:54:14,383 basehttp 154 "GET /carts/ HTTP/1.1" 200 377
+INFO 2020-05-08 12:54:20,140 basehttp 154 "OPTIONS /carts/ HTTP/1.1" 200 0
+INFO 2020-05-08 12:55:57,788 basehttp 154 "DELETE /carts/ HTTP/1.1" 200 27
+INFO 2020-05-08 12:56:02,550 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/carts/views.py changed, reloading.
+INFO 2020-05-08 12:56:04,136 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-08 12:56:13,011 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-08 12:56:13,155 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-05-08 12:56:13,734 log 228 Not Found: /carts/simple/
+WARNING 2020-05-08 12:56:13,744 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-08 12:56:16,031 basehttp 154 "GET /carts/ HTTP/1.1" 200 377
+INFO 2020-05-08 12:58:49,136 basehttp 154 "DELETE /carts/ HTTP/1.1" 200 27

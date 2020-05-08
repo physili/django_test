@@ -147,7 +147,7 @@ class CartsView(View):
             redis_conn = get_redis_connection('carts')
             user_id = request.user.id
             pl = redis_conn.pipeline()
-            pl.hset('history_%s'%user_id, sku_id, count)
+            pl.hset('carts_%s'%user_id, sku_id, count)
             if selected:
                 pl.sadd('selected_%s'%user_id,sku_id)
             else:
@@ -191,17 +191,43 @@ class CartsView(View):
 
     #删除购物车
     def delete(self,request):
-        pass
         #1.提取参数sku_id
+        dict = json.loads(request.body.decode())
+        sku_id = dict.get('sku_id')
         #2.验证sku_id是否存在数据库
+        try:
+            SKU.objects.get(id=sku_id)
+        except Exception as e:
+            return JsonResponse({'code': 400,
+                                 'errmsg': 'sku_id参数有误'})
         #3.判断是否登录
-        #4.是, 链接redis, 改selected_set的sku_id
-        #5.否, 链接cookie, 解密, 覆盖selected
-        #6.
-        #7.
-        #8.
-        #9.
-        #10.
+        if request.user.is_authenticated:
+            #4.是, 链接redis, 改selected_set的sku_id
+            redis_conn = get_redis_connection('carts')
+            redis_conn.hdel('carts_%s'%request.user.id, sku_id)
+            redis_conn.srem('selected_%s'%request.user.id, sku_id)
+            return JsonResponse({'code': 0,
+                                 'errmsg': 'ok'})
+
+        else:
+            #5.否, 链接cookie, 解密, 删除该sku_id
+            cookie_cart = request.COOKIES.get('carts')
+            # 6.判断cookie是否存在
+            if cookie_cart:
+                cookie_dict = pickle.loads(base64.b64decode(cookie_cart))
+            else:
+                cookie_dict = {}
+
+            response = JsonResponse({'code': 0,
+                                     'errmsg': 'ok'})
+            #7.判断sku_id是否在cookie里,
+            if sku_id in cookie_dict:
+                del cookie_dict[sku_id]
+                cart_data = base64.b64encode(pickle.dumps(cookie_dict)).decode()
+                response.set_cookie('carts',cart_data)
+            return response
+
+
 
 
 
