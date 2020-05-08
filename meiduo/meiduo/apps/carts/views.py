@@ -115,6 +115,95 @@ class CartsView(View):
         return JsonResponse({'code':0, 'errmsg':'ok',   'cart_skus':cart_skus})
 
 
+    #修改购物车
+    def put(self,request):
+        #1.提取参数sku_id count selected
+        dict = json.loads(request.body.decode())
+        sku_id = dict.get('sku_id')
+        count = dict.get('count')
+        selected = dict.get('selected',True)
+        #2.验证参数(整体 sku_id count)
+        if not all([sku_id,count]):
+            return JsonResponse({'code': 400,
+                                 'errmsg': '必传参数为空'})
+        #3.验证参数(单个sku_id是否在数据库, count是否是数字, select是否传参
+        try:
+            SKU.objects.get(id=sku_id)
+        except Exception as e:
+            return JsonResponse({'code': 400,
+                                 'errmsg': 'sku_id参数有误'})
+        try:
+            count = int(count)
+        except Exception as e:
+            return JsonResponse({'code': 400,
+                                 'errmsg': 'count参数有误'})
+        if selected:
+            if not isinstance(selected,bool):
+                return JsonResponse({'code': 400,
+                                     'errmsg': 'selected参数有误'})
+        #4.判断是否登录用户
+        if request.user.is_authenticated:
+            #5.是, 链接redis, 改hash表的count和selected_set的sku_id
+            redis_conn = get_redis_connection('carts')
+            user_id = request.user.id
+            pl = redis_conn.pipeline()
+            pl.hset('history_%s'%user_id, sku_id, count)
+            if selected:
+                pl.sadd('selected_%s'%user_id,sku_id)
+            else:
+                pl.srem('selected_%s'%user_id,sku_id)
+            pl.execute()
+            #6.返回json
+            car_sku = {
+                'id':sku_id,
+                'count':count,
+                'selected':selected
+            }
+            return JsonResponse({'code': 0,
+                                 'errmsg': 'ok',
+                                 'cart_sku':dict})
+
+        else:
+            #7.否, 提取cookie,解密, 覆盖count和selected
+            cookie_cart = request.COOKIES.get('carts')
+            if cookie_cart:
+                cookie_dict = pickle.loads(base64.b64decode(cookie_cart))
+            else:
+                cookie_dict = {}
+            cookie_dict[sku_id] = {
+                'count':count,
+                'selected':selected
+            }
+            cookie_data = base64.b64encode(pickle.dumps(cookie_dict)).decode()
+            #8.返回json
+            car_sku = {
+                'id':sku_id,
+                'count':count,
+                'selected':selected
+            }
+            response = JsonResponse({'code': 0,
+                                     'errmsg': 'ok',
+                                     'cart_sku': car_sku})
+            response.set_cookie('carts',cookie_data)
+            return response
+        #9.
+        #10.
+
+    #删除购物车
+    def delete(self,request):
+        pass
+        #1.提取参数sku_id
+        #2.验证sku_id是否存在数据库
+        #3.判断是否登录
+        #4.是, 链接redis, 改selected_set的sku_id
+        #5.否, 链接cookie, 解密, 覆盖selected
+        #6.
+        #7.
+        #8.
+        #9.
+        #10.
+
+
 
 
 

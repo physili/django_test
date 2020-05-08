@@ -1029,3 +1029,73 @@ INFO 2020-05-06 13:55:39,765 basehttp 154 "GET /carts/ HTTP/1.1" 200 375
 WARNING 2020-05-06 13:55:52,080 log 228 Not Found: /carts/simple/
 WARNING 2020-05-06 13:55:52,082 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
 INFO 2020-05-06 13:57:07,213 basehttp 154 "GET /carts/ HTTP/1.1" 200 44
+INFO 2020-05-06 17:03:24,207 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-08 12:06:16,135 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-08 12:06:24,400 log 228 Not Found: /carts/simple/
+WARNING 2020-05-08 12:06:24,401 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-08 12:06:24,518 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
+INFO 2020-05-08 12:06:24,582 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+WARNING 2020-05-08 12:08:46,868 log 228 Not Found: /carts/simple/
+WARNING 2020-05-08 12:08:46,879 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-08 12:08:48,169 basehttp 154 "GET /carts/ HTTP/1.1" 200 44
+INFO 2020-05-08 12:08:52,007 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 63
+INFO 2020-05-08 12:08:52,014 basehttp 154 "GET /info/ HTTP/1.1" 200 63
+INFO 2020-05-08 12:09:02,518 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-08 12:09:02,532 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-08 12:09:02,777 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2020-05-08 12:09:02,790 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-05-08 12:09:03,281 log 228 Not Found: /carts/simple/
+WARNING 2020-05-08 12:09:03,282 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-08 12:09:08,409 basehttp 154 "GET /carts/ HTTP/1.1" 200 376
+INFO 2020-05-08 12:09:21,365 basehttp 154 "OPTIONS /carts/ HTTP/1.1" 200 0
+ERROR 2020-05-08 12:10:09,953 log 228 Internal Server Error: /carts/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/utils/deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/corsheaders/middleware.py", line 111, in process_response
+    patch_vary_headers(response, ["Origin"])
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/utils/cache.py", line 265, in patch_vary_headers
+    if response.has_header('Vary'):
+TypeError: has_header() missing 1 required positional argument: 'header'
+ERROR 2020-05-08 12:10:09,965 basehttp 154 "PUT /carts/ HTTP/1.1" 500 71921
+INFO 2020-05-08 12:12:22,678 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-08 12:12:32,788 basehttp 154 "PUT /carts/ HTTP/1.1" 200 85
+INFO 2020-05-08 12:14:03,495 basehttp 154 "PUT /carts/ HTTP/1.1" 200 86
+WARNING 2020-05-08 12:14:18,167 log 228 Not Found: /carts/simple/
+WARNING 2020-05-08 12:14:18,169 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-08 12:14:20,040 basehttp 154 "GET /carts/ HTTP/1.1" 200 377
+INFO 2020-05-08 12:14:32,916 basehttp 154 "GET /carts/ HTTP/1.1" 200 377
+INFO 2020-05-08 12:19:24,556 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+INFO 2020-05-08 12:19:24,648 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 603
+INFO 2020-05-08 12:19:27,116 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2020-05-08 12:19:27,142 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+WARNING 2020-05-08 12:19:31,517 log 228 Not Found: /carts/simple/
+WARNING 2020-05-08 12:19:31,518 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-08 12:19:33,664 basehttp 154 "GET /carts/ HTTP/1.1" 200 44
+INFO 2020-05-08 12:20:43,880 basehttp 154 "GET /carts/ HTTP/1.1" 200 44
+WARNING 2020-05-08 12:20:47,705 log 228 Not Found: /carts/simple/
+WARNING 2020-05-08 12:20:47,707 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+WARNING 2020-05-08 12:20:49,782 log 228 Not Found: /carts/simple/
+WARNING 2020-05-08 12:20:49,791 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-08 12:20:49,838 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+INFO 2020-05-08 12:20:49,846 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
+INFO 2020-05-08 12:20:52,052 basehttp 154 "OPTIONS /browse_histories/ HTTP/1.1" 200 0
+WARNING 2020-05-08 12:20:52,121 log 228 Not Found: /carts/simple/
+INFO 2020-05-08 12:20:52,131 basehttp 154 "POST /browse_histories/ HTTP/1.1" 200 63
+WARNING 2020-05-08 12:20:52,157 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-08 12:20:58,492 basehttp 154 "OPTIONS /carts/ HTTP/1.1" 200 0
+INFO 2020-05-08 12:20:58,509 basehttp 154 "POST /carts/ HTTP/1.1" 200 67
+INFO 2020-05-08 12:21:11,191 basehttp 154 "GET /carts/ HTTP/1.1" 200 376
+INFO 2020-05-08 12:22:27,758 basehttp 154 "PUT /carts/ HTTP/1.1" 200 81
+INFO 2020-05-08 12:23:40,360 basehttp 154 "PUT /carts/ HTTP/1.1" 200 82
+INFO 2020-05-08 12:23:58,309 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-08 12:23:58,500 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+WARNING 2020-05-08 12:23:59,056 log 228 Not Found: /carts/simple/
+WARNING 2020-05-08 12:23:59,057 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
+INFO 2020-05-08 12:24:01,309 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+INFO 2020-05-08 12:24:01,353 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 603
+INFO 2020-05-08 12:24:04,825 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+WARNING 2020-05-08 12:24:07,069 log 228 Not Found: /carts/simple/
+WARNING 2020-05-08 12:24:07,074 basehttp 154 "GET /carts/simple/ HTTP/1.1" 404 6250
