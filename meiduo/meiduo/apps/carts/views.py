@@ -266,6 +266,42 @@ class CartSelectAllView(View):
             return response
 
 
+#简易购物车展示
+class CartsSimpleView(View):
+    def get(self,request):
+        #1.判断是否用户登录
+        if request.user.is_authenticated:
+            # 2.是则调用redis的hash和set
+            redis_conn = get_redis_connection('carts')
+            hash_dict = redis_conn.hgetall('carts_%s'%request.user.id)
+            set_selected = redis_conn.smembers('selected_%s'%request.user.id)
+        #3.整合成cookie的key field value格式
+            cart_dict = {}
+            for sku_id,count in hash_dict.items():
+                cart_dict[int(sku_id)] = {'count':int(count), 'selected':sku_id in set_selected}
+
+        #6.否则调用返回的cookie
+        else:
+            cookie_cart = request.COOKIES.get('carts')
+            if cookie_cart:
+                # 7.解密cookie
+                cart_dict = pickle.loads(base64.b64decode(cookie_cart.encode()))
+            else:
+                cart_dict = {}
+        #9.遍历sku_id, 调取数据库的sku,
+        sku_ids = cart_dict.keys()
+        skus = SKU.objects.filter(id__in=sku_ids)
+        #10.重新构造返回的数据
+        cart_skus = []
+        for sku in skus:
+            cart_skus.append({
+                'id':sku.id,
+                'name':sku.name,
+                'count':cart_dict[sku.id]['count'],
+                'default_image_url':sku.default_image_url,
+            })
+        return JsonResponse({'code':0, 'errmsg':'ok', 'cart_skus':cart_skus})
+
 
 
 
