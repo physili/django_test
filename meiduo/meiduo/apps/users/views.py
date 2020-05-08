@@ -4,6 +4,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.views import View
 
+from carts.utils import merge_cart_cookie_to_redis
 from goods.models import SKU
 from meiduo.utils.views import LoginVerifyMixin
 from users.models import User, Address
@@ -77,6 +78,10 @@ class RegisterView(View):
         # 通过cookie携带用户信息
         response = JsonResponse({'code': 0, 'errmsg': 'ok'})
         response.set_cookie('username',user.username,max_age=3600*24*12)
+
+        #增加合并购物车功能
+        response = merge_cart_cookie_to_redis(request,response)
+
         # 7.返回响应
         return response
 
@@ -105,6 +110,9 @@ class LoginView(View):
 
         response = JsonResponse({'code':0,'errmsg':'ok'})
         response.set_cookie('username',user.username,max_age=3600*24*12)
+
+        # 增加合并购物车功能
+        response = merge_cart_cookie_to_redis(request, response)
 
         #6.返回响应
         return response

@@ -3,6 +3,8 @@ from QQLoginTool.QQtool import OAuthQQ
 from django.conf import settings
 from django import http
 from django.views import View
+
+from carts.utils import merge_cart_cookie_to_redis
 from oauth.models import OAuthQQUser
 import logging
 from django.db import DatabaseError
@@ -70,6 +72,10 @@ class QQUserView(View):
             response = http.JsonResponse({'code':0,'errmsg':'ok'})
             #9.通过cookie实现用户名显示
             response.set_cookie('username',user.username,max_age=3600*24)
+
+            # 增加合并购物车功能
+            response = merge_cart_cookie_to_redis(request, response)
+
             #10返回响应
             return response
 
@@ -125,8 +131,12 @@ class QQUserView(View):
             return http.JsonResponse({'code':400, 'errmsg':'往数据库添加数据出错'})
         #10.保持状态
         login(request,user)
-        respoonse = http.JsonResponse({'code':0, 'errmsg':'ok'})
+        response = http.JsonResponse({'code':0, 'errmsg':'ok'})
         #11.设置cookie:username
-        respoonse.set_cookie('username',user.username,max_age=3600*24)
+        response.set_cookie('username',user.username,max_age=3600*24)
+
+        # 增加合并购物车功能
+        response = merge_cart_cookie_to_redis(request, response)
+
         #12.返回json
-        return respoonse
+        return response
