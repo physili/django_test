@@ -1261,3 +1261,37 @@ TypeError: Object of type 'type' is not JSON serializable
 ERROR 2020-05-08 16:04:56,455 basehttp 154 "GET /orders/settlement/ HTTP/1.1" 500 129046
 INFO 2020-05-08 16:07:22,136 autoreload 597 Watching for file changes with StatReloader
 INFO 2020-05-08 16:07:31,487 basehttp 154 "GET /orders/settlement/ HTTP/1.1" 200 1434
+INFO 2020-05-09 15:04:32,368 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 15:04:47,974 basehttp 154 "OPTIONS /orders/commit/ HTTP/1.1" 200 0
+INFO 2020-05-09 15:05:07,793 basehttp 154 "POST /orders/commit/ HTTP/1.1" 200 63
+INFO 2020-05-09 15:05:36,139 basehttp 154 "GET /orders/settlement/ HTTP/1.1" 200 1434
+INFO 2020-05-09 15:05:59,736 basehttp 154 "POST /orders/commit/ HTTP/1.1" 200 63
+INFO 2020-05-09 15:06:49,122 basehttp 154 "POST /orders/commit/ HTTP/1.1" 200 63
+INFO 2020-05-09 15:07:04,275 basehttp 154 "GET /orders/settlement/ HTTP/1.1" 200 1434
+ERROR 2020-05-09 15:08:25,334 log 228 Internal Server Error: /orders/commit/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/orders/views.py", line 89, in post
+    redis_conn = get_redis_connection('cats')
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django_redis/__init__.py", line 12, in get_redis_connection
+    cache = caches[alias]
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/cache/__init__.py", line 76, in __getitem__
+    "Could not find config for '%s' in settings.CACHES" % alias
+django.core.cache.backends.base.InvalidCacheBackendError: Could not find config for 'cats' in settings.CACHES
+ERROR 2020-05-09 15:08:25,338 basehttp 154 "POST /orders/commit/ HTTP/1.1" 500 94332
+INFO 2020-05-09 15:09:19,000 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 15:10:55,770 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 15:14:22,652 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/orders/views.py changed, reloading.
+INFO 2020-05-09 15:14:24,004 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 15:25:03,329 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-09 15:25:08,020 basehttp 154 "OPTIONS /orders/commit/ HTTP/1.1" 200 0
+INFO 2020-05-09 15:27:43,267 basehttp 154 "POST /orders/commit/ HTTP/1.1" 200 66
