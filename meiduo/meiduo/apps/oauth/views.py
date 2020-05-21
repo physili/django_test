@@ -18,7 +18,7 @@ import re
 from django_redis import get_redis_connection
 
 # Create your views here.
-#第一个接口:返回qq登录网址(包含内容有:client_id,redirect_uri,state)
+#第一个接口:返回qq登录网址(包含内容有:client_id,client_secret,redirect_uri,state)
 class QQURLView(View):
     def get(self,request):
         #先接受请求,提取参数
