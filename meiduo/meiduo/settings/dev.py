@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'carts',
     'orders',
     'payment',
+    'rest_framework',
     'meiduo_admin',
 ]
 
@@ -242,6 +243,7 @@ CORS_ORIGIN_WHITELIST = (
     'http://127.0.0.1:8080',
     'http://localhost:8080',
     'http://www.meiduo.site:8080',
+    'http://www.meiduo.site:8000',
 )
 CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 
@@ -295,3 +297,18 @@ HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
 #用于搜索时决定每页显示数据条数:
 HAYSTACK_SEARCH_RESULTS_PER_PAGE = 4
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+}
+
+import datetime
+JWT_AUTH = {
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),    #默认token有效期是300s
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'meiduo_admin.utils.jwt_response_payload_handler', #重写登录返回响应
+}

@@ -97,7 +97,7 @@ class LoginView(View):
         if not all([username,password]):
             return JsonResponse({'code':400,'errmsg':'缺少必传参数'})
         #3.登录认证authenticate
-        user = authenticate(username=username,password=password)
+        user = authenticate(request=request,username=username,password=password)
         if user is None:
             return JsonResponse({'code': 400,'errmsg': '用户名或者密码错误'})
         #4.保持状态login

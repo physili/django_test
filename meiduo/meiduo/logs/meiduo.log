@@ -1295,3 +1295,97 @@ INFO 2020-05-09 15:14:24,004 autoreload 597 Watching for file changes with StatR
 INFO 2020-05-09 15:25:03,329 autoreload 597 Watching for file changes with StatReloader
 INFO 2020-05-09 15:25:08,020 basehttp 154 "OPTIONS /orders/commit/ HTTP/1.1" 200 0
 INFO 2020-05-09 15:27:43,267 basehttp 154 "POST /orders/commit/ HTTP/1.1" 200 66
+INFO 2020-05-22 12:37:46,086 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-22 12:41:38,931 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-22 12:55:32,688 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-22 12:56:25,344 basehttp 154 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+WARNING 2020-05-22 12:56:25,600 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 12:56:25,601 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+WARNING 2020-05-22 12:57:18,846 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 12:57:18,847 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+INFO 2020-05-22 12:57:28,729 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-22 12:57:33,967 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 12:57:33,968 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+WARNING 2020-05-22 12:57:39,975 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 12:57:39,976 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+WARNING 2020-05-22 12:57:42,669 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 12:57:42,669 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+WARNING 2020-05-22 12:57:48,555 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 12:57:48,556 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+WARNING 2020-05-22 12:57:55,525 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 12:57:55,527 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+WARNING 2020-05-22 12:57:57,090 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 12:57:57,090 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+INFO 2020-05-22 12:59:05,217 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-22 13:00:05,240 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 13:00:05,262 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+INFO 2020-05-22 13:01:12,226 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-22 13:01:18,307 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 13:01:18,307 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+WARNING 2020-05-22 13:01:24,963 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 13:01:24,964 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+WARNING 2020-05-22 13:01:34,293 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 13:01:34,294 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+INFO 2020-05-22 13:01:49,123 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-22 13:02:42,177 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 13:02:42,200 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+INFO 2020-05-22 13:03:06,473 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-22 13:03:14,779 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 13:03:14,794 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+WARNING 2020-05-22 13:03:31,338 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 13:03:31,341 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+WARNING 2020-05-22 13:03:37,757 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 13:03:37,758 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+WARNING 2020-05-22 13:03:43,239 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 13:03:43,240 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+WARNING 2020-05-22 13:03:53,100 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 13:03:53,101 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+INFO 2020-05-22 13:08:06,237 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2020-05-22 13:08:18,889 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:08:21,991 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:08:34,658 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-22 13:08:46,822 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:09:00,599 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:09:11,789 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:10:02,700 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:10:11,933 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-22 13:10:17,360 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:11:40,308 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2020-05-22 13:11:42,888 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2020-05-22 13:11:42,939 basehttp 154 "GET /list/115/skus/?page=1&page_size=5&ordering=-create_time HTTP/1.1" 200 1561
+INFO 2020-05-22 13:11:42,941 basehttp 154 "GET /hot/115/ HTTP/1.1" 200 582
+INFO 2020-05-22 13:11:57,440 basehttp 154 "OPTIONS /login/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:11:57,621 basehttp 154 "POST /login/ HTTP/1.1" 200 27
+INFO 2020-05-22 13:11:58,118 basehttp 154 "GET /carts/simple/ HTTP/1.1" 200 44
+INFO 2020-05-22 13:12:17,905 basehttp 154 "GET /info/ HTTP/1.1" 200 150
+INFO 2020-05-22 13:12:17,939 basehttp 154 "GET /browse_histories/ HTTP/1.1" 200 885
+INFO 2020-05-22 13:12:28,359 basehttp 154 "OPTIONS /logout/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:12:28,375 basehttp 154 "DELETE /logout/ HTTP/1.1" 200 27
+INFO 2020-05-22 13:13:50,294 basehttp 154 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+WARNING 2020-05-22 13:13:50,423 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-22 13:13:50,423 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+INFO 2020-05-22 13:16:38,965 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 238
+INFO 2020-05-22 13:16:39,233 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:16:39,243 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:16:39,256 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:16:39,262 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:16:39,283 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:16:39,283 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:16:39,292 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:16:39,332 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+WARNING 2020-05-22 13:16:39,449 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 13:16:39,455 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2020-05-22 13:16:39,479 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7156
+WARNING 2020-05-22 13:16:39,480 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7147
+WARNING 2020-05-22 13:16:39,501 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 13:16:39,519 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7147
+WARNING 2020-05-22 13:16:39,521 log 228 Not Found: /meiduo_admin/statistical/total_count/
+WARNING 2020-05-22 13:16:39,537 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 13:16:39,543 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-22 13:16:39,543 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 13:16:39,550 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7147
+WARNING 2020-05-22 13:16:39,557 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7162
+WARNING 2020-05-22 13:16:39,558 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 404 7150
+WARNING 2020-05-22 13:16:39,561 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7147
+WARNING 2020-05-22 13:16:39,573 log 228 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2020-05-22 13:16:39,581 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 7162

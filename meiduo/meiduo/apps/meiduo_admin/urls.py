@@ -13,9 +13,9 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from . import views
-from django.urls import re_path
+from rest_framework_jwt.views import obtain_jwt_token #obtain_jwt_token 就是　验证用户名和密码，没有问题，会返回Ｔｏｋｅｎ
+from django.conf.urls import re_path
 
 urlpatterns = [
-
+    re_path(r'^authorizations/$',obtain_jwt_token),# ObtainJSONWebToken.as_view()
 ]
