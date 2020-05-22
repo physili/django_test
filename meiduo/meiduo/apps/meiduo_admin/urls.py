@@ -21,4 +21,5 @@ from .views import statistical
 urlpatterns = [
     re_path(r'^authorizations/$',obtain_jwt_token),# ObtainJSONWebToken.as_view()
     re_path(r'^statistical/total_count/$',statistical.UserTotalCountView.as_view()),
+    re_path(r'^statistical/day_active/$',statistical.UserDailyActiveCountView.as_view()),
 ]
