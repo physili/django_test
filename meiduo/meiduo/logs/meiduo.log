@@ -1389,3 +1389,153 @@ WARNING 2020-05-22 13:16:39,558 basehttp 154 "GET /meiduo_admin/statistical/tota
 WARNING 2020-05-22 13:16:39,561 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7147
 WARNING 2020-05-22 13:16:39,573 log 228 Not Found: /meiduo_admin/statistical/month_increment/
 WARNING 2020-05-22 13:16:39,581 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 7162
+INFO 2020-05-22 13:50:45,114 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-22 13:51:26,237 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:51:26,300 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:51:26,314 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:51:26,317 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:51:26,318 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:51:26,319 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:51:26,376 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-22 13:51:26,420 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+WARNING 2020-05-22 13:51:27,924 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 13:51:27,968 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2020-05-22 13:51:27,973 log 228 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2020-05-22 13:51:27,974 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7334
+WARNING 2020-05-22 13:51:27,997 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-22 13:51:27,999 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7343
+WARNING 2020-05-22 13:51:28,016 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 13:51:28,032 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7334
+WARNING 2020-05-22 13:51:28,033 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7349
+WARNING 2020-05-22 13:51:28,029 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 7349
+WARNING 2020-05-22 13:51:28,038 log 228 Not Found: /meiduo_admin/statistical/total_count/
+WARNING 2020-05-22 13:51:28,053 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 404 7337
+WARNING 2020-05-22 13:51:28,097 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 13:51:28,106 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7334
+WARNING 2020-05-22 13:51:28,112 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 13:51:28,115 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7334
+WARNING 2020-05-22 13:52:26,770 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2020-05-22 13:52:26,775 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 13:52:26,841 log 228 Not Found: /meiduo_admin/statistical/total_count/
+WARNING 2020-05-22 13:52:26,860 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-22 13:52:26,862 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 13:52:26,895 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7343
+WARNING 2020-05-22 13:52:26,896 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7334
+WARNING 2020-05-22 13:52:26,908 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7349
+WARNING 2020-05-22 13:52:26,910 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7334
+WARNING 2020-05-22 13:52:26,912 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 404 7337
+WARNING 2020-05-22 13:52:26,960 log 228 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2020-05-22 13:52:26,970 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 7349
+WARNING 2020-05-22 13:52:27,046 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 13:52:27,047 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7334
+WARNING 2020-05-22 13:52:27,060 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 13:52:27,061 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7334
+INFO 2020-05-22 13:54:51,918 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-22 14:01:48,510 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2020-05-22 14:01:50,032 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-22 14:02:28,460 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-22 14:02:46,426 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-22 14:02:46,427 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-22 14:02:46,430 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-22 14:02:46,458 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-22 14:02:46,474 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-22 14:02:46,485 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-22 14:02:46,486 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-22 14:02:46,490 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+WARNING 2020-05-22 14:02:46,775 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 14:02:46,791 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 14:02:46,813 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 14:02:46,826 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2020-05-22 14:02:46,861 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 14:02:46,872 log 228 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2020-05-22 14:02:46,880 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7342
+WARNING 2020-05-22 14:02:46,912 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 7348
+WARNING 2020-05-22 14:02:46,913 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-22 14:02:46,925 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7348
+WARNING 2020-05-22 14:02:46,947 log 228 Forbidden: /meiduo_admin/statistical/total_count/
+WARNING 2020-05-22 14:02:46,952 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 403 63
+WARNING 2020-05-22 14:02:47,016 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 14:02:47,020 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 14:02:47,021 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 14:02:47,031 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7333
+INFO 2020-05-22 14:48:42,308 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-22 14:49:01,613 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-22 14:49:01,619 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-22 14:49:01,636 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2020-05-22 14:49:01,640 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-22 14:49:01,642 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-22 14:49:01,664 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-22 14:49:01,689 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-22 14:49:01,724 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+WARNING 2020-05-22 14:49:01,986 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2020-05-22 14:49:02,000 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 14:49:02,008 log 228 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2020-05-22 14:49:02,042 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-22 14:49:02,044 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 14:49:02,063 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 14:49:02,059 log 228 Forbidden: /meiduo_admin/statistical/total_count/
+WARNING 2020-05-22 14:49:02,062 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7348
+WARNING 2020-05-22 14:49:02,070 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 403 63
+WARNING 2020-05-22 14:49:02,047 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 14:49:02,047 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7342
+WARNING 2020-05-22 14:49:02,061 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 7348
+WARNING 2020-05-22 14:49:02,284 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 14:49:02,285 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 14:49:02,313 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 14:49:02,313 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7333
+INFO 2020-05-22 14:55:46,754 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-22 14:56:16,169 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-22 14:56:16,179 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 14:56:16,185 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 14:56:16,189 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7348
+WARNING 2020-05-22 14:56:16,226 log 228 Forbidden: /meiduo_admin/statistical/total_count/
+WARNING 2020-05-22 14:56:16,228 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 14:56:16,255 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 403 63
+WARNING 2020-05-22 14:56:16,270 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2020-05-22 14:56:16,271 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 14:56:16,323 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7342
+WARNING 2020-05-22 14:56:16,341 log 228 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2020-05-22 14:56:16,387 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 7348
+WARNING 2020-05-22 14:56:16,527 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 14:56:16,537 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 14:56:16,541 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 14:56:16,542 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7333
+INFO 2020-05-22 14:58:21,047 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-22 14:58:32,339 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2020-05-22 14:58:32,370 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 14:58:32,389 log 228 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2020-05-22 14:58:32,391 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7342
+WARNING 2020-05-22 14:58:32,395 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 14:58:32,399 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-22 14:58:32,400 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 7348
+WARNING 2020-05-22 14:58:32,408 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 14:58:32,423 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7348
+WARNING 2020-05-22 14:58:32,425 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 14:58:32,503 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 14:58:32,503 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 14:58:32,515 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 14:58:32,520 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7333
+INFO 2020-05-22 15:00:12,088 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-22 15:04:03,175 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-22 15:04:15,843 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-22 15:04:15,847 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-22 15:04:15,860 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2020-05-22 15:04:15,850 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-22 15:04:15,849 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-22 15:04:15,865 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-22 15:04:15,876 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-22 15:04:15,877 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+WARNING 2020-05-22 15:04:16,484 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 15:04:16,507 log 228 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2020-05-22 15:04:16,508 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 7348
+WARNING 2020-05-22 15:04:16,511 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2020-05-22 15:04:16,512 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7342
+WARNING 2020-05-22 15:04:16,523 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 15:04:16,544 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-22 15:04:16,544 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7348
+WARNING 2020-05-22 15:04:16,547 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 15:04:16,560 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 15:04:16,623 log 228 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2020-05-22 15:04:16,646 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 7333
+WARNING 2020-05-22 15:04:16,652 log 228 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2020-05-22 15:04:16,661 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7333

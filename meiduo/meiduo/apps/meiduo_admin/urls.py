@@ -16,6 +16,9 @@ Including another URLconf
 from rest_framework_jwt.views import obtain_jwt_token #obtain_jwt_token 就是　验证用户名和密码，没有问题，会返回Ｔｏｋｅｎ
 from django.conf.urls import re_path
 
+from .views import statistical
+
 urlpatterns = [
     re_path(r'^authorizations/$',obtain_jwt_token),# ObtainJSONWebToken.as_view()
+    re_path(r'^statistical/total_count/$',statistical.UserTotalCountView.as_view()),
 ]
