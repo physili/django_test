@@ -1577,3 +1577,223 @@ WARNING 2020-05-22 15:45:55,631 log 228 Not Found: /meiduo_admin/statistical/day
 WARNING 2020-05-22 15:45:55,633 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 7518
 INFO 2020-05-22 15:48:16,948 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
 INFO 2020-05-22 15:48:16,952 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:15:49,952 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-23 01:16:06,920 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:16:06,930 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:16:06,931 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:16:06,940 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:16:06,941 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:16:06,944 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:16:06,973 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:16:06,992 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+WARNING 2020-05-23 01:16:07,871 log 228 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2020-05-23 01:16:07,898 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2020-05-23 01:16:07,902 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 7718
+WARNING 2020-05-23 01:16:07,906 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-23 01:16:07,958 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7718
+WARNING 2020-05-23 01:16:07,929 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7712
+INFO 2020-05-23 01:16:08,078 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:16:08,079 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:16:08,317 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+ERROR 2020-05-23 01:16:43,076 log 228 Internal Server Error: /meiduo_admin/statistical/day_orders/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/statistical.py", line 31, in get
+    count = User.objects.filter(orderinfo__create_time__day=now_date).count()
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1821, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'datetime.date'
+ERROR 2020-05-23 01:16:43,078 log 228 Internal Server Error: /meiduo_admin/statistical/day_orders/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/statistical.py", line 31, in get
+    count = User.objects.filter(orderinfo__create_time__day=now_date).count()
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/query.py", line 892, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/query.py", line 910, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1290, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1318, in _add_q
+    split_subq=split_subq, simple_col=simple_col,
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1251, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/sql/query.py", line 1116, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/lookups.py", line 20, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/lookups.py", line 70, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/fields/__init__.py", line 1821, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'datetime.date'
+ERROR 2020-05-23 01:16:43,098 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 500 22621
+ERROR 2020-05-23 01:16:43,115 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 500 22621
+INFO 2020-05-23 01:17:21,654 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/statistical.py changed, reloading.
+INFO 2020-05-23 01:17:28,844 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-23 01:17:41,222 log 228 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2020-05-23 01:17:41,231 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-23 01:17:41,241 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7718
+WARNING 2020-05-23 01:17:41,237 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 7718
+INFO 2020-05-23 01:17:41,506 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+WARNING 2020-05-23 01:17:41,534 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+INFO 2020-05-23 01:17:41,551 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+WARNING 2020-05-23 01:17:41,564 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7712
+INFO 2020-05-23 01:17:41,775 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:17:50,343 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:18:24,915 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+WARNING 2020-05-23 01:19:36,763 log 228 Not Found: /meiduo_admin/statistical/month_increment/
+INFO 2020-05-23 01:19:36,774 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+WARNING 2020-05-23 01:19:36,799 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-23 01:19:36,855 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 7718
+WARNING 2020-05-23 01:19:36,907 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7718
+INFO 2020-05-23 01:19:37,202 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+WARNING 2020-05-23 01:19:38,074 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2020-05-23 01:19:38,096 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7712
+INFO 2020-05-23 01:19:44,577 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:19:44,600 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:19:46,550 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:37:31,499 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-23 01:37:41,479 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:37:41,481 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:37:41,495 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:37:41,507 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:37:41,512 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:37:41,513 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:37:41,513 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:37:41,521 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+WARNING 2020-05-23 01:37:42,066 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2020-05-23 01:37:42,097 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7902
+INFO 2020-05-23 01:37:42,133 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:37:42,165 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+WARNING 2020-05-23 01:37:42,187 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-23 01:37:42,210 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7908
+INFO 2020-05-23 01:37:42,269 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:37:42,412 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:37:42,442 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:38:33,145 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-23 01:38:42,743 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:38:42,753 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:38:42,758 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+WARNING 2020-05-23 01:38:42,780 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-23 01:38:42,820 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7908
+WARNING 2020-05-23 01:38:42,816 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2020-05-23 01:38:42,890 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7902
+INFO 2020-05-23 01:38:42,956 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:38:42,962 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:38:57,722 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+WARNING 2020-05-23 01:39:40,750 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+INFO 2020-05-23 01:39:40,779 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+WARNING 2020-05-23 01:39:40,802 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+INFO 2020-05-23 01:39:40,849 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+WARNING 2020-05-23 01:39:40,854 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7908
+INFO 2020-05-23 01:39:40,856 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+WARNING 2020-05-23 01:39:40,878 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7902
+INFO 2020-05-23 01:39:41,153 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:39:41,195 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:39:41,734 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-23 01:40:33,485 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+WARNING 2020-05-23 01:40:33,523 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+INFO 2020-05-23 01:40:33,548 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+WARNING 2020-05-23 01:40:33,617 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7902
+WARNING 2020-05-23 01:40:33,634 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-23 01:40:33,671 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7908
+INFO 2020-05-23 01:40:33,673 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:40:33,848 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:40:33,862 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:40:34,550 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-23 01:48:12,899 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/statistical.py changed, reloading.
+INFO 2020-05-23 01:48:16,928 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-23 01:49:00,061 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-23 01:52:45,667 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:52:45,686 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:52:45,696 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:52:45,698 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:52:45,706 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:52:45,708 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:52:45,709 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-23 01:52:45,714 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+WARNING 2020-05-23 01:52:46,271 log 228 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2020-05-23 01:52:46,310 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 7902
+WARNING 2020-05-23 01:52:46,345 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-23 01:52:46,395 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 7908
+INFO 2020-05-23 01:52:46,404 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:52:46,419 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:52:46,423 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:52:46,707 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:52:46,717 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:52:47,004 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-23 01:54:34,168 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-23 01:54:42,247 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:54:42,262 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:54:42,335 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+WARNING 2020-05-23 01:54:42,460 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-23 01:54:42,487 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 8096
+INFO 2020-05-23 01:54:42,598 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:54:42,628 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:54:42,929 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-23 01:54:52,382 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:58:19,850 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-23 01:58:30,521 log 228 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2020-05-23 01:58:30,564 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 8096
+INFO 2020-05-23 01:58:30,588 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:58:30,596 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:58:30,598 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:58:30,961 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:58:30,975 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-23 01:58:31,386 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-23 01:58:43,731 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31

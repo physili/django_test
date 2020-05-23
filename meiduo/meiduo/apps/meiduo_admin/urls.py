@@ -22,4 +22,7 @@ urlpatterns = [
     re_path(r'^authorizations/$',obtain_jwt_token),# ObtainJSONWebToken.as_view()
     re_path(r'^statistical/total_count/$',statistical.UserTotalCountView.as_view()),
     re_path(r'^statistical/day_active/$',statistical.UserDailyActiveCountView.as_view()),
+    re_path(r'^statistical/day_orders/$',statistical.UserDailyOrderCountView.as_view()),
+    re_path(r'^statistical/month_increment/$',statistical.UserMonthCountView.as_view()),
+    re_path(r'^statistical/day_increment/$',statistical.UserDayCountView.as_view()),
 ]

@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, timedelta
 from users.models import User
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -21,3 +21,36 @@ class UserDailyActiveCountView(APIView):
         now_date = date.today()
         count = User.objects.filter(last_login__gte=now_date).count()
         return Response({'count':count,'date':now_date})
+
+
+#日下单用户量统计
+class UserDailyOrderCountView(APIView):
+    permission_classes = [IsAdminUser]
+    def get(self,request):
+        now_date = date.today()
+        count = User.objects.filter(orderinfo__create_time__gte=now_date).count()
+        return Response({'count':count,'date':now_date})
+
+
+#月增用户统计
+class UserMonthCountView(APIView):
+    permission_classes = [IsAdminUser]
+    def get(self,request):
+        now_date = date.today()
+        start_date = now_date - timedelta(days=30)
+        date_list = []
+        for i in range(1,31):
+            index_date = start_date + timedelta(days=i)
+            cur_date = start_date + timedelta(days=i+1)
+            count = User.objects.filter(date_joined__gte=index_date, date_joined__lt=cur_date).count()
+            date_list.append({'count':count,'date':index_date})
+        return Response(date_list)
+
+
+#日增用户统计
+class UserDayCountView(APIView):
+    permission_classes = [IsAdminUser]
+    def get(self,request):
+        now_date = date.today()# 获取当前日期
+        count = User.objects.filter(date_joined__gte=now_date).count()
+        return Response({'count': count,'date': now_date})
