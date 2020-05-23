@@ -1797,3 +1797,5 @@ INFO 2020-05-23 01:58:30,961 basehttp 154 "GET /meiduo_admin/statistical/day_act
 INFO 2020-05-23 01:58:30,975 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
 INFO 2020-05-23 01:58:31,386 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
 INFO 2020-05-23 01:58:43,731 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-23 02:16:14,163 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/goods/models.py changed, reloading.
+INFO 2020-05-23 02:16:16,023 autoreload 597 Watching for file changes with StatReloader
