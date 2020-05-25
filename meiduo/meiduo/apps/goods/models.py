@@ -53,7 +53,7 @@ class Goods(BaseModel):               #商品SPU表对应的内容: SPU: 代表�
         return self.name
 
 class GoodsSpecification(BaseModel):               #商品规格
-    goods = models.ForeignKey(Goods, on_delete=models.CASCADE, verbose_name='商品')# 该商品规格属于哪个商品
+    spu = models.ForeignKey(Goods, related_name='specs', on_delete=models.CASCADE, verbose_name='商品')# 该商品规格属于哪个商品
     name = models.CharField(max_length=20, verbose_name='规格名称')# 这组规格的名称
     class Meta:
         db_table = 'tb_goods_specification'
@@ -64,7 +64,7 @@ class GoodsSpecification(BaseModel):               #商品规格
 
 class SpecificationOption(BaseModel):        #规格具体选项表
     # 这个规格选项表对应上面的哪个商品规格
-    spec = models.ForeignKey(GoodsSpecification, on_delete=models.CASCADE, verbose_name='规格')
+    spec = models.ForeignKey(GoodsSpecification, related_name='options', on_delete=models.CASCADE, verbose_name='规格')
     value = models.CharField(max_length=20,  verbose_name='选项值') # 规格选项的内容
     class Meta:
         db_table = 'tb_specification_option'
@@ -76,7 +76,7 @@ class SpecificationOption(BaseModel):        #规格具体选项表
 class SKU(BaseModel):        #商品SKU表对应的内容:   SKU: 具体的某个商品
     name = models.CharField(max_length=50, verbose_name='名称')# 这个商品的名称
     caption = models.CharField(max_length=100, verbose_name='副标题') # 这个商品的副标题
-    goods = models.ForeignKey(Goods,  on_delete=models.CASCADE, verbose_name='商品')# 这个商品对应 goods 表中的那个字段
+    spu = models.ForeignKey(Goods,  on_delete=models.CASCADE, verbose_name='商品')# 这个商品对应 goods 表中的那个字段
     category = models.ForeignKey(GoodsCategory,   on_delete=models.PROTECT, verbose_name='从属类别')# 这个商品的类别
     price = models.DecimalField(max_digits=10,   decimal_places=2, verbose_name='单价')# 这个商品的价格
     cost_price = models.DecimalField(max_digits=10, decimal_places=2,  verbose_name='进价')# 这个商品的进价
@@ -101,10 +101,11 @@ class SKUImage(BaseModel):            #SKU图片
         verbose_name = 'SKU图片'
         verbose_name_plural = verbose_name
     def __str__(self):
+        # print('%s %s' % (self.sku.name, self.id))
         return '%s %s' % (self.sku.name, self.id)
 
 class SKUSpecification(BaseModel):    #SKU具体规格
-    sku = models.ForeignKey(SKU,  on_delete=models.CASCADE, verbose_name='sku')# 对应的SKU值
+    sku = models.ForeignKey(SKU, related_name='specs', on_delete=models.CASCADE, verbose_name='sku')# 对应的SKU值
     # 对应哪一个规格
     spec = models.ForeignKey(GoodsSpecification, on_delete=models.PROTECT, verbose_name='规格名称')
     # 规格的具体内容
