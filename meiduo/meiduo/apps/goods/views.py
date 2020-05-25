@@ -1,7 +1,10 @@
+from datetime import date
+
 from django.shortcuts import render
 from django.core.paginator import Paginator,EmptyPage
+from django.utils import timezone
 from django.views import View
-from goods.models import SKU,GoodsCategory
+from goods.models import SKU,GoodsCategory,GoodsVisitCount
 from django.http import JsonResponse
 from goods.utils import get_breadcrumb
 
@@ -81,3 +84,27 @@ class MySearchView(SearchView):
                 'count':context['page'].paginator.count
             })
         return JsonResponse(data_list, safe=False)
+
+
+#统计分类商品访问量接口
+class DetailVisitCountView(View):
+    def post(self,request,category_id):
+        try:
+            category = GoodsCategory.objects.get(id=category_id)
+        except Exception as e:
+            return JsonResponse({'code':400,'errmsg':'缺少必传参数'})
+        now_date = timezone.localdate()
+        print(now_date)
+        now_date2 = date.today()
+        print(now_date2)
+        try:
+            category_date_visit = category.goodsvisitcount_set.get(date=now_date)
+        except Exception as e:
+            category_date_visit = GoodsVisitCount()
+        try:
+            category_date_visit.category = category
+            category_date_visit.count += 1
+            category_date_visit.save()
+        except Exception as e:
+            return JsonResponse({'code':400,'errmsg':'服务器异常'})
+        return JsonResponse({'code':0,'errmsg':'ok'})
