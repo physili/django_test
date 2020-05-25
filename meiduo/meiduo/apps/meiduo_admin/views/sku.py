@@ -2,9 +2,9 @@ from rest_framework.generics import ListAPIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from goods.models import SKU, GoodsCategory
+from goods.models import SKU, GoodsCategory, Goods
 from meiduo_admin.utils import PageNum
-from meiduo_admin.serializers.sku import SKUSerializer, SKUCategoriesSerializer
+from meiduo_admin.serializers.sku import SKUSerializer, SKUCategoriesSerializer, GoodsSimpleSerializer
 
 #1.获取sku数据
 class SKUModelViewSet(ModelViewSet):
@@ -25,3 +25,9 @@ class SKUCategoriesView(ListAPIView):
     #goodscategory = None 指:下一级对象是空的
     #获取自关联的最后一级
     queryset = GoodsCategory.objects.filter(goodscategory=None)
+
+
+#获取SPU表名称数据
+class GoodsSimpleView(ListAPIView):
+    serializer_class = GoodsSimpleSerializer
+    queryset = Goods.objects.all()

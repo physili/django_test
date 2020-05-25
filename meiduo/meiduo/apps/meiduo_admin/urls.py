@@ -29,6 +29,7 @@ urlpatterns = [
     re_path(r'^users/$',user.UserListView.as_view()),
     re_path(r'^skus/simple/$', image.SKUView.as_view()),
     re_path(r'^skus/categories/$', sku.SKUCategoriesView.as_view()),
+    re_path(r'^goods/simple/$', sku.GoodsSimpleView.as_view()),
 ]
 
 router = DefaultRouter()
