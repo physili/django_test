@@ -40,3 +40,9 @@ class GoodsSpecView(ListAPIView):
     def get_queryset(self):
         pk = self.kwargs['pk']
         return GoodsSpecification.objects.filter(spu_id=pk)
+#获取SPU商品规格信息, 方式二
+# class GoodsSpecAPIView(APIView):
+#     def get(self,request,pk):
+#         gs = GoodsSpecification.objects.filter(spu_id=pk)
+#         serializer = GoodsSpecSerializer(gs,many=True)
+#         return Response(serializer.data)
