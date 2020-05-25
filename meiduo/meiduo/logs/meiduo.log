@@ -3325,3 +3325,18 @@ INFO 2020-05-25 12:16:18,281 basehttp 154 "GET /meiduo_admin/skus/categories/ HT
 INFO 2020-05-25 12:16:38,799 basehttp 154 "OPTIONS /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 0
 WARNING 2020-05-25 12:16:38,823 log 228 Not Found: /meiduo_admin/goods/2/specs/
 WARNING 2020-05-25 12:16:38,825 basehttp 154 "GET /meiduo_admin/goods/2/specs/ HTTP/1.1" 404 11241
+INFO 2020-05-25 13:08:17,663 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-25 13:08:35,642 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-25 13:08:35,664 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2020-05-25 13:08:35,688 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-25 13:08:35,689 basehttp 154 "OPTIONS /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-25 13:08:35,690 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2020-05-25 13:08:36,197 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 625
+INFO 2020-05-25 13:08:36,418 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 5305
+INFO 2020-05-25 13:08:36,451 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 625
+INFO 2020-05-25 13:08:36,663 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2020-05-25 13:08:36,947 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2020-05-25 13:08:48,894 basehttp 154 "OPTIONS /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 0
+INFO 2020-05-25 13:13:12,197 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-25 13:13:16,604 basehttp 154 "OPTIONS /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 0
+INFO 2020-05-25 13:17:37,357 basehttp 154 "GET /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 462

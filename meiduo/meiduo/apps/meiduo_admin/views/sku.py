@@ -2,9 +2,9 @@ from rest_framework.generics import ListAPIView
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from goods.models import SKU, GoodsCategory, Goods
+from goods.models import SKU, GoodsCategory, Goods, GoodsSpecification
 from meiduo_admin.utils import PageNum
-from meiduo_admin.serializers.sku import SKUSerializer, SKUCategoriesSerializer, GoodsSimpleSerializer
+from meiduo_admin.serializers.sku import SKUSerializer, SKUCategoriesSerializer, GoodsSimpleSerializer, GoodsSpecSerializer
 
 #1.获取sku数据
 class SKUModelViewSet(ModelViewSet):
@@ -31,3 +31,12 @@ class SKUCategoriesView(ListAPIView):
 class GoodsSimpleView(ListAPIView):
     serializer_class = GoodsSimpleSerializer
     queryset = Goods.objects.all()
+
+
+#获取SPU商品规格信息
+class GoodsSpecView(ListAPIView):
+    serializer_class = GoodsSpecSerializer
+    #查询集是用户指定的某一spu_id, 所以重写queryset
+    def get_queryset(self):
+        pk = self.kwargs['pk']
+        return GoodsSpecification.objects.filter(spu_id=pk)

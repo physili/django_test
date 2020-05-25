@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from goods.models import SKU, GoodsCategory, Goods
+from goods.models import SKU, GoodsCategory, Goods, SpecificationOption, GoodsSpecification
 
 
 class SKUSerializer(serializers.ModelSerializer):
@@ -15,4 +15,19 @@ class SKUCategoriesSerializer(serializers.ModelSerializer):
 class GoodsSimpleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Goods
+        fields = '__all__'
+
+class GoodsOptionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SpecificationOption
+        fields = ('id','value')
+
+class GoodsSpecSerializer(serializers.ModelSerializer):
+    options = GoodsOptionSerializer(many=True)
+    # spu: str
+    spu = serializers.StringRelatedField()
+    # spu_id: id
+    spu_id = serializers.IntegerField()
+    class Meta:
+        model = GoodsSpecification
         fields = '__all__'
