@@ -3260,3 +3260,26 @@ INFO 2020-05-25 09:35:24,993 basehttp 154 "GET /meiduo_admin/statistical/day_inc
 INFO 2020-05-25 09:35:25,208 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
 INFO 2020-05-25 09:35:25,228 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
 INFO 2020-05-25 09:35:25,250 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-25 10:15:28,359 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-25 10:15:35,898 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-25 10:15:50,565 basehttp 154 "OPTIONS /meiduo_admin/skus/simple/ HTTP/1.1" 200 0
+INFO 2020-05-25 10:15:50,566 basehttp 154 "OPTIONS /meiduo_admin/skus/simple/ HTTP/1.1" 200 0
+INFO 2020-05-25 10:15:50,568 basehttp 154 "OPTIONS /meiduo_admin/skus/images/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-25 10:15:51,071 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1466
+INFO 2020-05-25 10:15:51,176 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1466
+INFO 2020-05-25 10:15:51,198 basehttp 154 "GET /meiduo_admin/skus/images/?page=1&pagesize=10 HTTP/1.1" 200 1118
+INFO 2020-05-25 10:16:01,698 basehttp 154 "OPTIONS /meiduo_admin/skus/images/?page=5&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-25 10:16:01,736 basehttp 154 "GET /meiduo_admin/skus/images/?page=5&pagesize=10 HTTP/1.1" 200 269
+INFO 2020-05-25 10:16:07,779 basehttp 154 "OPTIONS /meiduo_admin/skus/images/45/ HTTP/1.1" 200 0
+INFO 2020-05-25 10:16:07,916 basehttp 154 "GET /meiduo_admin/skus/images/45/ HTTP/1.1" 200 107
+INFO 2020-05-25 10:25:49,328 basehttp 154 "PUT /meiduo_admin/skus/images/45/ HTTP/1.1" 201 109
+INFO 2020-05-25 10:25:49,521 basehttp 154 "OPTIONS /meiduo_admin/skus/images/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-25 10:25:49,664 basehttp 154 "GET /meiduo_admin/skus/images/?pagesize=10 HTTP/1.1" 200 1118
+INFO 2020-05-25 10:25:54,132 basehttp 154 "GET /meiduo_admin/skus/images/?page=5&pagesize=10 HTTP/1.1" 200 269
+INFO 2020-05-25 10:31:18,806 basehttp 154 "OPTIONS /meiduo_admin/skus/images/45/ HTTP/1.1" 200 0
+INFO 2020-05-25 10:31:18,927 basehttp 154 "DELETE /meiduo_admin/skus/images/45/ HTTP/1.1" 204 0
+INFO 2020-05-25 10:31:19,071 basehttp 154 "GET /meiduo_admin/skus/images/?pagesize=10 HTTP/1.1" 200 1118
+INFO 2020-05-25 10:31:21,470 basehttp 154 "OPTIONS /meiduo_admin/skus/images/?page=5&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-25 10:31:21,509 basehttp 154 "GET /meiduo_admin/skus/images/?page=5&pagesize=10 HTTP/1.1" 200 161
+INFO 2020-05-25 10:31:44,295 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/image.py changed, reloading.
+INFO 2020-05-25 10:31:47,812 autoreload 597 Watching for file changes with StatReloader
