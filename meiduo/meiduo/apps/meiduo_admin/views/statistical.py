@@ -1,4 +1,6 @@
 from datetime import date, timedelta
+
+from goods.models import GoodsVisitCount
 from users.models import User
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -54,3 +56,15 @@ class UserDayCountView(APIView):
         now_date = date.today()# 获取当前日期
         count = User.objects.filter(date_joined__gte=now_date).count()
         return Response({'count': count,'date': now_date})
+
+
+#日分类商品访问量
+class CategoryVistCountView(APIView):
+    permission_classes = [IsAdminUser]
+    def get(self,request):
+        now_date = date.today()
+        cates = GoodsVisitCount.objects.filter(date=now_date)
+        list = []
+        for cate in cates:
+            list.append({"category": cate.category.name,"count": cate.count})
+        return Response(list)

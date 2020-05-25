@@ -60,7 +60,7 @@ class GoodsSpecification(BaseModel):               #商品规格
         verbose_name = '商品规格'
         verbose_name_plural = verbose_name
     def __str__(self):
-        return '%s: %s' % (self.goods.name, self.name)
+        return '%s: %s' % (self.spu.name, self.name)
 
 class SpecificationOption(BaseModel):        #规格具体选项表
     # 这个规格选项表对应上面的哪个商品规格

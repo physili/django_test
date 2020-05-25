@@ -25,6 +25,7 @@ urlpatterns = [
     re_path(r'^statistical/day_orders/$',statistical.UserDailyOrderCountView.as_view()),
     re_path(r'^statistical/month_increment/$',statistical.UserMonthCountView.as_view()),
     re_path(r'^statistical/day_increment/$',statistical.UserDayCountView.as_view()),
+    re_path(r'^statistical/goods_day_views/$',statistical.CategoryVistCountView.as_view()),
     re_path(r'^users/$',user.UserListView.as_view()),
     re_path(r'^skus/simple/$', image.SKUView.as_view()),
 ]

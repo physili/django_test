@@ -94,9 +94,9 @@ class DetailVisitCountView(View):
         except Exception as e:
             return JsonResponse({'code':400,'errmsg':'缺少必传参数'})
         now_date = timezone.localdate()
-        print(now_date)
-        now_date2 = date.today()
-        print(now_date2)
+        # print(now_date)
+        # now_date2 = date.today()
+        # print(now_date2)
         try:
             category_date_visit = category.goodsvisitcount_set.get(date=now_date)
         except Exception as e:
