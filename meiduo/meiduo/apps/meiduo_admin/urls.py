@@ -16,7 +16,7 @@ Including another URLconf
 from rest_framework_jwt.views import obtain_jwt_token #obtain_jwt_token 就是　验证用户名和密码，没有问题，会返回Ｔｏｋｅｎ
 from django.conf.urls import re_path
 from rest_framework.routers import DefaultRouter
-from .views import statistical,user, image
+from .views import statistical,user, image, sku
 
 urlpatterns = [
     re_path(r'^authorizations/$',obtain_jwt_token),# ObtainJSONWebToken.as_view()
@@ -28,8 +28,10 @@ urlpatterns = [
     re_path(r'^statistical/goods_day_views/$',statistical.CategoryVistCountView.as_view()),
     re_path(r'^users/$',user.UserListView.as_view()),
     re_path(r'^skus/simple/$', image.SKUView.as_view()),
+    re_path(r'^skus/categories/$', sku.SKUCategoriesView.as_view()),
 ]
 
 router = DefaultRouter()
+router.register(r'skus', sku.SKUModelViewSet, basename='skus')
 router.register(r'skus/images', image.ImageView, basename='image')
 urlpatterns += router.urls

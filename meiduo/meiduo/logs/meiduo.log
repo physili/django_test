@@ -3283,3 +3283,31 @@ INFO 2020-05-25 10:31:21,470 basehttp 154 "OPTIONS /meiduo_admin/skus/images/?pa
 INFO 2020-05-25 10:31:21,509 basehttp 154 "GET /meiduo_admin/skus/images/?page=5&pagesize=10 HTTP/1.1" 200 161
 INFO 2020-05-25 10:31:44,295 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/image.py changed, reloading.
 INFO 2020-05-25 10:31:47,812 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-25 11:51:21,179 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-25 11:51:36,059 basehttp 154 "OPTIONS /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-25 11:51:36,059 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2020-05-25 11:51:36,062 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-25 11:51:36,063 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2020-05-25 11:51:36,069 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+WARNING 2020-05-25 11:51:36,275 log 228 Not Found: /meiduo_admin/goods/simple/
+WARNING 2020-05-25 11:51:36,276 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 404 10885
+WARNING 2020-05-25 11:51:36,293 log 228 Not Found: /meiduo_admin/goods/simple/
+WARNING 2020-05-25 11:51:36,294 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 404 10885
+WARNING 2020-05-25 11:51:36,399 log 228 Not Found: /meiduo_admin/skus/categories/
+WARNING 2020-05-25 11:51:36,406 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 404 23
+WARNING 2020-05-25 11:51:36,472 log 228 Not Found: /meiduo_admin/skus/categories/
+WARNING 2020-05-25 11:51:36,473 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 404 23
+INFO 2020-05-25 11:51:36,570 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 5305
+INFO 2020-05-25 12:05:51,974 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-25 12:06:11,227 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2020-05-25 12:06:11,228 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2020-05-25 12:06:11,229 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-25 12:06:11,233 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-25 12:06:11,258 basehttp 154 "OPTIONS /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+WARNING 2020-05-25 12:06:11,411 log 228 Not Found: /meiduo_admin/goods/simple/
+WARNING 2020-05-25 12:06:11,411 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 404 11063
+WARNING 2020-05-25 12:06:11,570 log 228 Not Found: /meiduo_admin/goods/simple/
+WARNING 2020-05-25 12:06:11,579 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 404 11063
+INFO 2020-05-25 12:06:11,635 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 5305
+INFO 2020-05-25 12:06:12,007 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2020-05-25 12:06:12,458 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
