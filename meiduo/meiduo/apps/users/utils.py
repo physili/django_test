@@ -12,6 +12,7 @@ def get_user_by_account(account):
     else:
         return user
 
+#AUTHENTICATION_BACKENDS = ['users.utils.UsernameMobileAuthBackend']
 class UsernameMobileAuthBackend(ModelBackend):
     def authenticate(self, request, username=None, password=None, **kwargs):
         #判断是后台还是前台传入的登录验证
