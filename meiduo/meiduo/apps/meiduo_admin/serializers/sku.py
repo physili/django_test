@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from goods.models import SKU, GoodsCategory, Goods, SpecificationOption, GoodsSpecification, SKUSpecification
-
+from django.db import transaction
 
 class SKUSpecificationSerializer(serializers.ModelSerializer):
     spec_id = serializers.IntegerField()
@@ -23,12 +23,18 @@ class SKUSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         #获取规格信息,并从validated_data数据中, 删除规格信息数据
         specs_data = validated_data.pop('specs')
-        #保存sku数据库信息
-        sku = SKU.objects.create(**validated_data)
-        #保存skuspecification的数据库信息
-        for spec_data in specs_data:
-            SKUSpecification.objects.create(sku=sku,**spec_data)
-        return sku
+        #开启事务保存多表数据
+        with transaction.atomic():
+            #设置保存点
+            savepoint = transaction.savepoint()
+            #保存sku数据库信息
+            sku = SKU.objects.create(**validated_data)
+            #保存skuspecification的数据库信息
+            for spec_data in specs_data:
+                SKUSpecification.objects.create(sku=sku,**spec_data)
+            #清除保存点
+            transaction.savepoint_commit(savepoint)
+            return sku
 
 
 
