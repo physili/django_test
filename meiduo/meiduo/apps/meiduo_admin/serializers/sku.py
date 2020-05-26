@@ -36,6 +36,18 @@ class SKUSerializer(serializers.ModelSerializer):
             transaction.savepoint_commit(savepoint)
             return sku
 
+    # 修改商品的详情信息
+    def update(self, instance, validated_data):
+        specs_data = validated_data.pop('specs')
+        with transaction.atomic():
+            savepoint = transaction.savepoint()
+            #保存sku数据库信息
+            super().update(instance,validated_data)
+            for spec_data in specs_data:
+                SKUSpecification.objects.filter(sku=instance, spec_id=spec_data.get('spec_id')).update(option_id=spec_data.get('option_id'))
+            # 清除保存点
+            transaction.savepoint_commit(savepoint)
+            return instance
 
 
 class SKUCategoriesSerializer(serializers.ModelSerializer):

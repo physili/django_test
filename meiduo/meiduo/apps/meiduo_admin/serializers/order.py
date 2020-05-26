@@ -20,12 +20,4 @@ class OrderInfoSerializer(serializers.ModelSerializer):
     class Meta:
         model = OrderInfo
         fields = '__all__'
-        extra_kwargs = {
-            'user':{'required': False},
-            'address':{'required': False},
-            'total_count':{'required': False},
-            'total_amount':{'required': False},
-            'freight':{'required': False},
-            'pay_method':{'required': False},
-        }
 

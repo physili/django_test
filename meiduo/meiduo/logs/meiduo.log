@@ -4070,3 +4070,33 @@ INFO 2020-05-26 08:09:58,288 basehttp 154 "GET /meiduo_admin/orders/202005091525
 INFO 2020-05-26 08:14:34,421 autoreload 597 Watching for file changes with StatReloader
 INFO 2020-05-26 08:14:52,930 basehttp 154 "PUT /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 200 49
 INFO 2020-05-26 08:14:53,074 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 2525
+INFO 2020-05-26 08:16:37,426 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 08:16:41,281 basehttp 154 "OPTIONS /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 200 0
+INFO 2020-05-26 08:16:41,470 basehttp 154 "PUT /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 200 49
+INFO 2020-05-26 08:16:41,861 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 2525
+INFO 2020-05-26 08:31:44,618 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 08:31:49,789 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2020-05-26 08:31:49,848 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-26 08:31:49,887 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2020-05-26 08:31:49,894 basehttp 154 "OPTIONS /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-26 08:31:49,906 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-26 08:31:50,197 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 625
+INFO 2020-05-26 08:31:50,434 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 625
+INFO 2020-05-26 08:31:50,639 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2020-05-26 08:31:51,128 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2020-05-26 08:31:51,159 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 6601
+INFO 2020-05-26 08:31:59,055 basehttp 154 "OPTIONS /meiduo_admin/skus/?page=2&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-26 08:31:59,204 basehttp 154 "GET /meiduo_admin/skus/?page=2&pagesize=10&keyword= HTTP/1.1" 200 4780
+INFO 2020-05-26 08:32:04,272 basehttp 154 "OPTIONS /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 0
+INFO 2020-05-26 08:32:28,351 basehttp 154 "GET /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 462
+INFO 2020-05-26 08:32:28,413 basehttp 154 "OPTIONS /meiduo_admin/skus/17/ HTTP/1.1" 200 0
+INFO 2020-05-26 08:32:28,516 basehttp 154 "GET /meiduo_admin/skus/17/ HTTP/1.1" 200 364
+INFO 2020-05-26 08:32:29,111 basehttp 154 "GET /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 462
+INFO 2020-05-26 08:33:40,469 basehttp 154 "PUT /meiduo_admin/skus/17/ HTTP/1.1" 200 364
+INFO 2020-05-26 08:33:41,030 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 6601
+INFO 2020-05-26 08:33:45,629 basehttp 154 "GET /meiduo_admin/skus/?page=2&pagesize=10&keyword= HTTP/1.1" 200 4780
+INFO 2020-05-26 08:35:30,525 basehttp 154 "DELETE /meiduo_admin/skus/17/ HTTP/1.1" 204 0
+INFO 2020-05-26 08:35:30,939 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 6601
+INFO 2020-05-26 08:35:33,647 basehttp 154 "GET /meiduo_admin/skus/?page=2&pagesize=10&keyword= HTTP/1.1" 200 4415
+INFO 2020-05-26 08:37:47,249 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/serializers/sku.py changed, reloading.
+INFO 2020-05-26 08:37:49,197 autoreload 597 Watching for file changes with StatReloader
