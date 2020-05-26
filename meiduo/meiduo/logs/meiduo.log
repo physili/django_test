@@ -4100,3 +4100,45 @@ INFO 2020-05-26 08:35:30,939 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesi
 INFO 2020-05-26 08:35:33,647 basehttp 154 "GET /meiduo_admin/skus/?page=2&pagesize=10&keyword= HTTP/1.1" 200 4415
 INFO 2020-05-26 08:37:47,249 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/serializers/sku.py changed, reloading.
 INFO 2020-05-26 08:37:49,197 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 09:16:02,170 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2020-05-26 09:16:04,985 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 09:24:07,538 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2020-05-26 09:24:10,287 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 09:34:37,934 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2020-05-26 09:34:42,923 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 09:40:10,864 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 09:40:19,728 basehttp 154 "OPTIONS /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 0
+WARNING 2020-05-26 09:40:19,864 log 228 Unauthorized: /meiduo_admin/goods/
+WARNING 2020-05-26 09:40:19,868 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 401 35
+INFO 2020-05-26 09:43:23,259 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/goods.py changed, reloading.
+INFO 2020-05-26 09:43:24,832 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 09:43:46,572 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-26 09:44:12,880 log 228 Unauthorized: /meiduo_admin/goods/
+WARNING 2020-05-26 09:44:12,892 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 401 35
+INFO 2020-05-26 09:52:36,375 basehttp 154 "OPTIONS /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 0
+WARNING 2020-05-26 09:52:36,630 log 228 Unauthorized: /meiduo_admin/goods/
+WARNING 2020-05-26 09:52:36,669 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 401 35
+INFO 2020-05-26 09:53:14,118 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-26 09:53:34,565 log 228 Unauthorized: /meiduo_admin/goods/
+WARNING 2020-05-26 09:53:34,571 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 401 35
+INFO 2020-05-26 09:54:58,175 basehttp 154 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2020-05-26 09:54:58,599 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 238
+INFO 2020-05-26 09:54:59,124 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-26 09:54:59,147 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-26 09:54:59,182 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-26 09:54:59,193 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2020-05-26 09:54:59,194 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-26 09:54:59,197 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-26 09:54:59,222 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-26 09:54:59,227 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-26 09:54:59,302 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-26 09:54:59,448 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-26 09:54:59,454 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2020-05-26 09:54:59,478 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-26 09:54:59,492 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-26 09:54:59,600 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-26 09:54:59,610 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-26 09:54:59,959 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-26 09:55:07,015 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 11027
+INFO 2020-05-26 09:56:53,861 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/serializers/goods.py changed, reloading.
+INFO 2020-05-26 09:56:56,209 autoreload 597 Watching for file changes with StatReloader
