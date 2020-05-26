@@ -1,7 +1,6 @@
 from rest_framework import serializers
 from orders.models import OrderInfo, OrderGoods
 from goods.models import SKU
-from django.db import transaction
 
 class SKUSerializer(serializers.ModelSerializer):
     class Meta:
@@ -21,5 +20,12 @@ class OrderInfoSerializer(serializers.ModelSerializer):
     class Meta:
         model = OrderInfo
         fields = '__all__'
-
+        extra_kwargs = {
+            'user':{'required': False},
+            'address':{'required': False},
+            'total_count':{'required': False},
+            'total_amount':{'required': False},
+            'freight':{'required': False},
+            'pay_method':{'required': False},
+        }
 
