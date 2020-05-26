@@ -3570,3 +3570,361 @@ INFO 2020-05-26 03:35:50,333 basehttp 154 "GET /meiduo_admin/statistical/day_act
 INFO 2020-05-26 03:35:50,363 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
 INFO 2020-05-26 03:35:51,619 basehttp 154 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
 INFO 2020-05-26 03:35:58,957 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 136
+INFO 2020-05-26 03:43:35,439 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 03:43:42,985 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 288
+INFO 2020-05-26 04:23:57,153 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 04:24:06,019 basehttp 154 "OPTIONS /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 0
+ERROR 2020-05-26 04:25:04,625 log 228 Internal Server Error: /meiduo_admin/orders/20200509152508000000001/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 56, in retrieve
+    return Response(serializer.data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 562, in data
+    ret = super().data
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'SKU' object is not iterable
+ERROR 2020-05-26 04:25:04,631 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 500 22036
+INFO 2020-05-26 04:26:59,788 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 04:27:48,343 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 04:28:02,229 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 04:28:39,760 basehttp 154 "OPTIONS /meiduo_admin/orders/undefined/ HTTP/1.1" 200 0
+WARNING 2020-05-26 04:28:51,252 log 228 Not Found: /meiduo_admin/orders/undefined/
+WARNING 2020-05-26 04:28:51,253 basehttp 154 "GET /meiduo_admin/orders/undefined/ HTTP/1.1" 404 23
+INFO 2020-05-26 04:28:57,994 basehttp 154 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+ERROR 2020-05-26 04:29:06,021 log 228 Internal Server Error: /meiduo_admin/orders/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 94, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'OrderGoods' object has no attribute 'sku_set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 516, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 487, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `sku_set` on serializer `OrderGoodsSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `OrderGoods` instance.
+Original exception text was: 'OrderGoods' object has no attribute 'sku_set'.
+ERROR 2020-05-26 04:29:06,024 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 500 23402
+ERROR 2020-05-26 04:29:33,231 log 228 Internal Server Error: /meiduo_admin/orders/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 94, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'OrderGoods' object has no attribute 'sku_set'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 516, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 487, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `sku_set` on serializer `OrderGoodsSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `OrderGoods` instance.
+Original exception text was: 'OrderGoods' object has no attribute 'sku_set'.
+ERROR 2020-05-26 04:29:33,233 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 500 23402
+INFO 2020-05-26 04:30:56,328 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/serializers/order.py changed, reloading.
+INFO 2020-05-26 04:30:58,370 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 04:31:04,661 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-05-26 04:31:11,748 log 228 Internal Server Error: /meiduo_admin/orders/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'SKU' object is not iterable
+ERROR 2020-05-26 04:31:11,753 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 500 22437
+INFO 2020-05-26 04:33:47,691 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-05-26 04:38:47,733 log 228 Internal Server Error: /meiduo_admin/orders/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'SKU' object is not iterable
+ERROR 2020-05-26 04:38:47,737 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 500 22437
+INFO 2020-05-26 04:47:24,555 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/serializers/order.py changed, reloading.
+INFO 2020-05-26 04:47:28,277 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 04:47:39,506 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 04:47:56,565 basehttp 154 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+ERROR 2020-05-26 04:48:01,915 log 228 Internal Server Error: /meiduo_admin/orders/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 94, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'OrderGoods' object has no attribute 'total_amount'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 516, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 487, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `total_amount` on serializer `OrderGoodsSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `OrderGoods` instance.
+Original exception text was: 'OrderGoods' object has no attribute 'total_amount'.
+ERROR 2020-05-26 04:48:01,919 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 500 23427
+INFO 2020-05-26 04:48:19,587 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-05-26 04:50:13,446 log 228 Internal Server Error: /meiduo_admin/orders/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 94, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'OrderGoods' object has no attribute 'total_amount'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 529, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 516, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 487, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `total_amount` on serializer `OrderGoodsSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `OrderGoods` instance.
+Original exception text was: 'OrderGoods' object has no attribute 'total_amount'.
+ERROR 2020-05-26 04:50:13,453 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 500 23427
+INFO 2020-05-26 04:53:18,546 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 04:55:03,581 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 2579
+INFO 2020-05-26 04:55:07,485 basehttp 154 "OPTIONS /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 0
+INFO 2020-05-26 04:56:41,963 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 2525

@@ -5,19 +5,21 @@ from django.db import transaction
 
 class SKUSerializer(serializers.ModelSerializer):
     class Meta:
-        model = OrderInfo
+        model = SKU
         fields = '__all__'
 
 class OrderGoodsSerializer(serializers.ModelSerializer):
+    sku = SKUSerializer()
     class Meta:
-        model = OrderInfo
+        model = OrderGoods
         fields = '__all__'
 
 
 
 class OrderInfoSerializer(serializers.ModelSerializer):
+    skus = OrderGoodsSerializer(many=True)
     class Meta:
         model = OrderInfo
-        fields = ('order_id','create_time')
+        fields = '__all__'
 
 
