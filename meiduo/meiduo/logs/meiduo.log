@@ -4151,3 +4151,52 @@ INFO 2020-05-26 10:55:36,630 basehttp 154 "OPTIONS /meiduo_admin/goods/channel/c
 WARNING 2020-05-26 10:55:36,927 log 228 Not Found: /meiduo_admin/goods/channel/categories/
 WARNING 2020-05-26 10:55:36,929 basehttp 154 "GET /meiduo_admin/goods/channel/categories/ HTTP/1.1" 404 13832
 INFO 2020-05-26 10:55:51,433 basehttp 154 "GET /meiduo_admin/goods/brands/simple/ HTTP/1.1" 200 62
+INFO 2020-05-26 10:58:08,718 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/goods.py changed, reloading.
+INFO 2020-05-26 10:58:10,190 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 11:00:14,513 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 11:00:19,061 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 11027
+WARNING 2020-05-26 11:00:20,966 log 228 Not Found: /meiduo_admin/goods/channel/categories/
+WARNING 2020-05-26 11:00:20,975 basehttp 154 "GET /meiduo_admin/goods/channel/categories/ HTTP/1.1" 404 13832
+INFO 2020-05-26 11:00:25,055 basehttp 154 "GET /meiduo_admin/goods/brands/simple/ HTTP/1.1" 200 62
+INFO 2020-05-26 11:07:35,476 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/serializers/goods.py changed, reloading.
+INFO 2020-05-26 11:07:37,294 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 11:17:39,092 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 11:17:49,751 basehttp 154 "OPTIONS /meiduo_admin/goods/channel/categories/ HTTP/1.1" 200 0
+INFO 2020-05-26 11:17:49,771 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/simple/ HTTP/1.1" 200 0
+INFO 2020-05-26 11:17:50,247 basehttp 154 "GET /meiduo_admin/goods/brands/simple/ HTTP/1.1" 200 62
+INFO 2020-05-26 11:18:04,234 basehttp 154 "GET /meiduo_admin/goods/channel/categories/ HTTP/1.1" 200 975
+INFO 2020-05-26 11:18:15,122 basehttp 154 "OPTIONS /meiduo_admin/goods/channel/categories/1/ HTTP/1.1" 200 0
+ERROR 2020-05-26 11:18:28,859 log 228 Internal Server Error: /meiduo_admin/goods/channel/categories/1/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/goods.py", line 35, in get
+    category = GoodsCategory.objects.get(parent=pk)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/query.py", line 412, in get
+    (self.model._meta.object_name, num)
+goods.models.GoodsCategory.MultipleObjectsReturned: get() returned more than one GoodsCategory -- it returned 2!
+ERROR 2020-05-26 11:18:28,863 basehttp 154 "GET /meiduo_admin/goods/channel/categories/1/ HTTP/1.1" 500 21140
+INFO 2020-05-26 11:19:36,470 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 11:19:42,709 basehttp 154 "GET /meiduo_admin/goods/brands/simple/ HTTP/1.1" 200 62
+INFO 2020-05-26 11:19:47,580 basehttp 154 "GET /meiduo_admin/goods/channel/categories/ HTTP/1.1" 200 975
+INFO 2020-05-26 11:20:09,617 basehttp 154 "GET /meiduo_admin/goods/channel/categories/1/ HTTP/1.1" 200 65
+INFO 2020-05-26 11:20:17,932 basehttp 154 "OPTIONS /meiduo_admin/goods/channel/categories/39/ HTTP/1.1" 200 0
+INFO 2020-05-26 11:20:34,447 basehttp 154 "GET /meiduo_admin/goods/channel/categories/39/ HTTP/1.1" 200 289

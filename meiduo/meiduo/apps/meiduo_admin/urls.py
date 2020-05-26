@@ -32,6 +32,8 @@ urlpatterns = [
     re_path(r'^goods/simple/$', sku.GoodsSimpleView.as_view()),
     re_path(r'^goods/(?P<pk>\d+)/specs/$', sku.GoodsSpecView.as_view()),
     re_path(r'^goods/brands/simple/$', goods.BrandAPIView.as_view()),
+    re_path(r'^goods/channel/categories/$', goods.GoodsCategoryAPIView.as_view()),
+    re_path(r'^goods/channel/categories/(?P<pk>\d+)/$', goods.GoodsCategoryAPIView.as_view()),
 ]
 
 router = DefaultRouter()

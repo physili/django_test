@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from goods.models import Goods, Brand
+from goods.models import Goods, Brand, GoodsCategory
 
 class GoodsSerializer(serializers.ModelSerializer):
     brand = serializers.StringRelatedField()
@@ -14,5 +14,10 @@ class GoodsSerializer(serializers.ModelSerializer):
 
 class BrandSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Goods
+        model = Brand
+        fields = ('id','name')
+
+class GoodsCategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GoodsCategory
         fields = ('id','name')
