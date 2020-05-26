@@ -3340,3 +3340,214 @@ INFO 2020-05-25 13:08:48,894 basehttp 154 "OPTIONS /meiduo_admin/goods/1/specs/ 
 INFO 2020-05-25 13:13:12,197 autoreload 597 Watching for file changes with StatReloader
 INFO 2020-05-25 13:13:16,604 basehttp 154 "OPTIONS /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 0
 INFO 2020-05-25 13:17:37,357 basehttp 154 "GET /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 462
+INFO 2020-05-25 13:28:33,217 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/sku.py changed, reloading.
+INFO 2020-05-25 13:28:35,047 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 01:32:51,769 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 01:32:57,552 basehttp 154 "OPTIONS /meiduo_admin/skus/simple/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:32:57,561 basehttp 154 "OPTIONS /meiduo_admin/skus/simple/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:32:57,563 basehttp 154 "OPTIONS /meiduo_admin/skus/images/?page=1&pagesize=10 HTTP/1.1" 200 0
+WARNING 2020-05-26 01:32:57,659 log 228 Not Found: /meiduo_admin/skus/images/
+WARNING 2020-05-26 01:32:57,660 basehttp 154 "GET /meiduo_admin/skus/images/?page=1&pagesize=10 HTTP/1.1" 404 23
+INFO 2020-05-26 01:32:57,690 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1466
+INFO 2020-05-26 01:32:57,774 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1466
+INFO 2020-05-26 01:33:13,637 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:33:13,638 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:33:13,640 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:33:13,651 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:33:13,654 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:33:13,655 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:33:13,666 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:33:13,678 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:33:13,756 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-26 01:33:13,757 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-26 01:33:13,787 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-26 01:33:13,792 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2020-05-26 01:33:13,797 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-26 01:33:13,873 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-26 01:33:13,880 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-26 01:33:13,937 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+WARNING 2020-05-26 01:33:23,492 log 228 Not Found: /meiduo_admin/skus/images/
+WARNING 2020-05-26 01:33:23,504 basehttp 154 "GET /meiduo_admin/skus/images/?page=1&pagesize=10 HTTP/1.1" 404 23
+INFO 2020-05-26 01:33:23,521 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1466
+INFO 2020-05-26 01:33:23,524 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1466
+INFO 2020-05-26 01:38:25,342 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1466
+WARNING 2020-05-26 01:38:25,386 log 228 Not Found: /meiduo_admin/skus/images/
+WARNING 2020-05-26 01:38:25,386 basehttp 154 "GET /meiduo_admin/skus/images/?page=1&pagesize=10 HTTP/1.1" 404 23
+INFO 2020-05-26 01:38:25,409 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1466
+INFO 2020-05-26 01:39:02,515 autoreload 597 Watching for file changes with StatReloader
+WARNING 2020-05-26 01:39:09,039 log 228 Not Found: /meiduo_admin/skus/images/
+WARNING 2020-05-26 01:39:09,040 basehttp 154 "GET /meiduo_admin/skus/images/?page=1&pagesize=10 HTTP/1.1" 404 23
+INFO 2020-05-26 01:39:09,042 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1466
+INFO 2020-05-26 01:39:09,095 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1466
+INFO 2020-05-26 01:41:23,218 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 01:41:27,327 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1466
+INFO 2020-05-26 01:41:27,354 basehttp 154 "GET /meiduo_admin/skus/images/?page=1&pagesize=10 HTTP/1.1" 200 1118
+INFO 2020-05-26 01:41:27,373 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1466
+INFO 2020-05-26 01:42:17,284 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:42:17,287 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:42:17,288 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:42:17,289 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:42:17,295 basehttp 154 "OPTIONS /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-26 01:42:17,342 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 625
+INFO 2020-05-26 01:42:17,345 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 5305
+INFO 2020-05-26 01:42:17,420 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 625
+INFO 2020-05-26 01:42:17,441 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2020-05-26 01:42:17,522 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2020-05-26 01:42:26,665 basehttp 154 "OPTIONS /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 0
+WARNING 2020-05-26 01:42:26,693 log 228 Not Found: /meiduo_admin/goods/
+WARNING 2020-05-26 01:42:26,694 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 404 11432
+INFO 2020-05-26 01:42:28,525 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 5305
+INFO 2020-05-26 01:42:28,562 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2020-05-26 01:42:28,568 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 625
+INFO 2020-05-26 01:42:28,572 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 625
+INFO 2020-05-26 01:42:28,646 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2020-05-26 01:42:38,432 basehttp 154 "OPTIONS /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 0
+INFO 2020-05-26 01:42:38,530 basehttp 154 "GET /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 462
+INFO 2020-05-26 02:29:56,845 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 02:31:30,976 basehttp 154 "OPTIONS /meiduo_admin/skus/ HTTP/1.1" 200 0
+ERROR 2020-05-26 02:38:48,895 log 228 Internal Server Error: /meiduo_admin/skus/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 95, in perform_request
+    response = self.pool.urlopen(method, url, body, retries=False, headers=self.headers, **kw)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/urllib3/connectionpool.py", line 725, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/urllib3/util/retry.py", line 379, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/urllib3/packages/six.py", line 735, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/lib/python3.6/http/client.py", line 1264, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1310, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1259, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.6/http/client.py", line 1038, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.6/http/client.py", line 976, in send
+    self.connect()
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f65681d0588>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/serializers/sku.py", line 27, in create
+    sku = SKU.objects.create(**validated_data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/query.py", line 422, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/base.py", line 741, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/base.py", line 790, in save_base
+    update_fields=update_fields, raw=raw, using=using,
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 175, in send
+    for receiver in self._live_receivers(sender)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/dispatch/dispatcher.py", line 175, in <listcomp>
+    for receiver in self._live_receivers(sender)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/haystack/signals.py", line 52, in handle_save
+    index.update_object(instance, using=using)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/haystack/indexes.py", line 284, in update_object
+    backend.update(self, [instance])
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/haystack/backends/elasticsearch_backend.py", line 190, in update
+    bulk(self.conn, prepped_docs, index=self.index_name, doc_type='modelresult')
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 190, in bulk
+    for ok, item in streaming_bulk(client, actions, **kwargs):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 162, in streaming_bulk
+    for result in _process_bulk_chunk(client, bulk_actions, raise_on_exception, raise_on_error, **kwargs):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 91, in _process_bulk_chunk
+    raise e
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/elasticsearch/helpers/__init__.py", line 87, in _process_bulk_chunk
+    resp = client.bulk('\n'.join(bulk_actions) + '\n', **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/elasticsearch/client/utils.py", line 69, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/elasticsearch/client/__init__.py", line 785, in bulk
+    doc_type, '_bulk'), params=params, body=self._bulk_body(body))
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/elasticsearch/transport.py", line 327, in perform_request
+    status, headers, data = connection.perform_request(method, url, params, body, ignore=ignore, timeout=timeout)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/elasticsearch/connection/http_urllib3.py", line 106, in perform_request
+    raise ConnectionError('N/A', str(e), e)
+elasticsearch.exceptions.ConnectionError: ConnectionError(<urllib3.connection.HTTPConnection object at 0x7f65681d0588>: Failed to establish a new connection: [Errno 111] Connection refused) caused by: NewConnectionError(<urllib3.connection.HTTPConnection object at 0x7f65681d0588>: Failed to establish a new connection: [Errno 111] Connection refused)
+ERROR 2020-05-26 02:38:48,952 basehttp 154 "POST /meiduo_admin/skus/ HTTP/1.1" 500 27772
+INFO 2020-05-26 02:41:33,848 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-26 02:41:44,765 basehttp 154 "OPTIONS /meiduo_admin/skus/ HTTP/1.1" 200 0
+INFO 2020-05-26 02:42:37,241 basehttp 154 "POST /meiduo_admin/skus/ HTTP/1.1" 201 420
+INFO 2020-05-26 02:42:37,451 basehttp 154 "OPTIONS /meiduo_admin/goods//specs/ HTTP/1.1" 200 0
+WARNING 2020-05-26 02:42:37,627 log 228 Not Found: /meiduo_admin/goods//specs/
+WARNING 2020-05-26 02:42:37,632 basehttp 154 "GET /meiduo_admin/goods//specs/ HTTP/1.1" 404 11430
+INFO 2020-05-26 02:43:22,217 basehttp 154 "OPTIONS /meiduo_admin/skus/?page=2&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-26 02:43:22,365 basehttp 154 "GET /meiduo_admin/skus/?page=2&pagesize=10&keyword= HTTP/1.1" 200 4780
+INFO 2020-05-26 02:45:53,724 basehttp 154 "OPTIONS /meiduo_admin/skus/simple/ HTTP/1.1" 200 0
+INFO 2020-05-26 02:45:53,731 basehttp 154 "OPTIONS /meiduo_admin/skus/simple/ HTTP/1.1" 200 0
+INFO 2020-05-26 02:45:53,736 basehttp 154 "OPTIONS /meiduo_admin/skus/images/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-26 02:45:53,857 basehttp 154 "GET /meiduo_admin/skus/images/?page=1&pagesize=10 HTTP/1.1" 200 1118
+INFO 2020-05-26 02:45:53,863 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1524
+INFO 2020-05-26 02:45:53,984 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1524
+INFO 2020-05-26 02:46:02,584 basehttp 154 "OPTIONS /meiduo_admin/skus/images/?page=5&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-26 02:46:02,622 basehttp 154 "GET /meiduo_admin/skus/images/?page=5&pagesize=10 HTTP/1.1" 200 161
+INFO 2020-05-26 02:46:08,692 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2020-05-26 02:46:08,697 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2020-05-26 02:46:08,699 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-26 02:46:08,711 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-26 02:46:08,757 basehttp 154 "OPTIONS /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-26 02:46:08,820 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 625
+INFO 2020-05-26 02:46:09,070 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 625
+INFO 2020-05-26 02:46:09,438 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 6601
+INFO 2020-05-26 02:46:09,445 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2020-05-26 02:46:09,842 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2020-05-26 02:46:24,137 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1524
+INFO 2020-05-26 02:46:24,141 basehttp 154 "GET /meiduo_admin/skus/images/?page=1&pagesize=10 HTTP/1.1" 200 1118
+INFO 2020-05-26 02:46:24,158 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1524
+INFO 2020-05-26 02:46:32,127 basehttp 154 "GET /meiduo_admin/skus/images/?page=5&pagesize=10 HTTP/1.1" 200 161
+INFO 2020-05-26 02:46:54,527 basehttp 154 "OPTIONS /meiduo_admin/skus/images/ HTTP/1.1" 200 0
+INFO 2020-05-26 02:46:54,702 basehttp 154 "POST /meiduo_admin/skus/images/ HTTP/1.1" 201 109
+INFO 2020-05-26 02:46:54,769 basehttp 154 "OPTIONS /meiduo_admin/skus/images/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-26 02:46:54,879 basehttp 154 "GET /meiduo_admin/skus/images/?pagesize=10 HTTP/1.1" 200 1118
+INFO 2020-05-26 02:47:01,073 basehttp 154 "GET /meiduo_admin/skus/images/?page=5&pagesize=10 HTTP/1.1" 200 269
+INFO 2020-05-26 02:47:15,310 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 625
+INFO 2020-05-26 02:47:15,435 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 625
+INFO 2020-05-26 02:47:15,567 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2020-05-26 02:47:15,720 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 6601
+INFO 2020-05-26 02:47:16,208 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271

@@ -34,6 +34,7 @@ urlpatterns = [
 ]
 
 router = DefaultRouter()
-router.register(r'skus', sku.SKUModelViewSet, basename='skus')
 router.register(r'skus/images', image.ImageView, basename='image')
+router.register(r'skus', sku.SKUModelViewSet, basename='skus')
+
 urlpatterns += router.urls

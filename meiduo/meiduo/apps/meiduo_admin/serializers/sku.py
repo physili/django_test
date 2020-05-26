@@ -1,11 +1,36 @@
 from rest_framework import serializers
-from goods.models import SKU, GoodsCategory, Goods, SpecificationOption, GoodsSpecification
+from goods.models import SKU, GoodsCategory, Goods, SpecificationOption, GoodsSpecification, SKUSpecification
 
+
+class SKUSpecificationSerializer(serializers.ModelSerializer):
+    spec_id = serializers.IntegerField()
+    option_id = serializers.IntegerField()
+    class Meta:
+        model = SKUSpecification
+        fields = ('spec_id','option_id')
 
 class SKUSerializer(serializers.ModelSerializer):
+    spu_id = serializers.IntegerField()
+    category_id = serializers.IntegerField()
+    spu = serializers.StringRelatedField(required=False)
+    category = serializers.StringRelatedField(required=False)
+    #获取SKUSpecification的两个字段
+    specs = SKUSpecificationSerializer(many=True)
     class Meta:
         model = SKU
         fields = '__all__'
+
+    def create(self, validated_data):
+        #获取规格信息,并从validated_data数据中, 删除规格信息数据
+        specs_data = validated_data.pop('specs')
+        #保存sku数据库信息
+        sku = SKU.objects.create(**validated_data)
+        #保存skuspecification的数据库信息
+        for spec_data in specs_data:
+            SKUSpecification.objects.create(sku=sku,**spec_data)
+        return sku
+
+
 
 class SKUCategoriesSerializer(serializers.ModelSerializer):
     class Meta:

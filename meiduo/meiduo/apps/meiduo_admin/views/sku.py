@@ -6,7 +6,7 @@ from goods.models import SKU, GoodsCategory, Goods, GoodsSpecification
 from meiduo_admin.utils import PageNum
 from meiduo_admin.serializers.sku import SKUSerializer, SKUCategoriesSerializer, GoodsSimpleSerializer, GoodsSpecSerializer
 
-#1.获取sku数据
+#1.获取sku数据, 保存sku数据
 class SKUModelViewSet(ModelViewSet):
     serializer_class = SKUSerializer
     pagination_class = PageNum
