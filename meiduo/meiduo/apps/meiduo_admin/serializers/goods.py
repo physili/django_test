@@ -12,6 +12,7 @@ class GoodsSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
+
 class BrandSerializer(serializers.ModelSerializer):
     class Meta:
         model = Brand
