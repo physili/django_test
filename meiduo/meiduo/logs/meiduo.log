@@ -4798,3 +4798,51 @@ INFO 2020-05-28 15:32:24,238 basehttp 154 "DELETE /meiduo_admin/goods/specs/9/ H
 INFO 2020-05-28 15:32:24,469 basehttp 154 "GET /meiduo_admin/goods/specs/?page=1&pagesize=10 HTTP/1.1" 200 1314
 INFO 2020-05-28 15:34:50,754 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/spec.py changed, reloading.
 INFO 2020-05-28 15:34:52,571 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 15:38:20,753 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2020-05-28 15:38:21,714 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 16:30:38,267 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2020-05-28 16:30:40,055 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 16:34:35,379 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 16:34:40,407 basehttp 154 "OPTIONS /meiduo_admin/specs/options/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 16:34:40,408 basehttp 154 "OPTIONS /meiduo_admin/goods/specs/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 16:34:40,409 basehttp 154 "OPTIONS /meiduo_admin/goods/specs/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 16:34:40,567 basehttp 154 "GET /meiduo_admin/goods/specs/simple/ HTTP/1.1" 200 213
+INFO 2020-05-28 16:34:40,656 basehttp 154 "GET /meiduo_admin/goods/specs/simple/ HTTP/1.1" 200 213
+INFO 2020-05-28 16:34:40,712 basehttp 154 "GET /meiduo_admin/specs/options/?page=1&pagesize=10 HTTP/1.1" 200 1830
+INFO 2020-05-28 16:36:01,811 basehttp 154 "OPTIONS /meiduo_admin/specs/options/ HTTP/1.1" 200 0
+INFO 2020-05-28 16:36:01,900 basehttp 154 "POST /meiduo_admin/specs/options/ HTTP/1.1" 201 172
+INFO 2020-05-28 16:36:02,031 basehttp 154 "OPTIONS /meiduo_admin/specs/options/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 16:36:02,270 basehttp 154 "GET /meiduo_admin/specs/options/?pagesize=10 HTTP/1.1" 200 1830
+INFO 2020-05-28 16:36:07,833 basehttp 154 "OPTIONS /meiduo_admin/specs/options/?page=2&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 16:36:07,917 basehttp 154 "GET /meiduo_admin/specs/options/?page=2&pagesize=10 HTTP/1.1" 200 1563
+INFO 2020-05-28 16:36:20,392 basehttp 154 "OPTIONS /meiduo_admin/specs/options/22/ HTTP/1.1" 200 0
+INFO 2020-05-28 16:36:20,481 basehttp 154 "GET /meiduo_admin/specs/options/22/ HTTP/1.1" 200 172
+INFO 2020-05-28 16:36:51,265 basehttp 154 "PUT /meiduo_admin/specs/options/22/ HTTP/1.1" 200 172
+INFO 2020-05-28 16:36:51,382 basehttp 154 "GET /meiduo_admin/specs/options/?pagesize=10 HTTP/1.1" 200 1830
+INFO 2020-05-28 16:36:55,967 basehttp 154 "GET /meiduo_admin/specs/options/?page=2&pagesize=10 HTTP/1.1" 200 1563
+INFO 2020-05-28 16:38:47,677 basehttp 154 "POST /meiduo_admin/specs/options/ HTTP/1.1" 201 172
+INFO 2020-05-28 16:38:47,941 basehttp 154 "GET /meiduo_admin/specs/options/?pagesize=10 HTTP/1.1" 200 1830
+INFO 2020-05-28 16:38:54,776 basehttp 154 "GET /meiduo_admin/specs/options/?page=2&pagesize=10 HTTP/1.1" 200 1736
+INFO 2020-05-28 16:39:23,649 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 16:39:23,656 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 16:39:23,659 basehttp 154 "OPTIONS /meiduo_admin/goods/specs/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 16:39:23,737 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 10743
+INFO 2020-05-28 16:39:23,764 basehttp 154 "GET /meiduo_admin/goods/specs/?page=1&pagesize=10 HTTP/1.1" 200 1314
+INFO 2020-05-28 16:39:23,805 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 10743
+INFO 2020-05-28 16:39:41,935 basehttp 154 "OPTIONS /meiduo_admin/goods/specs/ HTTP/1.1" 200 0
+INFO 2020-05-28 16:39:42,038 basehttp 154 "POST /meiduo_admin/goods/specs/ HTTP/1.1" 201 158
+INFO 2020-05-28 16:39:42,206 basehttp 154 "GET /meiduo_admin/goods/specs/?page=1&pagesize=10 HTTP/1.1" 200 1473
+INFO 2020-05-28 16:39:48,094 basehttp 154 "GET /meiduo_admin/goods/specs/simple/ HTTP/1.1" 200 245
+INFO 2020-05-28 16:39:48,177 basehttp 154 "GET /meiduo_admin/goods/specs/simple/ HTTP/1.1" 200 245
+INFO 2020-05-28 16:39:48,206 basehttp 154 "GET /meiduo_admin/specs/options/?page=1&pagesize=10 HTTP/1.1" 200 1830
+INFO 2020-05-28 16:39:53,165 basehttp 154 "GET /meiduo_admin/specs/options/?page=2&pagesize=10 HTTP/1.1" 200 1736
+INFO 2020-05-28 16:39:55,002 basehttp 154 "OPTIONS /meiduo_admin/specs/options/23/ HTTP/1.1" 200 0
+INFO 2020-05-28 16:39:55,097 basehttp 154 "GET /meiduo_admin/specs/options/23/ HTTP/1.1" 200 172
+INFO 2020-05-28 16:40:35,675 basehttp 154 "PUT /meiduo_admin/specs/options/23/ HTTP/1.1" 200 170
+INFO 2020-05-28 16:40:35,861 basehttp 154 "GET /meiduo_admin/specs/options/?pagesize=10 HTTP/1.1" 200 1830
+INFO 2020-05-28 16:40:38,349 basehttp 154 "GET /meiduo_admin/specs/options/?page=2&pagesize=10 HTTP/1.1" 200 1734
+INFO 2020-05-28 16:40:48,624 basehttp 154 "DELETE /meiduo_admin/specs/options/23/ HTTP/1.1" 204 0
+INFO 2020-05-28 16:40:48,782 basehttp 154 "GET /meiduo_admin/specs/options/?pagesize=10 HTTP/1.1" 200 1830
+INFO 2020-05-28 16:40:54,405 basehttp 154 "GET /meiduo_admin/specs/options/?page=2&pagesize=10 HTTP/1.1" 200 1563
+INFO 2020-05-28 16:41:31,580 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/option.py changed, reloading.
+INFO 2020-05-28 16:41:33,389 autoreload 597 Watching for file changes with StatReloader
