@@ -4231,3 +4231,243 @@ WARNING 2020-05-27 15:12:50,528 basehttp 154 "GET /meiduo_admin/permission/conte
 WARNING 2020-05-27 15:12:50,601 log 228 Not Found: /meiduo_admin/permission/content_types/
 WARNING 2020-05-27 15:12:50,605 basehttp 154 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 404 15122
 INFO 2020-05-27 15:12:50,611 basehttp 154 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 871
+INFO 2020-05-28 09:12:12,032 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 09:12:20,028 basehttp 154 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:12:20,193 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 238
+INFO 2020-05-28 09:12:20,379 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:12:20,383 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:12:20,399 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:12:20,401 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:12:20,516 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:12:20,544 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:12:20,621 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:12:20,634 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-28 09:12:20,670 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:12:20,694 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-28 09:12:20,732 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-28 09:12:20,767 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2020-05-28 09:12:20,803 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-28 09:12:20,826 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-28 09:12:20,903 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-28 09:12:20,973 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-28 09:12:39,447 basehttp 154 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:12:39,450 basehttp 154 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:12:39,452 basehttp 154 "OPTIONS /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 09:12:39,573 basehttp 154 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 871
+ERROR 2020-05-28 09:12:39,596 log 228 Internal Server Error: /meiduo_admin/permission/content_types/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 94, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'ContentType' object has no attribute 'codename'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/permission.py", line 18, in get
+    return Response(serializer.data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 516, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 487, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `codename` on serializer `PermissionSerialzier`.
+The serializer field might be named incorrectly and not match any attribute or key on the `ContentType` instance.
+Original exception text was: 'ContentType' object has no attribute 'codename'.
+ERROR 2020-05-28 09:12:39,599 basehttp 154 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 500 21588
+ERROR 2020-05-28 09:12:39,700 log 228 Internal Server Error: /meiduo_admin/permission/content_types/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 94, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'ContentType' object has no attribute 'codename'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/permission.py", line 18, in get
+    return Response(serializer.data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 516, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 487, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `codename` on serializer `PermissionSerialzier`.
+The serializer field might be named incorrectly and not match any attribute or key on the `ContentType` instance.
+Original exception text was: 'ContentType' object has no attribute 'codename'.
+ERROR 2020-05-28 09:12:39,701 basehttp 154 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 500 21588
+INFO 2020-05-28 09:13:28,913 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 238
+INFO 2020-05-28 09:13:28,980 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-28 09:13:29,030 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-28 09:13:29,034 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2020-05-28 09:13:29,075 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-28 09:13:29,092 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-28 09:13:29,099 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-28 09:13:29,109 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-28 09:13:29,420 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-28 09:13:31,740 basehttp 154 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 871
+ERROR 2020-05-28 09:13:31,755 log 228 Internal Server Error: /meiduo_admin/permission/content_types/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 94, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'ContentType' object has no attribute 'codename'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/permission.py", line 18, in get
+    return Response(serializer.data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 516, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 487, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `codename` on serializer `PermissionSerialzier`.
+The serializer field might be named incorrectly and not match any attribute or key on the `ContentType` instance.
+Original exception text was: 'ContentType' object has no attribute 'codename'.
+ERROR 2020-05-28 09:13:31,768 basehttp 154 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 500 21588
+ERROR 2020-05-28 09:13:31,861 log 228 Internal Server Error: /meiduo_admin/permission/content_types/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 454, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 94, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'ContentType' object has no attribute 'codename'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/permission.py", line 18, in get
+    return Response(serializer.data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 760, in data
+    ret = super().data
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 678, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 516, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/fields.py", line 487, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `codename` on serializer `PermissionSerialzier`.
+The serializer field might be named incorrectly and not match any attribute or key on the `ContentType` instance.
+Original exception text was: 'ContentType' object has no attribute 'codename'.
+ERROR 2020-05-28 09:13:31,864 basehttp 154 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 500 21588
+INFO 2020-05-28 09:17:54,081 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 09:18:16,857 basehttp 154 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 871
+INFO 2020-05-28 09:18:16,882 basehttp 154 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 200 804
+INFO 2020-05-28 09:18:16,905 basehttp 154 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 200 804
+INFO 2020-05-28 09:19:32,402 basehttp 154 "OPTIONS /meiduo_admin/permission/perms/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:19:32,529 basehttp 154 "POST /meiduo_admin/permission/perms/ HTTP/1.1" 201 61
+INFO 2020-05-28 09:19:32,728 basehttp 154 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 854
+INFO 2020-05-28 09:19:41,958 basehttp 154 "OPTIONS /meiduo_admin/permission/perms/?page=11&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 09:19:41,982 basehttp 154 "GET /meiduo_admin/permission/perms/?page=11&pagesize=10 HTTP/1.1" 200 446
+INFO 2020-05-28 09:20:01,444 basehttp 154 "OPTIONS /meiduo_admin/permission/perms/?page=10&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 09:20:01,474 basehttp 154 "GET /meiduo_admin/permission/perms/?page=10&pagesize=10 HTTP/1.1" 200 897
+INFO 2020-05-28 09:20:06,000 basehttp 154 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 200 804
+INFO 2020-05-28 09:20:06,049 basehttp 154 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 854
+INFO 2020-05-28 09:20:06,123 basehttp 154 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 200 804
+INFO 2020-05-28 09:20:10,813 basehttp 154 "GET /meiduo_admin/permission/perms/?page=11&pagesize=10 HTTP/1.1" 200 446
+INFO 2020-05-28 09:20:20,612 basehttp 154 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 854
+INFO 2020-05-28 09:20:41,010 basehttp 154 "OPTIONS /meiduo_admin/permission/perms/105/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:20:41,094 basehttp 154 "DELETE /meiduo_admin/permission/perms/105/ HTTP/1.1" 204 0
+INFO 2020-05-28 09:20:41,211 basehttp 154 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 871
