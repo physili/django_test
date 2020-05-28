@@ -4846,3 +4846,29 @@ INFO 2020-05-28 16:40:48,782 basehttp 154 "GET /meiduo_admin/specs/options/?page
 INFO 2020-05-28 16:40:54,405 basehttp 154 "GET /meiduo_admin/specs/options/?page=2&pagesize=10 HTTP/1.1" 200 1563
 INFO 2020-05-28 16:41:31,580 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/option.py changed, reloading.
 INFO 2020-05-28 16:41:33,389 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 16:43:20,094 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/urls.py changed, reloading.
+INFO 2020-05-28 16:43:20,853 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 16:49:01,205 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 16:49:07,975 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 16:49:07,976 basehttp 154 "OPTIONS /meiduo_admin/goods/channel_types/ HTTP/1.1" 200 0
+INFO 2020-05-28 16:49:07,978 basehttp 154 "OPTIONS /meiduo_admin/goods/categories/ HTTP/1.1" 200 0
+WARNING 2020-05-28 16:49:08,143 log 228 Not Found: /meiduo_admin/goods/channel_types/
+WARNING 2020-05-28 16:49:08,144 log 228 Not Found: /meiduo_admin/goods/categories/
+WARNING 2020-05-28 16:49:08,145 basehttp 154 "GET /meiduo_admin/goods/categories/ HTTP/1.1" 404 23
+WARNING 2020-05-28 16:49:08,147 basehttp 154 "GET /meiduo_admin/goods/channel_types/ HTTP/1.1" 404 23
+INFO 2020-05-28 16:49:08,165 basehttp 154 "GET /meiduo_admin/goods/brands/?page=1&pagesize=10 HTTP/1.1" 200 506
+INFO 2020-05-28 16:49:43,179 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/ HTTP/1.1" 200 0
+INFO 2020-05-28 16:49:43,474 basehttp 154 "POST /meiduo_admin/goods/brands/ HTTP/1.1" 201 220
+INFO 2020-05-28 16:49:43,577 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 16:49:43,620 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 727
+INFO 2020-05-28 16:49:50,592 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/3/ HTTP/1.1" 200 0
+INFO 2020-05-28 16:49:50,682 basehttp 154 "GET /meiduo_admin/goods/brands/3/ HTTP/1.1" 200 220
+INFO 2020-05-28 16:50:09,537 basehttp 154 "PUT /meiduo_admin/goods/brands/3/ HTTP/1.1" 200 220
+INFO 2020-05-28 16:50:09,601 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 727
+INFO 2020-05-28 16:50:15,823 basehttp 154 "GET /meiduo_admin/goods/brands/3/ HTTP/1.1" 200 220
+INFO 2020-05-28 16:50:40,818 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/2/ HTTP/1.1" 200 0
+INFO 2020-05-28 16:50:40,913 basehttp 154 "GET /meiduo_admin/goods/brands/2/ HTTP/1.1" 200 232
+INFO 2020-05-28 16:51:30,650 basehttp 154 "DELETE /meiduo_admin/goods/brands/3/ HTTP/1.1" 204 0
+INFO 2020-05-28 16:51:30,722 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 506
+INFO 2020-05-28 16:52:06,582 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/brand.py changed, reloading.
+INFO 2020-05-28 16:52:08,304 autoreload 597 Watching for file changes with StatReloader
