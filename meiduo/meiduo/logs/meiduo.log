@@ -4471,3 +4471,36 @@ INFO 2020-05-28 09:20:20,612 basehttp 154 "GET /meiduo_admin/permission/perms/?p
 INFO 2020-05-28 09:20:41,010 basehttp 154 "OPTIONS /meiduo_admin/permission/perms/105/ HTTP/1.1" 200 0
 INFO 2020-05-28 09:20:41,094 basehttp 154 "DELETE /meiduo_admin/permission/perms/105/ HTTP/1.1" 204 0
 INFO 2020-05-28 09:20:41,211 basehttp 154 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 871
+INFO 2020-05-28 09:43:43,888 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 09:43:47,115 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:43:47,125 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:43:47,137 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/?page=1&pagesize=10 HTTP/1.1" 200 0
+WARNING 2020-05-28 09:43:47,317 log 228 Not Found: /meiduo_admin/permission/simple/
+WARNING 2020-05-28 09:43:47,338 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 404 16194
+INFO 2020-05-28 09:43:47,419 basehttp 154 "GET /meiduo_admin/permission/groups/?page=1&pagesize=10 HTTP/1.1" 200 54
+WARNING 2020-05-28 09:43:47,427 log 228 Not Found: /meiduo_admin/permission/simple/
+WARNING 2020-05-28 09:43:47,438 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 404 16194
+INFO 2020-05-28 09:50:08,679 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 09:50:15,856 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 09:50:15,857 basehttp 154 "GET /meiduo_admin/permission/groups/?page=1&pagesize=10 HTTP/1.1" 200 54
+INFO 2020-05-28 09:50:15,955 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 09:52:28,429 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:52:28,549 basehttp 154 "POST /meiduo_admin/permission/groups/ HTTP/1.1" 201 57
+INFO 2020-05-28 09:52:28,669 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 09:52:28,713 basehttp 154 "GET /meiduo_admin/permission/groups/?pagesize=10 HTTP/1.1" 200 111
+INFO 2020-05-28 09:54:53,243 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/1/ HTTP/1.1" 200 0
+INFO 2020-05-28 09:54:53,616 basehttp 154 "GET /meiduo_admin/permission/groups/1/ HTTP/1.1" 200 57
+INFO 2020-05-28 09:56:55,490 basehttp 154 "GET /meiduo_admin/permission/groups/1/ HTTP/1.1" 200 57
+INFO 2020-05-28 10:00:28,297 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 10:01:14,125 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 10:03:19,441 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 10:03:36,128 basehttp 154 "GET /meiduo_admin/permission/groups/1/ HTTP/1.1" 200 57
+INFO 2020-05-28 10:04:46,184 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 10:05:21,241 basehttp 154 "GET /meiduo_admin/permission/groups/1/ HTTP/1.1" 200 57
+INFO 2020-05-28 10:16:40,543 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/1/ HTTP/1.1" 200 0
+INFO 2020-05-28 10:16:40,860 basehttp 154 "DELETE /meiduo_admin/permission/groups/1/ HTTP/1.1" 204 0
+INFO 2020-05-28 10:16:40,917 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 10:16:41,117 basehttp 154 "GET /meiduo_admin/permission/groups/?pagesize=10 HTTP/1.1" 200 54
+INFO 2020-05-28 10:17:37,176 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/ HTTP/1.1" 200 0
+INFO 2020-05-28 10:18:37,959 basehttp 154 "POST /meiduo_admin/permission/groups/ HTTP/1.1" 201 46
+INFO 2020-05-28 10:19:54,207 basehttp 154 "GET /meiduo_admin/permission/groups/?pagesize=10 HTTP/1.1" 200 100
