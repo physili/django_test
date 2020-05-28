@@ -4504,3 +4504,277 @@ INFO 2020-05-28 10:16:41,117 basehttp 154 "GET /meiduo_admin/permission/groups/?
 INFO 2020-05-28 10:17:37,176 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/ HTTP/1.1" 200 0
 INFO 2020-05-28 10:18:37,959 basehttp 154 "POST /meiduo_admin/permission/groups/ HTTP/1.1" 201 46
 INFO 2020-05-28 10:19:54,207 basehttp 154 "GET /meiduo_admin/permission/groups/?pagesize=10 HTTP/1.1" 200 100
+INFO 2020-05-28 11:57:37,280 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 11:57:51,331 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 11:57:51,342 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 11:57:51,345 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 11:57:51,348 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 11:57:51,375 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 11:57:51,515 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 11:57:51,573 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 11:57:51,616 basehttp 154 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 2539
+INFO 2020-05-28 11:57:51,669 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 11:57:51,704 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 11:59:58,129 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 12:00:07,137 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 12:00:07,161 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 12:00:07,223 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 12:00:07,350 basehttp 154 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 2591
+INFO 2020-05-28 12:00:07,373 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 12:00:24,010 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 12:00:24,065 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 12:00:24,077 basehttp 154 "GET /meiduo_admin/permission/groups/?page=1&pagesize=10 HTTP/1.1" 200 100
+INFO 2020-05-28 12:00:24,094 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 12:00:26,453 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 12:00:26,477 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 12:00:26,491 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 12:00:26,529 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 12:00:26,546 basehttp 154 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 2591
+INFO 2020-05-28 12:03:50,253 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/ HTTP/1.1" 200 0
+INFO 2020-05-28 12:03:50,433 basehttp 154 "POST /meiduo_admin/permission/admins/ HTTP/1.1" 201 333
+INFO 2020-05-28 12:03:50,602 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 12:03:50,788 basehttp 154 "GET /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 2925
+INFO 2020-05-28 12:04:00,812 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/11/ HTTP/1.1" 200 0
+INFO 2020-05-28 12:04:01,174 basehttp 154 "GET /meiduo_admin/permission/admins/11/ HTTP/1.1" 200 333
+WARNING 2020-05-28 12:06:57,980 log 228 Bad Request: /meiduo_admin/permission/admins/
+WARNING 2020-05-28 12:06:57,996 basehttp 154 "POST /meiduo_admin/permission/admins/ HTTP/1.1" 400 131
+INFO 2020-05-28 12:15:36,782 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 12:16:04,272 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 12:16:04,286 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 12:16:04,286 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 12:16:04,287 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 12:16:04,289 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 12:16:05,141 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 12:16:05,155 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 12:16:05,289 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 12:16:05,539 basehttp 154 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 2925
+INFO 2020-05-28 12:16:05,637 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 12:48:01,379 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 12:48:24,038 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 12:48:24,041 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 12:48:24,065 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 12:48:24,074 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 12:48:24,116 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 12:48:24,413 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 12:48:24,414 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 12:48:24,561 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 12:48:24,590 basehttp 154 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 2925
+INFO 2020-05-28 12:48:24,591 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 12:49:56,294 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/ HTTP/1.1" 200 0
+INFO 2020-05-28 12:49:56,447 basehttp 154 "POST /meiduo_admin/permission/admins/ HTTP/1.1" 201 332
+INFO 2020-05-28 12:49:56,749 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 12:49:56,987 basehttp 154 "GET /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 3258
+INFO 2020-05-28 12:51:52,240 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/12/ HTTP/1.1" 200 0
+INFO 2020-05-28 12:51:52,545 basehttp 154 "GET /meiduo_admin/permission/admins/12/ HTTP/1.1" 200 332
+INFO 2020-05-28 12:52:28,098 basehttp 154 "PUT /meiduo_admin/permission/admins/12/ HTTP/1.1" 200 333
+INFO 2020-05-28 12:52:28,173 basehttp 154 "GET /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 3259
+INFO 2020-05-28 12:57:05,272 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/serializers/admin.py changed, reloading.
+INFO 2020-05-28 12:57:06,474 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 12:57:11,820 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/11/ HTTP/1.1" 200 0
+INFO 2020-05-28 12:57:12,219 basehttp 154 "DELETE /meiduo_admin/permission/admins/11/ HTTP/1.1" 204 0
+INFO 2020-05-28 12:57:12,462 basehttp 154 "GET /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 2925
+INFO 2020-05-28 13:03:11,302 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/serializers/admin.py changed, reloading.
+INFO 2020-05-28 13:03:13,088 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 13:03:16,867 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/12/ HTTP/1.1" 200 0
+INFO 2020-05-28 13:03:16,999 basehttp 154 "GET /meiduo_admin/permission/admins/12/ HTTP/1.1" 200 79
+INFO 2020-05-28 13:07:42,808 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 13:07:57,517 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 13:07:57,535 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 13:07:57,542 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 13:07:57,545 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 13:07:57,547 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 13:07:57,865 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 13:07:57,875 basehttp 154 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 672
+INFO 2020-05-28 13:07:57,876 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 13:07:57,957 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 13:07:57,960 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 13:08:30,502 basehttp 154 "GET /meiduo_admin/permission/admins/12/ HTTP/1.1" 200 79
+INFO 2020-05-28 13:09:08,867 basehttp 154 "PUT /meiduo_admin/permission/admins/12/ HTTP/1.1" 200 79
+INFO 2020-05-28 13:09:08,920 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 13:09:08,976 basehttp 154 "GET /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 672
+INFO 2020-05-28 13:12:59,392 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 13:13:06,309 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 13:13:06,323 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 13:13:06,471 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 13:13:06,484 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 13:13:06,507 basehttp 154 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 915
+INFO 2020-05-28 13:13:17,796 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/12/ HTTP/1.1" 200 0
+INFO 2020-05-28 13:13:18,218 basehttp 154 "GET /meiduo_admin/permission/admins/12/ HTTP/1.1" 200 118
+INFO 2020-05-28 13:14:17,274 basehttp 154 "PUT /meiduo_admin/permission/admins/12/ HTTP/1.1" 200 118
+INFO 2020-05-28 13:14:17,446 basehttp 154 "GET /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 915
+INFO 2020-05-28 14:35:22,031 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 14:36:23,536 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/ HTTP/1.1" 200 0
+ERROR 2020-05-28 14:36:23,696 log 228 Internal Server Error: /meiduo_admin/permission/admins/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/serializers/admin.py", line 20, in create
+    user = User.objects.create_user(**validated_data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/contrib/auth/models.py", line 151, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/contrib/auth/models.py", line 143, in _create_user
+    user = self.model(username=username, email=email, **extra_fields)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/base.py", line 496, in __init__
+    _setattr(self, prop, kwargs[prop])
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 538, in __set__
+    % self._get_set_deprecation_msg_params(),
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use groups.set() instead.
+ERROR 2020-05-28 14:36:23,699 basehttp 154 "POST /meiduo_admin/permission/admins/ HTTP/1.1" 500 20899
+ERROR 2020-05-28 14:37:41,238 log 228 Internal Server Error: /meiduo_admin/permission/admins/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/serializers/admin.py", line 20, in create
+    user = User.objects.create_user(**validated_data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/contrib/auth/models.py", line 151, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/contrib/auth/models.py", line 143, in _create_user
+    user = self.model(username=username, email=email, **extra_fields)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/base.py", line 496, in __init__
+    _setattr(self, prop, kwargs[prop])
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 538, in __set__
+    % self._get_set_deprecation_msg_params(),
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use groups.set() instead.
+ERROR 2020-05-28 14:37:41,239 basehttp 154 "POST /meiduo_admin/permission/admins/ HTTP/1.1" 500 20899
+INFO 2020-05-28 14:38:42,810 autoreload 597 Watching for file changes with StatReloader
+ERROR 2020-05-28 14:38:47,091 log 228 Internal Server Error: /meiduo_admin/permission/admins/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/serializers/admin.py", line 20, in create
+    user = User.objects.create_user(**validated_data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/contrib/auth/models.py", line 151, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/contrib/auth/models.py", line 143, in _create_user
+    user = self.model(username=username, email=email, **extra_fields)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/base.py", line 496, in __init__
+    _setattr(self, prop, kwargs[prop])
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 538, in __set__
+    % self._get_set_deprecation_msg_params(),
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use groups.set() instead.
+ERROR 2020-05-28 14:38:47,097 basehttp 154 "POST /meiduo_admin/permission/admins/ HTTP/1.1" 500 20899
+INFO 2020-05-28 14:40:26,762 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 14:40:36,661 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 14:40:36,662 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 14:40:36,664 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 14:40:36,665 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-28 14:40:36,665 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 14:40:36,967 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-28 14:40:36,975 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 14:40:37,091 basehttp 154 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 915
+INFO 2020-05-28 14:40:37,095 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-28 14:40:37,126 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+ERROR 2020-05-28 14:41:24,824 log 228 Internal Server Error: /meiduo_admin/permission/admins/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/serializers/admin.py", line 20, in create
+    user = User.objects.create_user(**validated_data)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/contrib/auth/models.py", line 151, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/contrib/auth/models.py", line 143, in _create_user
+    user = self.model(username=username, email=email, **extra_fields)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/base.py", line 496, in __init__
+    _setattr(self, prop, kwargs[prop])
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py", line 538, in __set__
+    % self._get_set_deprecation_msg_params(),
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use groups.set() instead.
+ERROR 2020-05-28 14:41:24,826 basehttp 154 "POST /meiduo_admin/permission/admins/ HTTP/1.1" 500 20899
+INFO 2020-05-28 14:49:04,059 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-28 14:49:07,900 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/ HTTP/1.1" 200 0
+INFO 2020-05-28 14:49:08,239 basehttp 154 "POST /meiduo_admin/permission/admins/ HTTP/1.1" 201 121
+INFO 2020-05-28 14:49:08,482 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-28 14:49:08,852 basehttp 154 "GET /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 1037
+INFO 2020-05-28 14:49:32,453 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/13/ HTTP/1.1" 200 0
+INFO 2020-05-28 14:49:32,764 basehttp 154 "GET /meiduo_admin/permission/admins/13/ HTTP/1.1" 200 121
+INFO 2020-05-28 14:54:04,806 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/10/ HTTP/1.1" 200 0
+INFO 2020-05-28 14:54:04,923 basehttp 154 "GET /meiduo_admin/permission/admins/10/ HTTP/1.1" 200 123
+INFO 2020-05-28 14:54:09,759 basehttp 154 "GET /meiduo_admin/permission/admins/13/ HTTP/1.1" 200 121
