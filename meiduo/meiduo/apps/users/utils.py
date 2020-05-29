@@ -18,7 +18,7 @@ class UsernameMobileAuthBackend(ModelBackend):
         #判断是后台还是前台传入的登录验证
         if request is None: # 后台用户走 后台验证逻辑
             admin_user = User.objects.get(username=username)
-            if admin_user.check_password(password) and admin_user.is_superuser:
+            if admin_user.check_password(password) and admin_user.is_staff:
                 return admin_user
 
         else:# 普通用户还走原来的业务逻辑
