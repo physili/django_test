@@ -1,3 +1,4 @@
+from rest_framework.permissions import IsAdminUser, DjangoModelPermissions
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
 from orders.models import OrderInfo
@@ -8,6 +9,8 @@ from rest_framework.decorators import action
 class OrderModelViewSet(ModelViewSet):
     serializer_class = OrderInfoSerializer
     pagination_class = PageNum
+    #设置权限
+    permission_classes = [IsAdminUser,DjangoModelPermissions ]
     # 根据用户的不同操作提供不同的查询集
     def get_queryset(self):
         keyword = self.request.query_params.get('keyword')
