@@ -10,6 +10,13 @@ class GoodsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Goods
         fields = '__all__'
+        extra_kwargs = {
+            'sales':{'required':False},
+            'comments':{'required':False},
+            'category1':{'required':False},
+            'category2':{'required':False},
+            'category3':{'required':False},
+        }
 
 
 

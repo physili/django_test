@@ -9,8 +9,6 @@ def my_decorator(view):
             return http.JsonResponse({'code':400, 'errmsg':'请登录后重试'})
     return inner
 
-
-
 #Mixin扩展类
 class LoginVerifyMixin(object):
     @classmethod

@@ -4872,3 +4872,511 @@ INFO 2020-05-28 16:51:30,650 basehttp 154 "DELETE /meiduo_admin/goods/brands/3/ 
 INFO 2020-05-28 16:51:30,722 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 506
 INFO 2020-05-28 16:52:06,582 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/brand.py changed, reloading.
 INFO 2020-05-28 16:52:08,304 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 06:19:01,938 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 06:19:32,001 basehttp 154 "OPTIONS /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-29 06:19:32,263 basehttp 154 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 752
+INFO 2020-05-29 06:19:36,610 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 06:19:36,615 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 06:19:36,626 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 06:19:36,633 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 06:19:36,636 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 06:19:36,773 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-29 06:19:36,839 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-29 06:19:36,885 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-29 06:19:36,990 basehttp 154 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 1037
+INFO 2020-05-29 06:19:36,993 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-29 06:19:44,060 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/13/ HTTP/1.1" 200 0
+INFO 2020-05-29 06:19:44,702 basehttp 154 "GET /meiduo_admin/permission/admins/13/ HTTP/1.1" 200 121
+INFO 2020-05-29 06:20:23,656 basehttp 154 "PUT /meiduo_admin/permission/admins/13/ HTTP/1.1" 200 124
+INFO 2020-05-29 06:20:23,678 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 06:20:23,854 basehttp 154 "GET /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 1040
+INFO 2020-05-29 06:21:15,719 basehttp 154 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+WARNING 2020-05-29 06:21:15,858 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-29 06:21:15,858 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+WARNING 2020-05-29 06:21:40,335 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-29 06:21:40,336 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+WARNING 2020-05-29 06:22:36,344 log 228 Bad Request: /meiduo_admin/authorizations/
+WARNING 2020-05-29 06:22:36,345 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+INFO 2020-05-29 06:36:11,092 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 06:36:45,020 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 06:37:00,484 basehttp 154 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2020-05-29 06:38:27,530 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 238
+INFO 2020-05-29 06:38:27,998 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-29 06:38:28,105 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-29 06:38:28,106 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-29 06:38:28,117 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-29 06:38:28,189 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-29 06:38:28,193 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-29 06:38:28,207 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-29 06:38:28,306 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2020-05-29 06:38:28,608 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-29 06:38:28,618 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2020-05-29 06:38:28,621 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-29 06:38:28,668 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 06:38:28,678 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 06:38:28,793 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 06:38:28,845 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 06:38:29,101 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-29 06:38:35,774 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/users/utils.py changed, reloading.
+INFO 2020-05-29 06:38:38,932 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 06:39:12,165 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 06:41:36,400 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 225
+INFO 2020-05-29 06:41:36,880 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-29 06:41:36,917 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-29 06:41:37,006 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 06:41:37,076 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 06:41:37,097 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2020-05-29 06:41:37,216 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 06:41:37,219 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 06:41:37,630 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-29 08:41:08,997 basehttp 154 "OPTIONS /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-29 08:41:31,890 basehttp 154 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 752
+INFO 2020-05-29 08:42:29,771 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 08:42:29,790 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 08:42:29,791 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+WARNING 2020-05-29 08:42:29,826 log 228 Unauthorized: /meiduo_admin/permission/simple/
+WARNING 2020-05-29 08:42:29,827 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 401 38
+INFO 2020-05-29 08:42:29,844 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+WARNING 2020-05-29 08:42:29,848 log 228 Unauthorized: /meiduo_admin/permission/groups/simple/
+WARNING 2020-05-29 08:42:29,849 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 401 38
+INFO 2020-05-29 08:42:29,850 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 0
+WARNING 2020-05-29 08:42:29,887 log 228 Unauthorized: /meiduo_admin/permission/simple/
+WARNING 2020-05-29 08:42:29,888 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 401 38
+WARNING 2020-05-29 08:42:29,902 log 228 Unauthorized: /meiduo_admin/permission/groups/simple/
+WARNING 2020-05-29 08:42:29,909 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 401 38
+INFO 2020-05-29 08:42:30,050 basehttp 154 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 1040
+INFO 2020-05-29 08:42:39,086 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/12/ HTTP/1.1" 200 0
+WARNING 2020-05-29 08:42:39,236 log 228 Unauthorized: /meiduo_admin/permission/admins/12/
+WARNING 2020-05-29 08:42:39,241 basehttp 154 "GET /meiduo_admin/permission/admins/12/ HTTP/1.1" 401 38
+WARNING 2020-05-29 08:42:52,499 log 228 Unauthorized: /meiduo_admin/permission/admins/12/
+WARNING 2020-05-29 08:42:52,500 basehttp 154 "GET /meiduo_admin/permission/admins/12/ HTTP/1.1" 401 38
+INFO 2020-05-29 08:46:04,051 basehttp 154 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2020-05-29 08:46:34,127 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 238
+INFO 2020-05-29 08:46:34,379 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-29 08:46:34,393 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-29 08:46:34,400 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-29 08:46:34,414 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-29 08:46:34,421 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-29 08:46:34,447 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-29 08:46:34,490 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2020-05-29 08:46:34,527 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-29 08:46:34,693 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-29 08:46:34,775 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 08:46:34,843 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 08:46:34,926 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-29 08:46:34,972 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2020-05-29 08:46:35,108 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 08:46:35,128 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 08:46:35,655 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+WARNING 2020-05-29 08:46:41,324 log 228 Unauthorized: /meiduo_admin/permission/groups/simple/
+WARNING 2020-05-29 08:46:41,356 log 228 Unauthorized: /meiduo_admin/permission/simple/
+WARNING 2020-05-29 08:46:41,364 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 401 38
+WARNING 2020-05-29 08:46:41,374 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 401 38
+WARNING 2020-05-29 08:46:41,396 log 228 Unauthorized: /meiduo_admin/permission/simple/
+WARNING 2020-05-29 08:46:41,399 log 228 Unauthorized: /meiduo_admin/permission/groups/simple/
+WARNING 2020-05-29 08:46:41,399 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 401 38
+WARNING 2020-05-29 08:46:41,410 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 401 38
+INFO 2020-05-29 08:46:41,663 basehttp 154 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 1040
+INFO 2020-05-29 08:48:26,658 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 08:48:40,333 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-29 08:48:40,496 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-29 08:48:40,515 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-29 08:48:40,642 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-29 08:48:40,677 basehttp 154 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 1040
+INFO 2020-05-29 08:50:13,414 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 08:50:20,481 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/ HTTP/1.1" 200 0
+INFO 2020-05-29 08:58:29,821 basehttp 154 "POST /meiduo_admin/permission/admins/ HTTP/1.1" 201 109
+INFO 2020-05-29 08:58:30,004 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 08:58:30,389 basehttp 154 "GET /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 1150
+INFO 2020-05-29 08:59:15,247 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/14/ HTTP/1.1" 200 0
+INFO 2020-05-29 08:59:43,905 basehttp 154 "GET /meiduo_admin/permission/admins/14/ HTTP/1.1" 200 109
+WARNING 2020-05-29 09:00:15,100 log 228 Bad Request: /meiduo_admin/permission/admins/14/
+WARNING 2020-05-29 09:00:15,114 basehttp 154 "PUT /meiduo_admin/permission/admins/14/ HTTP/1.1" 400 40
+WARNING 2020-05-29 09:00:26,255 log 228 Bad Request: /meiduo_admin/permission/admins/14/
+WARNING 2020-05-29 09:00:26,256 basehttp 154 "PUT /meiduo_admin/permission/admins/14/ HTTP/1.1" 400 40
+WARNING 2020-05-29 09:00:50,891 log 228 Bad Request: /meiduo_admin/permission/admins/14/
+WARNING 2020-05-29 09:00:50,896 basehttp 154 "PUT /meiduo_admin/permission/admins/14/ HTTP/1.1" 400 40
+WARNING 2020-05-29 09:01:52,554 log 228 Bad Request: /meiduo_admin/permission/admins/14/
+WARNING 2020-05-29 09:01:52,578 basehttp 154 "PUT /meiduo_admin/permission/admins/14/ HTTP/1.1" 400 40
+INFO 2020-05-29 09:04:05,503 basehttp 154 "PUT /meiduo_admin/permission/admins/14/ HTTP/1.1" 200 133
+INFO 2020-05-29 09:04:06,494 basehttp 154 "GET /meiduo_admin/permission/admins/?pagesize=10 HTTP/1.1" 200 1174
+INFO 2020-05-29 09:13:08,256 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 09:14:42,055 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/settings/dev.py changed, reloading.
+INFO 2020-05-29 09:14:42,719 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 09:18:17,366 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 09:18:35,549 basehttp 154 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2020-05-29 09:18:35,821 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 225
+INFO 2020-05-29 09:18:36,047 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-29 09:18:36,052 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-29 09:18:36,098 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-29 09:18:36,118 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2020-05-29 09:18:36,119 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-29 09:18:36,130 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-29 09:18:36,139 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-29 09:18:36,142 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-29 09:18:36,368 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-29 09:18:36,386 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2020-05-29 09:18:36,417 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 09:18:36,429 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-29 09:18:36,429 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 09:18:36,502 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 09:18:36,524 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 09:18:36,663 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-29 09:18:39,680 basehttp 154 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-29 09:18:39,887 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 2579
+INFO 2020-05-29 09:18:55,841 basehttp 154 "OPTIONS /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-29 09:18:55,893 basehttp 154 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 832
+INFO 2020-05-29 09:18:57,937 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 2579
+INFO 2020-05-29 09:19:01,800 basehttp 154 "OPTIONS /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 0
+INFO 2020-05-29 09:19:01,864 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 2525
+INFO 2020-05-29 09:19:09,178 basehttp 154 "OPTIONS /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 200 0
+INFO 2020-05-29 09:19:09,317 basehttp 154 "PUT /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 200 49
+INFO 2020-05-29 09:19:09,532 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 2525
+INFO 2020-05-29 11:06:26,703 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 11:06:53,989 basehttp 154 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:07:07,329 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 225
+INFO 2020-05-29 11:07:07,482 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:07:07,506 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:07:07,565 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:07:07,577 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:07:07,592 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:07:07,665 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:07:07,666 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:07:07,722 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:09:30,182 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:09:30,188 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2020-05-29 11:09:30,190 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:09:30,195 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:09:30,201 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:09:30,232 basehttp 154 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-29 11:09:30,271 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:09:30,272 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:09:30,284 basehttp 154 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:09:30,301 basehttp 154 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:09:30,368 basehttp 154 "OPTIONS /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-29 11:09:30,654 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 10743
+INFO 2020-05-29 11:09:30,808 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-29 11:09:31,020 basehttp 154 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 10743
+INFO 2020-05-29 11:09:31,291 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2020-05-29 11:09:31,349 basehttp 154 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 6601
+INFO 2020-05-29 11:09:31,633 basehttp 154 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2020-05-29 11:09:35,339 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:09:35,359 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:11:41,088 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 2579
+INFO 2020-05-29 11:12:32,499 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 2579
+INFO 2020-05-29 11:12:38,267 basehttp 154 "OPTIONS /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:12:48,499 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 2525
+INFO 2020-05-29 11:12:59,671 basehttp 154 "OPTIONS /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:13:41,393 basehttp 154 "PUT /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 200 49
+INFO 2020-05-29 11:14:05,020 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 2525
+INFO 2020-05-29 11:14:26,321 basehttp 154 "PUT /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 200 49
+INFO 2020-05-29 11:14:33,614 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 2525
+INFO 2020-05-29 11:35:23,252 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 11:35:37,668 basehttp 154 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:35:38,172 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 225
+INFO 2020-05-29 11:35:38,760 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:35:38,762 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:35:38,763 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:35:38,765 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:35:38,766 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:35:38,766 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:35:38,788 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:35:38,794 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:35:38,911 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:35:38,974 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2020-05-29 11:35:39,262 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:35:39,269 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:35:39,270 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:35:39,359 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:35:39,366 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:35:39,378 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-29 11:35:46,647 basehttp 154 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-29 11:35:46,802 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 2579
+INFO 2020-05-29 11:35:48,625 basehttp 154 "OPTIONS /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:35:48,724 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 2525
+INFO 2020-05-29 11:35:54,029 basehttp 154 "OPTIONS /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:35:54,157 basehttp 154 "PUT /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 200 49
+INFO 2020-05-29 11:35:54,590 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 2525
+INFO 2020-05-29 11:41:48,305 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:41:48,313 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:41:48,358 basehttp 154 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:41:48,419 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:41:48,435 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 11:41:48,441 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-29 11:41:48,463 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-29 11:41:48,624 basehttp 154 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 48
+INFO 2020-05-29 11:41:48,634 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-29 11:41:48,679 basehttp 154 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 1174
+INFO 2020-05-29 11:41:55,215 basehttp 154 "OPTIONS /meiduo_admin/permission/admins/13/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:41:55,617 basehttp 154 "GET /meiduo_admin/permission/admins/13/ HTTP/1.1" 200 124
+INFO 2020-05-29 11:42:07,555 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 11:42:07,630 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-29 11:42:07,678 basehttp 154 "GET /meiduo_admin/permission/groups/?page=1&pagesize=10 HTTP/1.1" 200 100
+INFO 2020-05-29 11:42:07,714 basehttp 154 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 9141
+INFO 2020-05-29 11:42:09,344 basehttp 154 "OPTIONS /meiduo_admin/permission/groups/2/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:42:09,594 basehttp 154 "GET /meiduo_admin/permission/groups/2/ HTTP/1.1" 200 46
+INFO 2020-05-29 11:42:20,537 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 2579
+INFO 2020-05-29 11:42:22,615 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 2525
+INFO 2020-05-29 11:42:27,885 basehttp 154 "PUT /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 200 49
+INFO 2020-05-29 11:42:27,987 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 2525
+INFO 2020-05-29 11:43:27,727 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 11:43:42,999 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 225
+INFO 2020-05-29 11:43:43,273 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:43:43,313 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:43:43,418 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:43:43,457 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2020-05-29 11:43:43,478 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:43:43,527 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:43:43,656 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:43:43,738 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+WARNING 2020-05-29 11:43:47,154 log 228 Unauthorized: /meiduo_admin/orders/
+WARNING 2020-05-29 11:43:47,155 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 401 38
+INFO 2020-05-29 11:44:03,505 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 2579
+INFO 2020-05-29 11:44:08,059 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 2525
+WARNING 2020-05-29 11:44:13,441 log 228 Forbidden: /meiduo_admin/orders/20200509152508000000001/status/
+WARNING 2020-05-29 11:44:13,453 basehttp 154 "PUT /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 403 63
+WARNING 2020-05-29 11:44:15,302 log 228 Forbidden: /meiduo_admin/orders/20200509152508000000001/status/
+WARNING 2020-05-29 11:44:15,304 basehttp 154 "PUT /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 403 63
+WARNING 2020-05-29 11:44:16,004 log 228 Forbidden: /meiduo_admin/orders/20200509152508000000001/status/
+WARNING 2020-05-29 11:44:16,048 basehttp 154 "PUT /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 403 63
+WARNING 2020-05-29 11:44:16,643 log 228 Forbidden: /meiduo_admin/orders/20200509152508000000001/status/
+WARNING 2020-05-29 11:44:16,655 basehttp 154 "PUT /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 403 63
+INFO 2020-05-29 11:45:39,695 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 11:46:21,814 basehttp 154 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:46:22,088 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 225
+INFO 2020-05-29 11:46:22,838 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:46:22,851 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:46:22,855 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:46:22,859 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:46:22,881 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:46:22,885 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:46:22,894 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:46:22,929 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:46:23,067 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:46:23,081 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:46:23,083 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:46:23,084 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:46:23,090 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2020-05-29 11:46:23,201 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:46:23,203 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:46:23,342 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-29 11:46:27,112 basehttp 154 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2020-05-29 11:46:27,319 basehttp 154 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 2579
+INFO 2020-05-29 11:46:28,932 basehttp 154 "OPTIONS /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:46:28,997 basehttp 154 "GET /meiduo_admin/orders/20200509152508000000001/ HTTP/1.1" 200 2525
+INFO 2020-05-29 11:46:33,910 basehttp 154 "OPTIONS /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 200 0
+WARNING 2020-05-29 11:46:33,998 log 228 Forbidden: /meiduo_admin/orders/20200509152508000000001/status/
+WARNING 2020-05-29 11:46:34,003 basehttp 154 "PUT /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 403 63
+WARNING 2020-05-29 11:46:38,763 log 228 Forbidden: /meiduo_admin/orders/20200509152508000000001/status/
+WARNING 2020-05-29 11:46:38,780 basehttp 154 "PUT /meiduo_admin/orders/20200509152508000000001/status/ HTTP/1.1" 403 63
+INFO 2020-05-29 11:47:29,852 basehttp 154 "OPTIONS /meiduo_admin/goods/channel_types/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:47:29,858 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 11:47:29,865 basehttp 154 "OPTIONS /meiduo_admin/goods/categories/ HTTP/1.1" 200 0
+WARNING 2020-05-29 11:47:29,963 log 228 Not Found: /meiduo_admin/goods/channel_types/
+WARNING 2020-05-29 11:47:29,965 log 228 Not Found: /meiduo_admin/goods/categories/
+WARNING 2020-05-29 11:47:29,968 basehttp 154 "GET /meiduo_admin/goods/channel_types/ HTTP/1.1" 404 23
+WARNING 2020-05-29 11:47:29,971 basehttp 154 "GET /meiduo_admin/goods/categories/ HTTP/1.1" 404 23
+INFO 2020-05-29 11:47:30,088 basehttp 154 "GET /meiduo_admin/goods/brands/?page=1&pagesize=10 HTTP/1.1" 200 506
+INFO 2020-05-29 11:47:32,889 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/1/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:47:33,026 basehttp 154 "GET /meiduo_admin/goods/brands/1/ HTTP/1.1" 200 219
+INFO 2020-05-29 11:47:53,204 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/2/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:47:53,297 basehttp 154 "GET /meiduo_admin/goods/brands/2/ HTTP/1.1" 200 232
+INFO 2020-05-29 11:49:11,976 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 11:54:28,274 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 238
+INFO 2020-05-29 11:54:28,639 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:54:28,648 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:54:28,666 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:54:28,684 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:54:28,734 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2020-05-29 11:54:28,747 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:54:28,820 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 11:54:28,966 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+WARNING 2020-05-29 11:54:33,245 log 228 Not Found: /meiduo_admin/goods/channel_types/
+WARNING 2020-05-29 11:54:33,248 log 228 Not Found: /meiduo_admin/goods/categories/
+WARNING 2020-05-29 11:54:33,249 basehttp 154 "GET /meiduo_admin/goods/categories/ HTTP/1.1" 404 23
+WARNING 2020-05-29 11:54:33,250 basehttp 154 "GET /meiduo_admin/goods/channel_types/ HTTP/1.1" 404 23
+INFO 2020-05-29 11:54:33,271 basehttp 154 "GET /meiduo_admin/goods/brands/?page=1&pagesize=10 HTTP/1.1" 200 506
+INFO 2020-05-29 11:54:48,882 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:54:49,343 basehttp 154 "POST /meiduo_admin/goods/brands/ HTTP/1.1" 201 220
+INFO 2020-05-29 11:54:49,494 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 11:54:49,561 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 727
+INFO 2020-05-29 11:54:58,504 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/4/ HTTP/1.1" 200 0
+INFO 2020-05-29 11:54:58,620 basehttp 154 "GET /meiduo_admin/goods/brands/4/ HTTP/1.1" 200 220
+INFO 2020-05-29 11:55:35,862 basehttp 154 "PUT /meiduo_admin/goods/brands/4/ HTTP/1.1" 200 220
+INFO 2020-05-29 11:55:35,981 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 727
+INFO 2020-05-29 11:55:39,846 basehttp 154 "GET /meiduo_admin/goods/brands/4/ HTTP/1.1" 200 220
+INFO 2020-05-29 11:55:49,446 basehttp 154 "PUT /meiduo_admin/goods/brands/4/ HTTP/1.1" 200 220
+INFO 2020-05-29 11:55:49,566 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 727
+WARNING 2020-05-29 11:55:59,873 log 228 Not Found: /meiduo_admin/goods/categories/
+WARNING 2020-05-29 11:55:59,887 log 228 Not Found: /meiduo_admin/goods/channel_types/
+WARNING 2020-05-29 11:55:59,912 basehttp 154 "GET /meiduo_admin/goods/channel_types/ HTTP/1.1" 404 23
+INFO 2020-05-29 11:55:59,917 basehttp 154 "GET /meiduo_admin/goods/brands/?page=1&pagesize=10 HTTP/1.1" 200 727
+WARNING 2020-05-29 11:55:59,921 basehttp 154 "GET /meiduo_admin/goods/categories/ HTTP/1.1" 404 23
+INFO 2020-05-29 13:03:22,831 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/brand.py changed, reloading.
+INFO 2020-05-29 13:03:24,488 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 13:31:40,620 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 13:32:48,153 basehttp 154 "OPTIONS /meiduo_admin/goods/categories/ HTTP/1.1" 200 0
+INFO 2020-05-29 13:32:48,169 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 13:32:48,171 basehttp 154 "OPTIONS /meiduo_admin/goods/channel_types/ HTTP/1.1" 200 0
+WARNING 2020-05-29 13:32:48,828 log 228 Not Found: /meiduo_admin/goods/categories/
+WARNING 2020-05-29 13:32:48,831 log 228 Not Found: /meiduo_admin/goods/channel_types/
+WARNING 2020-05-29 13:32:48,832 basehttp 154 "GET /meiduo_admin/goods/categories/ HTTP/1.1" 404 23
+WARNING 2020-05-29 13:32:48,833 basehttp 154 "GET /meiduo_admin/goods/channel_types/ HTTP/1.1" 404 23
+INFO 2020-05-29 13:32:48,907 basehttp 154 "GET /meiduo_admin/goods/brands/?page=1&pagesize=10 HTTP/1.1" 200 727
+INFO 2020-05-29 13:32:54,866 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/4/ HTTP/1.1" 200 0
+INFO 2020-05-29 13:32:55,021 basehttp 154 "GET /meiduo_admin/goods/brands/4/ HTTP/1.1" 200 220
+ERROR 2020-05-29 13:33:09,778 log 228 Internal Server Error: /meiduo_admin/goods/brands/4/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/brand.py", line 49, in update
+    client = Fdfs_client(settings.FDFS_CLIENT_CONF)
+AttributeError: module 'meiduo.settings' has no attribute 'FDFS_CLIENT_CONF'
+ERROR 2020-05-29 13:33:09,782 basehttp 154 "PUT /meiduo_admin/goods/brands/4/ HTTP/1.1" 500 19584
+ERROR 2020-05-29 13:33:16,465 log 228 Internal Server Error: /meiduo_admin/goods/brands/4/
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/viewsets.py", line 114, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/.virtualenvs/meiduo_water/lib/python3.6/site-packages/rest_framework/views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/brand.py", line 49, in update
+    client = Fdfs_client(settings.FDFS_CLIENT_CONF)
+AttributeError: module 'meiduo.settings' has no attribute 'FDFS_CLIENT_CONF'
+ERROR 2020-05-29 13:33:16,480 basehttp 154 "PUT /meiduo_admin/goods/brands/4/ HTTP/1.1" 500 19584
+INFO 2020-05-29 13:34:19,720 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 13:38:40,642 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 13:39:20,883 basehttp 154 "PUT /meiduo_admin/goods/brands/4/ HTTP/1.1" 201 133
+INFO 2020-05-29 13:39:21,308 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 13:39:21,475 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 727
+INFO 2020-05-29 13:40:00,269 basehttp 154 "DELETE /meiduo_admin/goods/brands/4/ HTTP/1.1" 204 0
+INFO 2020-05-29 13:40:00,425 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 506
+INFO 2020-05-29 13:40:21,648 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/ HTTP/1.1" 200 0
+INFO 2020-05-29 13:40:21,926 basehttp 154 "POST /meiduo_admin/goods/brands/ HTTP/1.1" 201 133
+INFO 2020-05-29 13:40:22,322 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 727
+INFO 2020-05-29 13:40:26,506 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/5/ HTTP/1.1" 200 0
+INFO 2020-05-29 13:40:35,017 basehttp 154 "GET /meiduo_admin/goods/brands/5/ HTTP/1.1" 200 220
+INFO 2020-05-29 13:41:01,743 basehttp 154 "PUT /meiduo_admin/goods/brands/5/ HTTP/1.1" 201 133
+INFO 2020-05-29 13:41:02,640 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 727
+INFO 2020-05-29 13:41:25,050 basehttp 154 "GET /meiduo_admin/goods/brands/5/ HTTP/1.1" 200 220
+INFO 2020-05-29 13:46:07,008 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 13:46:31,519 basehttp 154 "GET /meiduo_admin/goods/brands/5/ HTTP/1.1" 200 220
+INFO 2020-05-29 13:47:44,794 basehttp 154 "PUT /meiduo_admin/goods/brands/5/ HTTP/1.1" 201 133
+INFO 2020-05-29 13:47:46,277 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 727
+INFO 2020-05-29 13:48:06,459 basehttp 154 "DELETE /meiduo_admin/goods/brands/5/ HTTP/1.1" 204 0
+INFO 2020-05-29 13:48:08,700 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 506
+INFO 2020-05-29 13:48:19,044 basehttp 154 "POST /meiduo_admin/goods/brands/ HTTP/1.1" 201 133
+INFO 2020-05-29 13:48:21,911 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 727
+INFO 2020-05-29 13:48:33,428 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/6/ HTTP/1.1" 200 0
+INFO 2020-05-29 13:48:43,879 basehttp 154 "GET /meiduo_admin/goods/brands/6/ HTTP/1.1" 200 220
+INFO 2020-05-29 13:49:22,918 basehttp 154 "PUT /meiduo_admin/goods/brands/6/ HTTP/1.1" 201 133
+INFO 2020-05-29 13:49:23,576 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 13:49:25,543 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 727
+INFO 2020-05-29 13:50:36,370 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 13:50:44,800 basehttp 154 "GET /meiduo_admin/goods/brands/6/ HTTP/1.1" 200 220
+INFO 2020-05-29 13:50:53,683 basehttp 154 "PUT /meiduo_admin/goods/brands/6/ HTTP/1.1" 201 133
+INFO 2020-05-29 13:50:55,928 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 727
+INFO 2020-05-29 13:51:04,895 basehttp 154 "GET /meiduo_admin/goods/brands/6/ HTTP/1.1" 200 220
+INFO 2020-05-29 13:51:28,837 basehttp 154 "PUT /meiduo_admin/goods/brands/6/ HTTP/1.1" 201 133
+INFO 2020-05-29 13:51:31,235 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 727
+INFO 2020-05-29 13:53:46,726 basehttp 154 "OPTIONS /meiduo_admin/goods/categories/ HTTP/1.1" 200 0
+INFO 2020-05-29 13:53:46,738 basehttp 154 "OPTIONS /meiduo_admin/goods/channel_types/ HTTP/1.1" 200 0
+INFO 2020-05-29 13:54:12,376 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:16,156 basehttp 154 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:16,573 basehttp 154 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 238
+INFO 2020-05-29 15:10:16,942 basehttp 154 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:16,946 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:16,982 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:17,007 basehttp 154 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:17,016 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:17,039 basehttp 154 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:17,074 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:17,103 basehttp 154 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 31
+INFO 2020-05-29 15:10:17,105 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 15:10:17,115 basehttp 154 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2020-05-29 15:10:17,134 basehttp 154 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:17,224 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 15:10:17,239 basehttp 154 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2020-05-29 15:10:17,294 basehttp 154 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2020-05-29 15:10:17,347 basehttp 154 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2020-05-29 15:10:17,424 basehttp 154 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2020-05-29 15:10:30,387 basehttp 154 "OPTIONS /meiduo_admin/skus/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:30,389 basehttp 154 "OPTIONS /meiduo_admin/skus/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:30,393 basehttp 154 "OPTIONS /meiduo_admin/skus/images/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:30,493 basehttp 154 "GET /meiduo_admin/skus/images/?page=1&pagesize=10 HTTP/1.1" 200 1128
+INFO 2020-05-29 15:10:30,505 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1495
+INFO 2020-05-29 15:10:30,608 basehttp 154 "GET /meiduo_admin/skus/simple/ HTTP/1.1" 200 1495
+INFO 2020-05-29 15:10:32,517 basehttp 154 "OPTIONS /meiduo_admin/goods/channel_types/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:32,523 basehttp 154 "OPTIONS /meiduo_admin/goods/categories/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:32,525 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/?page=1&pagesize=10 HTTP/1.1" 200 0
+WARNING 2020-05-29 15:10:32,582 log 228 Not Found: /meiduo_admin/goods/categories/
+WARNING 2020-05-29 15:10:32,583 basehttp 154 "GET /meiduo_admin/goods/categories/ HTTP/1.1" 404 23
+INFO 2020-05-29 15:10:32,589 basehttp 154 "GET /meiduo_admin/goods/brands/?page=1&pagesize=10 HTTP/1.1" 200 727
+WARNING 2020-05-29 15:10:32,597 log 228 Not Found: /meiduo_admin/goods/channel_types/
+WARNING 2020-05-29 15:10:32,598 basehttp 154 "GET /meiduo_admin/goods/channel_types/ HTTP/1.1" 404 23
+INFO 2020-05-29 15:10:40,817 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/6/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:40,936 basehttp 154 "GET /meiduo_admin/goods/brands/6/ HTTP/1.1" 200 220
+INFO 2020-05-29 15:10:53,378 basehttp 154 "PUT /meiduo_admin/goods/brands/6/ HTTP/1.1" 201 133
+INFO 2020-05-29 15:10:53,457 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 15:10:53,498 basehttp 154 "GET /meiduo_admin/goods/brands/?pagesize=10 HTTP/1.1" 200 727
+INFO 2020-05-29 15:17:34,268 autoreload 217 /home/ubuntu/Desktop/heima/django_test/meiduo/meiduo/apps/meiduo_admin/views/image.py changed, reloading.
+INFO 2020-05-29 15:17:35,547 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 15:53:01,017 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 15:53:16,000 basehttp 154 "OPTIONS /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 15:53:16,739 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 11027
+INFO 2020-05-29 15:53:28,664 basehttp 154 "OPTIONS /meiduo_admin/goods/brands/simple/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:53:28,668 basehttp 154 "OPTIONS /meiduo_admin/goods/channel/categories/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:53:28,736 basehttp 154 "GET /meiduo_admin/goods/brands/simple/ HTTP/1.1" 200 87
+INFO 2020-05-29 15:53:29,004 basehttp 154 "GET /meiduo_admin/goods/channel/categories/ HTTP/1.1" 200 975
+INFO 2020-05-29 15:53:57,933 basehttp 154 "OPTIONS /meiduo_admin/goods/channel/categories/1/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:53:57,977 basehttp 154 "GET /meiduo_admin/goods/channel/categories/1/ HTTP/1.1" 200 65
+INFO 2020-05-29 15:54:00,123 basehttp 154 "OPTIONS /meiduo_admin/goods/channel/categories/38/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:54:00,175 basehttp 154 "GET /meiduo_admin/goods/channel/categories/38/ HTTP/1.1" 200 121
+INFO 2020-05-29 15:54:15,714 basehttp 154 "OPTIONS /meiduo_admin/goods/ HTTP/1.1" 200 0
+WARNING 2020-05-29 15:54:15,739 log 228 Bad Request: /meiduo_admin/goods/
+WARNING 2020-05-29 15:54:15,743 basehttp 154 "POST /meiduo_admin/goods/ HTTP/1.1" 400 121
+WARNING 2020-05-29 15:55:10,091 log 228 Bad Request: /meiduo_admin/goods/
+WARNING 2020-05-29 15:55:10,094 basehttp 154 "POST /meiduo_admin/goods/ HTTP/1.1" 400 121
+INFO 2020-05-29 15:58:09,058 autoreload 597 Watching for file changes with StatReloader
+INFO 2020-05-29 15:58:14,927 basehttp 154 "POST /meiduo_admin/goods/ HTTP/1.1" 201 397
+INFO 2020-05-29 15:58:17,137 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 11425
+INFO 2020-05-29 15:58:33,642 basehttp 154 "GET /meiduo_admin/goods/brands/simple/ HTTP/1.1" 200 87
+INFO 2020-05-29 15:58:33,680 basehttp 154 "OPTIONS /meiduo_admin/goods/4/ HTTP/1.1" 200 0
+INFO 2020-05-29 15:58:33,687 basehttp 154 "GET /meiduo_admin/goods/channel/categories/ HTTP/1.1" 200 975
+INFO 2020-05-29 15:58:33,732 basehttp 154 "GET /meiduo_admin/goods/4/ HTTP/1.1" 200 397
+INFO 2020-05-29 15:58:33,997 basehttp 154 "GET /meiduo_admin/goods/channel/categories/1/ HTTP/1.1" 200 65
+INFO 2020-05-29 15:58:33,998 basehttp 154 "GET /meiduo_admin/goods/channel/categories/38/ HTTP/1.1" 200 121
+INFO 2020-05-29 15:59:02,471 basehttp 154 "PUT /meiduo_admin/goods/4/ HTTP/1.1" 200 397
+INFO 2020-05-29 15:59:04,737 basehttp 154 "GET /meiduo_admin/goods/?page=1&pagesize=10 HTTP/1.1" 200 11425
+INFO 2020-05-29 15:59:15,522 basehttp 154 "DELETE /meiduo_admin/goods/4/ HTTP/1.1" 204 0
+INFO 2020-05-29 15:59:15,567 basehttp 154 "OPTIONS /meiduo_admin/goods/?pagesize=10 HTTP/1.1" 200 0
+INFO 2020-05-29 15:59:15,683 basehttp 154 "GET /meiduo_admin/goods/?pagesize=10 HTTP/1.1" 200 11027
